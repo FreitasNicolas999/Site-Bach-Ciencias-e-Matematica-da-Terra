@@ -1,178 +1,224 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bacharelado em Ciências e Matemática da Terra</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça o Bacharelado em Ciências Matemáticas e da Terra (BCMT) da UFRJ, sua estrutura interdisciplinar e suas ênfases acadêmicas.">
+  <meta name="theme-color" content="#05070a">
+  <title>Bacharelado em Ciências Matemáticas e da Terra | UFRJ</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
   <div class="rail" aria-hidden="true">
     <div class="rail-fill" id="railFill"></div>
     <span class="rail-label" id="railLabel">000%</span>
   </div>
 
-  <header>
-    <div class="brand">CIÊNCIAS E MATEMÁTICA DA TERRA <span>COMISSÃO · since 2007</span></div>
-    <nav class="links">
-      <a href="#Cursos">Cursos</a>
-      <a href="#geografia">Geografia</a>
-      <a href="#organograma">Organograma</a>
-      <a href="#Sobrenos">Sobre Nós</a>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#topo" aria-label="Ciências Matemáticas e da Terra — início">
+      CIÊNCIAS MATEMÁTICAS E DA TERRA
+      <span>UFRJ · desde 2009</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu de navegação">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="links" id="navLinks" aria-label="Navegação principal">
+      <a href="#cursos">O Curso</a>
+      <a href="#cmt-puro">CMT — Puro</a>
+      <a href="#analise-dados">Análise de Dados</a>
+      <a href="#sensoriamento">Sensoriamento Remoto</a>
+      <a href="#patrimonio">Patrimônio Natural</a>
     </nav>
-    <div class="clock mono" id="clock">00:00:00 UTC</div>
+
+    <time class="clock mono" id="clock" aria-label="Horário UTC">00:00:00 UTC</time>
   </header>
 
-  <!-- HERO -->
-  <section class="panel hero" id="topo">
-    <div class="panel-bg" data-speed="0.18" style="background-image:url('assets/earth-lights.jpg');"></div>
-    <div class="panel-scrim scrim-full"></div>
-    <div class="panel-inner">
-      <span class="coord mono">22°51'31.1"S 43°13'56.2"W; -22.858639, -43.232278; HEMISFERIO SUL. </span>
-      <h1 class="headline">Bacharelado<br>Em<br>Ciências e Matemática Da<br>Terra.</h1>
-      <p class="body-text">Conhecimento interdisciplinar é a chave para enfrentar os desafios de um mundo em constante transformação.</p>
-    </div>
-    <div class="scroll-cue"><div class="stem"></div>role para baixo</div>
-  </section>
-
-  <!-- TICKER -->
-  <div class="ticker">
-    <div class="ticker-track" id="tickerTrack"></div>
-  </div>
-
-  <!-- SECTION: CURSOS -->
-  <section class="panel" id="Cursos">
-    <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/earth-terrain.jpg');"></div>
-    <div class="panel-scrim scrim-bottom"></div>
-    <div class="panel-inner">
-      <div>
-        <span class="coord mono">-22.858639, -43.232278 —  Centro de Ciências Matemáticas e da Natureza </span>
-        <h2 class="headline">Áreas de Atuação<br>do curso.</h2>
+  <main id="conteudo">
+    <section class="panel hero" id="topo" aria-labelledby="titulo-principal">
+      <div class="panel-bg" data-speed="0.18" style="background-image:url('assets/earth-lights.jpg');"></div>
+      <div class="panel-scrim scrim-full"></div>
+      <div class="panel-inner">
+        <span class="coord mono">22°51'31.1&quot;S 43°13'56.2&quot;W · UFRJ — CCMN</span>
+        <h1 class="headline" id="titulo-principal">Bacharelado em Ciências Matemáticas e da Terra</h1>
+        <p class="body-text">Conhecimento interdisciplinar é a chave para enfrentar os desafios de um mundo em constante transformação.</p>
       </div>
-      <div class="body-col">
-        <p class="body-text">O bacharel em Ciências Matemáticas e da Terra (BCMT) da UFRJ possui uma formação interdisciplinar que combina conhecimentos de Matemática, Computação, Física e Geociências, preparando profissionais para atuar em diferentes setores científicos e tecnológicos.</p>
-        <div class="stat-row">
-          <div class="stat"><b>0</b><i>TESTE</i></div>
-          <div class="stat"><b>0</b><i>TESTE</i></div>
-          <div class="stat"><b>0</b><i>TESTE</i></div>
+      <div class="scroll-cue" aria-hidden="true"><div class="stem"></div>role para baixo</div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="tickerTrack"></div>
+    </div>
+
+    <section class="panel" id="cursos" aria-labelledby="titulo-estrutura">
+      <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/earth-terrain.jpg');"></div>
+      <div class="panel-scrim scrim-bottom"></div>
+      <div class="panel-inner">
+        <div>
+          <span class="coord mono">-22.858639, -43.232278 — Centro de Ciências Matemáticas e da Natureza (CCMN)</span>
+          <h2 class="headline" id="titulo-estrutura">Estrutura do curso</h2>
+        </div>
+        <div class="body-col">
+          <p class="body-text">O BCMT é uma graduação <strong>multiunidades</strong> da UFRJ, com formação interdisciplinar em matemática, computação, física e ciências da Terra. O curso foi <strong>criado em 2008</strong> e recebeu sua primeira turma em <strong>2009</strong>. A matriz vigente no SIGA desde 2025/1 organiza a formação em quatro ênfases: <strong>CMT — Puro (Formação Geral), Análise de Dados, Sensoriamento Remoto e Geoprocessamento e Patrimônio Natural</strong>.</p>
+          <div class="stat-row" aria-label="Informações gerais do curso">
+            <div class="stat"><b>2009</b><i>INÍCIO DAS TURMAS</i></div>
+            <div class="stat"><b>8</b><i>SEMESTRES RECOMENDADOS</i></div>
+            <div class="stat"><b>4</b><i>ÊNFASES CURRICULARES</i></div>
+            <div class="stat"><b>2.400 h</b><i>CARGA HORÁRIA TOTAL</i></div>
+          </div>
+          <a href="https://siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/90AED42F-0A2A-1E16-7AFB-56A8BD067DE2.html" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver grade: Formação Geral <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-    </div>
-  </section>
-  <div class="cmt-carousel-wrapper">
+    </section>
 
-    <button class="carousel-btn prev">
-        ←
-    </button>
-    <div class="cmt-carousel">
+    <section class="areas" aria-labelledby="titulo-areas">
+      <div class="areas-heading">
+        <span class="coord mono">PERCURSOS ACADÊMICOS</span>
+        <h2 id="titulo-areas">Explore as áreas do BCMT</h2>
+        <p>A reforma curricular vigente desde 2025/1 organiza o BCMT nestes quatro percursos. Use as setas, o teclado ou selecione um card para navegar.</p>
+      </div>
 
-        <div class="cmt-card">
-            <span>🌍</span>
-            <h3>Patrimonio Natural</h3>
-            <p>Compreensão dos fenômenos que moldam a Terra.</p>
-        </div>
+      <div class="cmt-carousel-wrapper" aria-roledescription="carrossel" aria-label="Áreas de formação do BCMT">
+        <button class="carousel-btn prev" type="button" aria-label="Área anterior">
+          <svg class="carousel-btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M14.5 5 7.5 12l7 7" />
+          </svg>
+          <span class="carousel-btn-label">Anterior</span>
+        </button>
+        <div class="cmt-carousel" id="areasCarousel">
+          <a class="cmt-card" href="#cmt-puro" data-label="CMT — Puro">
+            <span aria-hidden="true">∞</span>
+            <h3>CMT — Puro</h3>
+            <p>Formação geral, interdisciplinar e flexível em ciências matemáticas e da Terra.</p>
+          </a>
 
-        <div class="cmt-card">
-            <span>📊</span>
+          <a class="cmt-card" href="#analise-dados" data-label="Análise de Dados">
+            <span aria-hidden="true">📊</span>
             <h3>Análise de Dados</h3>
-            <p>Transformando dados em conhecimento científico.</p>
+            <p>Modelagem, programação e processamento da informação.</p>
+          </a>
+
+          <a class="cmt-card" href="#sensoriamento" data-label="Sensoriamento Remoto">
+            <span aria-hidden="true">🛰️</span>
+            <h3>Sensoriamento Remoto</h3>
+            <p>Tecnologias espaciais e geoprocessamento para observar o planeta.</p>
+          </a>
+
+          <a class="cmt-card" href="#patrimonio" data-label="Patrimônio Natural">
+            <span aria-hidden="true">🌍</span>
+            <h3>Patrimônio Natural</h3>
+            <p>Compreensão, valorização e conservação da geodiversidade.</p>
+          </a>
         </div>
-
-        <div class="cmt-card">
-            <span>🛰️</span>
-            <h3>Sensoriamento Remoto </h3>
-            <p>Tecnologias espaciais para observar o planeta.</p>
-        </div>
-
-        <div class="cmt-card">
-            <span>💻</span>
-            <h3>Puro</h3>
-            <p>Ferramentas que impulsionam a ciência moderna.</p>
-        </div>
-
-    </div>
-
-    <button class="carousel-btn next">
-        →
-    </button>
-
-</div>
-
-  <!-- SECTION: Analise de Dados -->
-  <section class="panel" id="rotacao">
-    <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/analis.jpg');"></div>
-    <div class="panel-scrim scrim-top"></div>
-    <div class="panel-inner">
-      <div>
-        <span class="coord mono">Ênfase de análise de dados.</span>
-        <h2 class="headline">Análise de<br>Dados</h2>
+        <button class="carousel-btn next" type="button" aria-label="Próxima área">
+          <svg class="carousel-btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="m9.5 5 7 7-7 7" />
+          </svg>
+          <span class="carousel-btn-label">Próxima</span>
+        </button>
       </div>
-      <div class="body-col">
-        <p class="body-text">TESTE.</p>
-        <div class="stat-row">
-          <div class="stat"><b>1.670</b><i>TESTE</i></div>
-          <div class="stat"><b>24h</b><i>TESTE</i></div>
-          <div class="stat"><b>−62°C</b><i>TESTE</i></div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <p class="sr-only" id="carouselStatus" aria-live="polite"></p>
+    </section>
 
-  <!-- SECTION: HORIZONTE -->
-  <section class="panel" id="Sensoriamento">
-    <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/senso.jpg');"></div>
-    <div class="panel-scrim scrim-bottom"></div>
-    <div class="panel-inner">
-      <div>
-        <span class="coord mono">Ênfase Sensoriamento Remoto e Geoprocessamento</span>
-        <h2 class="headline">Ênfase<br>Em<br>Sensoriamento Remoto<br>Geoprocessamento</h2>
-      </div>
-      <div class="body-col">
-        <p class="body-text">TESTE.</p>
-        <div class="stat-row">
-          <div class="stat"><b>100</b><i>KM DE ATMOSFERA ÚTIL</i></div>
-          <div class="stat"><b>7,66</b><i>KM/S VELOCIDADE ORBITAL</i></div>
-          <div class="stat"><b>1</b><i>PLANETA CONHECIDO ASSIM</i></div>
+    <section class="panel" id="cmt-puro" aria-labelledby="titulo-cmt-puro">
+      <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/earth-terrain.jpg'); background-position:center 58%;"></div>
+      <div class="panel-scrim scrim-top"></div>
+      <div class="panel-inner">
+        <div>
+          <span class="coord mono">Ênfase em CMT — Puro · Formação Geral</span>
+          <h2 class="headline" id="titulo-cmt-puro">CMT — Puro</h2>
+        </div>
+        <div class="body-col">
+          <p class="body-text">O <strong>CMT — Puro</strong> é o percurso de formação geral da matriz atual do BCMT. Ele preserva o caráter interdisciplinar do bacharelado e oferece ampla liberdade para construir uma trajetória acadêmica entre <strong>matemática, física, computação e ciências da Terra</strong>, combinando uma base obrigatória com disciplinas de escolha restrita e de livre escolha. É uma opção especialmente adequada para quem busca formação científica abrangente e deseja manter maior flexibilidade na composição do currículo.</p>
+          <div class="stat-row" aria-label="Informações da ênfase CMT Puro">
+            <div class="stat"><b>2.400 h</b><i>CARGA HORÁRIA TOTAL</i></div>
+            <div class="stat"><b>116</b><i>CRÉDITOS MÍNIMOS</i></div>
+            <div class="stat"><b>32</b><i>CRÉDITOS DE LIVRE ESCOLHA</i></div>
+          </div>
+          <a href="https://siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/90AED42F-0A2A-1E16-7AFB-56A8BD067DE2.html" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver grade: CMT — Puro <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SECTION: HORIZONTE -->
-  <section class="panel" id="Geologia">
-    <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/patri.jpg');"></div>
-    <div class="panel-scrim scrim-bottom"></div>
-    <div class="panel-inner">
-      <div>
-        <span class="coord mono">Ênfase Patrimonio</span>
-        <h2 class="headline">Ênfase<br>Em<br>Patrimonio<br>Natural</h2>
-      </div>
-      <div class="body-col">
-        <p class="body-text">TESTE.</p>
-        <div class="stat-row">
-          <div class="stat"><b>100</b><i>KM DE ATMOSFERA ÚTIL</i></div>
-          <div class="stat"><b>7,66</b><i>KM/S VELOCIDADE ORBITAL</i></div>
-          <div class="stat"><b>1</b><i>PLANETA CONHECIDO ASSIM</i></div>
+    <section class="panel" id="analise-dados" aria-labelledby="titulo-analise">
+      <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/analis.jpg');"></div>
+      <div class="panel-scrim scrim-top"></div>
+      <div class="panel-inner">
+        <div>
+          <span class="coord mono">Ênfase em Análise de Dados</span>
+          <h2 class="headline" id="titulo-analise">Análise de Dados</h2>
+        </div>
+        <div class="body-col">
+          <p class="body-text">Apoiada fortemente pelo <strong>Instituto de Computação (IC)</strong> e pelo Instituto de Matemática, esta ênfase foca na modelagem e no processamento da informação. O estudante desenvolve uma formação em programação, estruturas de dados e métodos computacionais, preparando-se para atuar no desenvolvimento de soluções tecnológicas e na análise quantitativa.</p>
+          <div class="stat-row">
+            <div class="stat"><b>Computação</b><i>FUNDAMENTOS</i></div>
+            <div class="stat"><b>Modelagem</b><i>MATEMÁTICA</i></div>
+            <div class="stat"><b>Estatística</b><i>APLICADA</i></div>
+          </div>
+          <a href="https://siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/90EBDFDE-0A2A-1E16-7AFB-56A8C06071F3.html" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver grade curricular <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="panel" id="sensoriamento" aria-labelledby="titulo-sensoriamento">
+      <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/senso.jpg');"></div>
+      <div class="panel-scrim scrim-bottom"></div>
+      <div class="panel-inner">
+        <div>
+          <span class="coord mono">Ênfase em Sensoriamento Remoto e Geoprocessamento</span>
+          <h2 class="headline" id="titulo-sensoriamento">Sensoriamento Remoto e Geoprocessamento</h2>
+        </div>
+        <div class="body-col">
+          <p class="body-text">Apoiada pelo <strong>Instituto de Geociências</strong>, a ênfase forma profissionais capacitados para aquisição, processamento e interpretação de dados espaciais. O foco abrange Sistemas de Informações Geográficas (SIG) e análise de imagens orbitais aplicados ao monitoramento ambiental, planejamento territorial, gestão de recursos naturais e compreensão das dinâmicas da superfície terrestre.</p>
+          <div class="stat-row">
+            <div class="stat"><b>Satélites</b><i>OBSERVAÇÃO</i></div>
+            <div class="stat"><b>Imagens</b><i>PROCESSAMENTO</i></div>
+            <div class="stat"><b>SIG</b><i>GEOPROCESSAMENTO</i></div>
+          </div>
+          <a href="https://www.siga.ufrj.br/sira/repositorio-curriculo/904E7D7F-0A2A-1E16-7AFB-56A8A2715768.html" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver grade curricular <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="patrimonio" aria-labelledby="titulo-patrimonio">
+      <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/patri.jpg');"></div>
+      <div class="panel-scrim scrim-bottom"></div>
+      <div class="panel-inner">
+        <div>
+          <span class="coord mono">Ênfase em Patrimônio Natural</span>
+          <h2 class="headline" id="titulo-patrimonio">Patrimônio Natural</h2>
+        </div>
+        <div class="body-col">
+          <p class="body-text">Com forte base no <strong>Instituto de Geociências</strong>, esta ênfase concentra-se na identificação, valorização e conservação da geodiversidade. O profissional é preparado para atuar em conservação, geoparques e preservação da memória geológica e paleontológica, integrando conhecimentos de geologia, geomorfologia e impactos ambientais.</p>
+          <div class="stat-row">
+            <div class="stat"><b>Geodiversidade</b><i>PRESERVAÇÃO</i></div>
+            <div class="stat"><b>Geologia</b><i>MEIO FÍSICO</i></div>
+            <div class="stat"><b>Geoparques</b><i>GESTÃO</i></div>
+          </div>
+          <a href="https://www.siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/9104B7B9-0A2A-1E16-7AFB-56A845D51877.html" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver grade curricular <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="footer-top">
-      <div class="footer-headline">TESTE. <span class="em">TESTE.</span></div>
+      <div class="footer-headline">Explorando o planeta. <span class="em">Modelando o futuro.</span></div>
       <a href="#topo" class="back-top mono">↑ voltar ao topo</a>
     </div>
     <div class="footer-bottom">
-      <span>Comissão Ciências e Matemática da Terra</span>
+      <span>Comissão do Bacharelado em Ciências Matemáticas e da Terra (UFRJ)</span>
       <span id="footerClock">00:00:00 UTC · ÓRBITA EM ANDAMENTO</span>
     </div>
   </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
