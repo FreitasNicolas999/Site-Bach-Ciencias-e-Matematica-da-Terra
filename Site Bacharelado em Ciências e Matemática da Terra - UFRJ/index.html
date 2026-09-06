@@ -3,219 +3,418 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça o Bacharelado em Ciências Matemáticas e da Terra (BCMT) da UFRJ, sua estrutura interdisciplinar e suas ênfases acadêmicas.">
-  <meta name="theme-color" content="#05070a">
-  <title>Bacharelado em Ciências Matemáticas e da Terra | UFRJ</title>
+  <meta name="description" content="Guia estudantil do Bacharelado em Ciências Matemáticas e da Terra (BCMT) da UFRJ: conheça o curso, explore as ênfases e encontre atalhos para a vida acadêmica.">
+  <meta name="theme-color" content="#071019">
+  <meta property="og:title" content="BCMT UFRJ | Guia de alunos para alunos">
+  <meta property="og:description" content="Conheça o Bacharelado em Ciências Matemáticas e da Terra, explore as ênfases e encontre atalhos para a vida acadêmica.">
+  <meta property="og:type" content="website">
+  <title>BCMT UFRJ | Guia de alunos para alunos</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <div class="rail" aria-hidden="true">
-    <div class="rail-fill" id="railFill"></div>
-    <span class="rail-label" id="railLabel">000%</span>
-  </div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
 
   <header class="site-header" id="siteHeader">
-    <a class="brand" href="#topo" aria-label="Ciências Matemáticas e da Terra — início">
-      CIÊNCIAS MATEMÁTICAS E DA TERRA
-      <span>UFRJ · desde 2009</span>
+    <a class="brand" href="#topo" aria-label="BCMT UFRJ — início">
+      <strong>BCMT</strong>
+      <span>Ciências Matemáticas e da Terra · UFRJ</span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu de navegação">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">
       <span></span><span></span><span></span>
     </button>
 
     <nav class="links" id="navLinks" aria-label="Navegação principal">
-      <a href="#cursos">O Curso</a>
-      <a href="#cmt-puro">CMT — Puro</a>
-      <a href="#analise-dados">Análise de Dados</a>
-      <a href="#sensoriamento">Sensoriamento Remoto</a>
-      <a href="#patrimonio">Patrimônio Natural</a>
+      <a href="#curso">O curso</a>
+      <a href="#enfases">Ênfases</a>
+      <a href="#alunos">Para alunos</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="https://www.acessograduacao.ufrj.br/" target="_blank" rel="noopener noreferrer">Como entrar <span aria-hidden="true">↗</span></a>
     </nav>
-
-    <time class="clock mono" id="clock" aria-label="Horário UTC">00:00:00 UTC</time>
   </header>
 
   <main id="conteudo">
-    <section class="panel hero" id="topo" aria-labelledby="titulo-principal">
-      <div class="panel-bg" data-speed="0.18" style="background-image:url('assets/earth-lights.jpg');"></div>
-      <div class="panel-scrim scrim-full"></div>
-      <div class="panel-inner">
-        <span class="coord mono">22°51'31.1&quot;S 43°13'56.2&quot;W · UFRJ — CCMN</span>
-        <h1 class="headline" id="titulo-principal">Bacharelado em Ciências Matemáticas e da Terra</h1>
-        <p class="body-text">Conhecimento interdisciplinar é a chave para enfrentar os desafios de um mundo em constante transformação.</p>
+    <section class="hero" id="topo" aria-labelledby="hero-title">
+      <div class="hero-media" data-parallax="0.12" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="orbit-art" aria-hidden="true">
+        <span class="orbit orbit-one"></span>
+        <span class="orbit orbit-two"></span>
+        <span class="orbit-dot"></span>
       </div>
-      <div class="scroll-cue" aria-hidden="true"><div class="stem"></div>role para baixo</div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow mono"><span class="status-dot"></span> UFRJ · CCMN · desde 2009</p>
+        <h1 id="hero-title">Um curso para quem não quer escolher <em>uma ciência só.</em></h1>
+        <p class="hero-lead">Matemática, computação, física e ciências da Terra se encontram no BCMT. Este guia foi pensado por estudantes para explicar o curso sem burocracias e aproximar quem já está aqui de quem ainda está chegando.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#comece-aqui">Quero conhecer o BCMT <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-ghost" href="#alunos">Já sou aluno <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="hero-facts" aria-label="Resumo do curso">
+        <div><b>8</b><span>semestres recomendados</span></div>
+        <div><b>4</b><span>percursos curriculares</span></div>
+        <div><b>2.400 h</b><span>carga horária</span></div>
+        <div><b>2009</b><span>primeira turma</span></div>
+      </div>
+
+      <a class="scroll-indicator mono" href="#comece-aqui"><span></span> explorar</a>
     </section>
 
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker-track" id="tickerTrack"></div>
-    </div>
+    <section class="audience section" id="comece-aqui" aria-labelledby="audience-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow mono">COMECE POR AQUI</p>
+        <h2 id="audience-title">O que você veio procurar?</h2>
+        <p>O site muda de perspectiva conforme a sua dúvida. Escolha um caminho e vá direto ao que importa.</p>
+      </div>
 
-    <section class="panel" id="cursos" aria-labelledby="titulo-estrutura">
-      <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/earth-terrain.jpg');"></div>
-      <div class="panel-scrim scrim-bottom"></div>
-      <div class="panel-inner">
-        <div>
-          <span class="coord mono">-22.858639, -43.232278 — Centro de Ciências Matemáticas e da Natureza (CCMN)</span>
-          <h2 class="headline" id="titulo-estrutura">Estrutura do curso</h2>
-        </div>
-        <div class="body-col">
-          <p class="body-text">O BCMT é uma graduação <strong>multiunidades</strong> da UFRJ, com formação interdisciplinar em matemática, computação, física e ciências da Terra. O curso foi <strong>criado em 2008</strong> e recebeu sua primeira turma em <strong>2009</strong>. A matriz vigente no SIGA desde 2025/1 organiza a formação em quatro ênfases: <strong>CMT — Puro (Formação Geral), Análise de Dados, Sensoriamento Remoto e Geoprocessamento e Patrimônio Natural</strong>.</p>
-          <div class="stat-row" aria-label="Informações gerais do curso">
-            <div class="stat"><b>2009</b><i>INÍCIO DAS TURMAS</i></div>
-            <div class="stat"><b>8</b><i>SEMESTRES RECOMENDADOS</i></div>
-            <div class="stat"><b>4</b><i>ÊNFASES CURRICULARES</i></div>
-            <div class="stat"><b>2.400 h</b><i>CARGA HORÁRIA TOTAL</i></div>
+      <div class="audience-grid">
+        <a class="audience-card prospect reveal" href="#curso">
+          <div class="audience-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3 2.8 8 12 13l9.2-5L12 3Z"/><path d="M5.5 10v5.5C7.2 17.2 9.4 18 12 18s4.8-.8 6.5-2.5V10"/></svg>
           </div>
-          <a href="https://siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/90AED42F-0A2A-1E16-7AFB-56A8BD067DE2.html" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver grade: Formação Geral <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
+          <span class="card-kicker mono">NOVOS INTERESSADOS</span>
+          <h3>“Quero entender se o BCMT é para mim.”</h3>
+          <p>Veja como o curso funciona, compare as quatro ênfases e descubra qual percurso conversa mais com os seus interesses.</p>
+          <span class="card-link">Conhecer o curso <b>→</b></span>
+        </a>
 
-    <section class="areas" aria-labelledby="titulo-areas">
-      <div class="areas-heading">
-        <span class="coord mono">PERCURSOS ACADÊMICOS</span>
-        <h2 id="titulo-areas">Explore as áreas do BCMT</h2>
-        <p>A reforma curricular vigente desde 2025/1 organiza o BCMT nestes quatro percursos. Use as setas, o teclado ou selecione um card para navegar.</p>
-      </div>
-
-      <div class="cmt-carousel-wrapper" aria-roledescription="carrossel" aria-label="Áreas de formação do BCMT">
-        <button class="carousel-btn prev" type="button" aria-label="Área anterior">
-          <svg class="carousel-btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M14.5 5 7.5 12l7 7" />
-          </svg>
-          <span class="carousel-btn-label">Anterior</span>
-        </button>
-        <div class="cmt-carousel" id="areasCarousel">
-          <a class="cmt-card" href="#cmt-puro" data-label="CMT — Puro">
-            <span aria-hidden="true">∞</span>
-            <h3>CMT — Puro</h3>
-            <p>Formação geral, interdisciplinar e flexível em ciências matemáticas e da Terra.</p>
-          </a>
-
-          <a class="cmt-card" href="#analise-dados" data-label="Análise de Dados">
-            <span aria-hidden="true">📊</span>
-            <h3>Análise de Dados</h3>
-            <p>Modelagem, programação e processamento da informação.</p>
-          </a>
-
-          <a class="cmt-card" href="#sensoriamento" data-label="Sensoriamento Remoto">
-            <span aria-hidden="true">🛰️</span>
-            <h3>Sensoriamento Remoto</h3>
-            <p>Tecnologias espaciais e geoprocessamento para observar o planeta.</p>
-          </a>
-
-          <a class="cmt-card" href="#patrimonio" data-label="Patrimônio Natural">
-            <span aria-hidden="true">🌍</span>
-            <h3>Patrimônio Natural</h3>
-            <p>Compreensão, valorização e conservação da geodiversidade.</p>
-          </a>
-        </div>
-        <button class="carousel-btn next" type="button" aria-label="Próxima área">
-          <svg class="carousel-btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="m9.5 5 7 7-7 7" />
-          </svg>
-          <span class="carousel-btn-label">Próxima</span>
-        </button>
-      </div>
-      <p class="sr-only" id="carouselStatus" aria-live="polite"></p>
-    </section>
-
-    <section class="panel" id="cmt-puro" aria-labelledby="titulo-cmt-puro">
-      <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/earth-terrain.jpg'); background-position:center 58%;"></div>
-      <div class="panel-scrim scrim-top"></div>
-      <div class="panel-inner">
-        <div>
-          <span class="coord mono">Ênfase em CMT — Puro · Formação Geral</span>
-          <h2 class="headline" id="titulo-cmt-puro">CMT — Puro</h2>
-        </div>
-        <div class="body-col">
-          <p class="body-text">O <strong>CMT — Puro</strong> é o percurso de formação geral da matriz atual do BCMT. Ele preserva o caráter interdisciplinar do bacharelado e oferece ampla liberdade para construir uma trajetória acadêmica entre <strong>matemática, física, computação e ciências da Terra</strong>, combinando uma base obrigatória com disciplinas de escolha restrita e de livre escolha. É uma opção especialmente adequada para quem busca formação científica abrangente e deseja manter maior flexibilidade na composição do currículo.</p>
-          <div class="stat-row" aria-label="Informações da ênfase CMT Puro">
-            <div class="stat"><b>2.400 h</b><i>CARGA HORÁRIA TOTAL</i></div>
-            <div class="stat"><b>116</b><i>CRÉDITOS MÍNIMOS</i></div>
-            <div class="stat"><b>32</b><i>CRÉDITOS DE LIVRE ESCOLHA</i></div>
+        <a class="audience-card student reveal" href="#alunos">
+          <div class="audience-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 5.5h16v13H4z"/><path d="M8 9h8M8 13h5"/></svg>
           </div>
-          <a href="https://siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/90AED42F-0A2A-1E16-7AFB-56A8BD067DE2.html" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver grade: CMT — Puro <span aria-hidden="true">↗</span></a>
+          <span class="card-kicker mono">ALUNOS DO BCMT</span>
+          <h3>“Só quero achar aquele link importante.”</h3>
+          <p>Portal do Aluno, calendário, SIGA, manual estudantil e atalhos para organizar a rotina acadêmica sem caça ao tesouro.</p>
+          <span class="card-link">Abrir central do aluno <b>→</b></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="course section" id="curso" aria-labelledby="course-title">
+      <div class="course-intro reveal">
+        <div>
+          <p class="eyebrow mono">01 · O CURSO</p>
+          <h2 id="course-title">Interdisciplinar por projeto, não por acaso.</h2>
+        </div>
+        <p>O Bacharelado em Ciências Matemáticas e da Terra é uma graduação multiunidades da UFRJ. A proposta combina fundamentos de diferentes áreas e permite que o estudante construa uma trajetória com graus distintos de especialização e liberdade curricular.</p>
+      </div>
+
+      <div class="course-bento">
+        <article class="bento-card bento-image reveal">
+          <img src="assets/earth-terrain.jpg" alt="Vista aérea de relevo terrestre" loading="lazy">
+          <div class="bento-image-copy">
+            <span class="mono">UMA BASE, VÁRIAS ROTAS</span>
+            <h3>Aprender a conectar áreas é parte da formação.</h3>
+          </div>
+        </article>
+
+        <article class="bento-card bento-feature reveal">
+          <span class="bento-number mono">01</span>
+          <h3>Multiunidades</h3>
+          <p>O curso integra conhecimentos e disciplinas ligados a diferentes unidades da UFRJ, refletindo seu caráter transversal.</p>
+        </article>
+
+        <article class="bento-card bento-feature reveal">
+          <span class="bento-number mono">02</span>
+          <h3>Quatro percursos</h3>
+          <p>CMT — Puro, Análise de Dados, Sensoriamento Remoto e Geoprocessamento e Patrimônio Natural.</p>
+        </article>
+
+        <article class="bento-card bento-feature bento-highlight reveal">
+          <span class="bento-number mono">03</span>
+          <h3>Flexibilidade</h3>
+          <p>A formação geral oferece espaço relevante para escolhas curriculares e para uma trajetória científica mais ampla.</p>
+        </article>
+      </div>
+
+      <div class="timeline-wrap reveal" aria-labelledby="timeline-title">
+        <div class="timeline-copy">
+          <p class="eyebrow mono">LINHA DO TEMPO</p>
+          <h3 id="timeline-title">Do projeto ao BCMT atual</h3>
+        </div>
+        <ol class="timeline">
+          <li><b>2008</b><span>Criação do curso aprovada pelo Consuni.</span></li>
+          <li><b>2009</b><span>Início efetivo das turmas de graduação.</span></li>
+          <li><b>2025/1</b><span>Matriz atual passa a organizar o BCMT em quatro ênfases.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="emphases section" id="enfases" aria-labelledby="emphases-title">
+      <div class="section-heading split-heading reveal">
+        <div>
+          <p class="eyebrow mono">02 · ÊNFASES</p>
+          <h2 id="emphases-title">Quatro maneiras de construir o seu BCMT.</h2>
+        </div>
+        <p>Não pense nelas como quatro cursos diferentes. São percursos dentro do mesmo bacharelado, cada um puxando a formação para um conjunto de interesses.</p>
+      </div>
+
+      <div class="emphasis-carousel" role="region" aria-roledescription="carrossel" aria-label="Ênfases do BCMT">
+        <div class="carousel-topbar">
+          <div class="carousel-count mono"><span id="carouselCurrent">01</span> / 04</div>
+          <div class="carousel-controls">
+            <button class="carousel-btn prev" type="button" aria-label="Ênfase anterior">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+            </button>
+            <button class="carousel-btn next" type="button" aria-label="Próxima ênfase">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-viewport" id="carouselViewport">
+          <div class="carousel-track" id="areasCarousel">
+            <article class="emphasis-slide" data-label="CMT — Puro">
+              <img src="assets/earth-sunrise.jpg" alt="Terra vista do espaço com iluminação no horizonte" loading="lazy">
+              <div class="slide-scrim"></div>
+              <div class="slide-content">
+                <p class="slide-index mono">ÊNFASE 01</p>
+                <h3>CMT — Puro</h3>
+                <p>O percurso de formação geral para quem quer preservar amplitude científica e maior liberdade na composição curricular.</p>
+                <div class="tag-row"><span>flexibilidade</span><span>matemática</span><span>ciências</span></div>
+                <a href="#cmt-puro">Ver detalhes <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="emphasis-slide" data-label="Análise de Dados">
+              <img src="assets/analis.jpg" alt="Visualização abstrata relacionada a dados e tecnologia" loading="lazy">
+              <div class="slide-scrim"></div>
+              <div class="slide-content">
+                <p class="slide-index mono">ÊNFASE 02</p>
+                <h3>Análise de Dados</h3>
+                <p>Para quem se interessa por programação, modelagem matemática, estatística e transformação de dados em informação.</p>
+                <div class="tag-row"><span>programação</span><span>modelagem</span><span>estatística</span></div>
+                <a href="#analise-dados">Ver detalhes <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="emphasis-slide" data-label="Sensoriamento Remoto e Geoprocessamento">
+              <img src="assets/senso.jpg" alt="Imagem relacionada a sensoriamento remoto da superfície terrestre" loading="lazy">
+              <div class="slide-scrim"></div>
+              <div class="slide-content">
+                <p class="slide-index mono">ÊNFASE 03</p>
+                <h3>Sensoriamento Remoto e Geoprocessamento</h3>
+                <p>Dados espaciais, imagens orbitais, SIG e geoprocessamento para observar, medir e interpretar o território.</p>
+                <div class="tag-row"><span>satélites</span><span>SIG</span><span>mapeamento</span></div>
+                <a href="#sensoriamento">Ver detalhes <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="emphasis-slide" data-label="Patrimônio Natural">
+              <img src="assets/patri.jpg" alt="Paisagem natural rochosa associada à geodiversidade" loading="lazy">
+              <div class="slide-scrim"></div>
+              <div class="slide-content">
+                <p class="slide-index mono">ÊNFASE 04</p>
+                <h3>Patrimônio Natural</h3>
+                <p>Uma rota para quem quer compreender, valorizar e conservar a geodiversidade e a memória geológica.</p>
+                <div class="tag-row"><span>geologia</span><span>conservação</span><span>geodiversidade</span></div>
+                <a href="#patrimonio">Ver detalhes <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots" aria-label="Selecionar ênfase"></div>
+        <p class="sr-only" id="carouselStatus" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="pathfinder section" id="afinidade" aria-labelledby="pathfinder-title">
+      <div class="pathfinder-card reveal">
+        <div class="pathfinder-copy">
+          <p class="eyebrow mono">EXPERIMENTE</p>
+          <h2 id="pathfinder-title">Qual ênfase vale explorar primeiro?</h2>
+          <p>Marque os temas que mais chamam sua atenção. O resultado não decide sua trajetória — ele só aponta um bom lugar para começar a leitura.</p>
+        </div>
+
+        <div class="interest-picker" id="interestPicker" aria-label="Seletor de interesses">
+          <button type="button" data-scores="1,3,0,0">Programação</button>
+          <button type="button" data-scores="3,2,0,0">Matemática</button>
+          <button type="button" data-scores="0,0,4,0">Mapas e satélites</button>
+          <button type="button" data-scores="1,2,1,0">Estatística</button>
+          <button type="button" data-scores="1,0,1,4">Geologia</button>
+          <button type="button" data-scores="0,0,1,4">Conservação</button>
+          <button type="button" data-scores="4,0,0,0">Liberdade curricular</button>
+          <button type="button" data-scores="2,1,2,2">Ciência interdisciplinar</button>
+        </div>
+
+        <div class="pathfinder-result" id="pathfinderResult" aria-live="polite">
+          <span class="mono">SEU PONTO DE PARTIDA</span>
+          <h3>Escolha alguns interesses acima.</h3>
+          <p>Você pode combinar quantos quiser.</p>
         </div>
       </div>
     </section>
 
-    <section class="panel" id="analise-dados" aria-labelledby="titulo-analise">
-      <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/analis.jpg');"></div>
-      <div class="panel-scrim scrim-top"></div>
-      <div class="panel-inner">
-        <div>
-          <span class="coord mono">Ênfase em Análise de Dados</span>
-          <h2 class="headline" id="titulo-analise">Análise de Dados</h2>
-        </div>
-        <div class="body-col">
-          <p class="body-text">Apoiada fortemente pelo <strong>Instituto de Computação (IC)</strong> e pelo Instituto de Matemática, esta ênfase foca na modelagem e no processamento da informação. O estudante desenvolve uma formação em programação, estruturas de dados e métodos computacionais, preparando-se para atuar no desenvolvimento de soluções tecnológicas e na análise quantitativa.</p>
-          <div class="stat-row">
-            <div class="stat"><b>Computação</b><i>FUNDAMENTOS</i></div>
-            <div class="stat"><b>Modelagem</b><i>MATEMÁTICA</i></div>
-            <div class="stat"><b>Estatística</b><i>APLICADA</i></div>
+    <section class="details section" id="detalhes" aria-labelledby="details-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow mono">03 · POR DENTRO DOS PERCURSOS</p>
+        <h2 id="details-title">Mais do que nomes: o foco de cada formação.</h2>
+      </div>
+
+      <div class="detail-list">
+        <article class="detail-card reveal" id="cmt-puro">
+          <div class="detail-media"><img src="assets/earth-terrain.jpg" alt="Relevo terrestre visto do alto" loading="lazy"></div>
+          <div class="detail-content">
+            <div class="detail-heading"><span class="mono">01 / 04</span><h3>CMT — Puro</h3></div>
+            <p>É o percurso de formação geral da matriz atual. Mantém o caráter interdisciplinar do bacharelado e oferece espaço amplo para construir uma trajetória entre matemática, física, computação e ciências da Terra.</p>
+            <dl class="mini-stats"><div><dt>Carga horária</dt><dd>2.400 h</dd></div><div><dt>Créditos mínimos</dt><dd>116</dd></div><div><dt>Livre escolha</dt><dd>32 créditos</dd></div></dl>
+            <div class="detail-actions"><a class="btn btn-small" href="https://siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/90AED42F-0A2A-1E16-7AFB-56A8BD067DE2.html" target="_blank" rel="noopener noreferrer">Grade no SIGA ↗</a></div>
           </div>
-          <a href="https://siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/90EBDFDE-0A2A-1E16-7AFB-56A8C06071F3.html" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver grade curricular <span aria-hidden="true">↗</span></a>
-        </div>
+        </article>
+
+        <article class="detail-card reverse reveal" id="analise-dados">
+          <div class="detail-media"><img src="assets/analis.jpg" alt="Representação visual de análise de dados" loading="lazy"></div>
+          <div class="detail-content">
+            <div class="detail-heading"><span class="mono">02 / 04</span><h3>Análise de Dados</h3></div>
+            <p>Direciona a formação para modelagem e processamento da informação, com presença forte de programação, estruturas de dados, matemática e estatística aplicada.</p>
+            <ul class="focus-list"><li>Programação e fundamentos computacionais</li><li>Modelagem matemática</li><li>Análise quantitativa e estatística</li></ul>
+            <div class="detail-actions"><a class="btn btn-small" href="https://siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/90EBDFDE-0A2A-1E16-7AFB-56A8C06071F3.html" target="_blank" rel="noopener noreferrer">Grade no SIGA ↗</a></div>
+          </div>
+        </article>
+
+        <article class="detail-card reveal" id="sensoriamento">
+          <div class="detail-media"><img src="assets/senso.jpg" alt="Imagem orbital da superfície terrestre" loading="lazy"></div>
+          <div class="detail-content">
+            <div class="detail-heading"><span class="mono">03 / 04</span><h3>Sensoriamento Remoto e Geoprocessamento</h3></div>
+            <p>Forma uma base para aquisição, processamento e interpretação de dados espaciais, combinando imagens orbitais, Sistemas de Informações Geográficas e leitura das dinâmicas da superfície terrestre.</p>
+            <ul class="focus-list"><li>Imagens e observação da Terra</li><li>Sistemas de Informações Geográficas</li><li>Análise espacial e território</li></ul>
+            <div class="detail-actions"><a class="btn btn-small" href="https://www.siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/90B3861A-0A2A-1E16-7AFB-56A85CD31EEF.html" target="_blank" rel="noopener noreferrer">Grade no SIGA ↗</a></div>
+          </div>
+        </article>
+
+        <article class="detail-card reverse reveal" id="patrimonio">
+          <div class="detail-media"><img src="assets/patri.jpg" alt="Formação rochosa em paisagem natural" loading="lazy"></div>
+          <div class="detail-content">
+            <div class="detail-heading"><span class="mono">04 / 04</span><h3>Patrimônio Natural</h3></div>
+            <p>Concentra-se na compreensão, valorização e conservação da geodiversidade, conectando conhecimentos de geologia e meio físico a temas como patrimônio geológico e geoparques.</p>
+            <ul class="focus-list"><li>Geodiversidade e patrimônio</li><li>Geologia e meio físico</li><li>Conservação e geoparques</li></ul>
+            <div class="detail-actions"><a class="btn btn-small" href="https://www.siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/9104B7B9-0A2A-1E16-7AFB-56A845D51877.html" target="_blank" rel="noopener noreferrer">Grade no SIGA ↗</a></div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="panel" id="sensoriamento" aria-labelledby="titulo-sensoriamento">
-      <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/senso.jpg');"></div>
-      <div class="panel-scrim scrim-bottom"></div>
-      <div class="panel-inner">
+    <section class="student-hub section" id="alunos" aria-labelledby="student-title">
+      <div class="student-hub-head reveal">
         <div>
-          <span class="coord mono">Ênfase em Sensoriamento Remoto e Geoprocessamento</span>
-          <h2 class="headline" id="titulo-sensoriamento">Sensoriamento Remoto e Geoprocessamento</h2>
+          <p class="eyebrow mono">04 · CENTRAL DO ALUNO</p>
+          <h2 id="student-title">Menos abas perdidas. Mais vida acadêmica.</h2>
         </div>
-        <div class="body-col">
-          <p class="body-text">Apoiada pelo <strong>Instituto de Geociências</strong>, a ênfase forma profissionais capacitados para aquisição, processamento e interpretação de dados espaciais. O foco abrange Sistemas de Informações Geográficas (SIG) e análise de imagens orbitais aplicados ao monitoramento ambiental, planejamento territorial, gestão de recursos naturais e compreensão das dinâmicas da superfície terrestre.</p>
-          <div class="stat-row">
-            <div class="stat"><b>Satélites</b><i>OBSERVAÇÃO</i></div>
-            <div class="stat"><b>Imagens</b><i>PROCESSAMENTO</i></div>
-            <div class="stat"><b>SIG</b><i>GEOPROCESSAMENTO</i></div>
-          </div>
-          <a href="https://www.siga.ufrj.br/sira/repositorio-curriculo/904E7D7F-0A2A-1E16-7AFB-56A8A2715768.html" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver grade curricular <span aria-hidden="true">↗</span></a>
+        <p>Um ponto de partida para serviços que aparecem o tempo todo na graduação. Para prazos e regras, a fonte oficial sempre prevalece.</p>
+      </div>
+
+      <div class="resource-grid">
+        <a class="resource-card reveal" href="https://portalaluno.ufrj.br/" target="_blank" rel="noopener noreferrer">
+          <span class="resource-icon" aria-hidden="true">01</span>
+          <div><h3>Portal do Aluno</h3><p>Acesso aos serviços acadêmicos e dados da vida universitária.</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="resource-card reveal" href="https://siga.ufrj.br/" target="_blank" rel="noopener noreferrer">
+          <span class="resource-icon" aria-hidden="true">02</span>
+          <div><h3>SIGA</h3><p>Sistema acadêmico e consulta de informações curriculares.</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="resource-card reveal" href="https://xn--graduao-2wa9a.ufrj.br/index.php/477-calendrio-acadmico" target="_blank" rel="noopener noreferrer">
+          <span class="resource-icon" aria-hidden="true">03</span>
+          <div><h3>Calendário acadêmico</h3><p>Confira períodos letivos, inscrições, trancamentos e demais datas oficiais.</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="resource-card reveal" href="https://xn--graduao-2wa9a.ufrj.br/images/_PR-1/Divulgacao/2023/manual-estudantil-final-21nov2023.pdf" target="_blank" rel="noopener noreferrer">
+          <span class="resource-icon" aria-hidden="true">04</span>
+          <div><h3>Manual Estudantil</h3><p>Um guia da PR-1 sobre atos acadêmicos, SIGA, documentos e estrutura da UFRJ.</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="resource-card reveal" href="https://www.acessograduacao.ufrj.br/" target="_blank" rel="noopener noreferrer">
+          <span class="resource-icon" aria-hidden="true">05</span>
+          <div><h3>Acesso à Graduação</h3><p>Editais, chamadas e procedimentos oficiais para ingresso na UFRJ.</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+        <a class="resource-card reveal" href="https://www.ccmn.ufrj.br/" target="_blank" rel="noopener noreferrer">
+          <span class="resource-icon" aria-hidden="true">06</span>
+          <div><h3>CCMN</h3><p>Portal do Centro de Ciências Matemáticas e da Natureza.</p></div>
+          <b aria-hidden="true">↗</b>
+        </a>
+      </div>
+
+      <div class="student-checklist reveal">
+        <div class="checklist-title">
+          <p class="eyebrow mono">PARA NÃO SE PERDER</p>
+          <h3>Checklist de começo de período</h3>
         </div>
+        <ol>
+          <li><span>01</span><div><b>Abra o calendário</b><p>Marque as janelas de inscrição, alteração e trancamento.</p></div></li>
+          <li><span>02</span><div><b>Confira sua matriz</b><p>Use o SIGA como referência para requisitos e organização curricular.</p></div></li>
+          <li><span>03</span><div><b>Revise seus registros</b><p>Depois das inscrições, acompanhe os documentos acadêmicos no Portal/SIGA.</p></div></li>
+          <li><span>04</span><div><b>Não fique com dúvida sozinho</b><p>Questões específicas de matrícula e percurso devem ser confirmadas com a orientação/coordenação acadêmica.</p></div></li>
+        </ol>
       </div>
     </section>
 
-    <section class="panel" id="patrimonio" aria-labelledby="titulo-patrimonio">
-      <div class="panel-bg" data-speed="0.12" style="background-image:url('assets/patri.jpg');"></div>
-      <div class="panel-scrim scrim-bottom"></div>
-      <div class="panel-inner">
-        <div>
-          <span class="coord mono">Ênfase em Patrimônio Natural</span>
-          <h2 class="headline" id="titulo-patrimonio">Patrimônio Natural</h2>
-        </div>
-        <div class="body-col">
-          <p class="body-text">Com forte base no <strong>Instituto de Geociências</strong>, esta ênfase concentra-se na identificação, valorização e conservação da geodiversidade. O profissional é preparado para atuar em conservação, geoparques e preservação da memória geológica e paleontológica, integrando conhecimentos de geologia, geomorfologia e impactos ambientais.</p>
-          <div class="stat-row">
-            <div class="stat"><b>Geodiversidade</b><i>PRESERVAÇÃO</i></div>
-            <div class="stat"><b>Geologia</b><i>MEIO FÍSICO</i></div>
-            <div class="stat"><b>Geoparques</b><i>GESTÃO</i></div>
-          </div>
-          <a href="https://www.siga.ufrj.br/sira/repositorio-curriculo/distribuicoes/9104B7B9-0A2A-1E16-7AFB-56A845D51877.html" target="_blank" rel="noopener noreferrer" class="btn-outline">Ver grade curricular <span aria-hidden="true">↗</span></a>
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="faq-head reveal">
+        <p class="eyebrow mono">05 · FAQ</p>
+        <h2 id="faq-title">Perguntas que a gente gostaria de ter encontrado cedo.</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>O BCMT é um curso ou são quatro cursos?<span aria-hidden="true">+</span></summary>
+          <div><p>É um bacharelado. A matriz vigente organiza a formação em quatro ênfases: CMT — Puro, Análise de Dados, Sensoriamento Remoto e Geoprocessamento e Patrimônio Natural.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>CMT — Puro significa “sem ênfase”?<span aria-hidden="true">+</span></summary>
+          <div><p>Na matriz atual, CMT — Puro é o nome do percurso de formação geral. Ele valoriza uma composição curricular mais ampla e flexível, em vez de concentrar a formação em uma das três áreas temáticas.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Como faço para entrar no BCMT?<span aria-hidden="true">+</span></summary>
+          <div><p>Os processos de ingresso podem mudar de um ano para outro. Consulte o portal oficial de Acesso à Graduação da UFRJ para editais, modalidades, vagas e chamadas do processo vigente.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Onde vejo a grade correta e os pré-requisitos?<span aria-hidden="true">+</span></summary>
+          <div><p>Use sempre o SIGA como referência acadêmica. Este site resume e organiza informações para facilitar a navegação, mas não substitui a matriz oficial nem orientações da coordenação.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Este site é um canal oficial da UFRJ?<span aria-hidden="true">+</span></summary>
+          <div><p>Não. Este é um projeto informativo feito por estudantes para estudantes e pessoas interessadas no curso. Sempre que houver divergência, prevalecem os canais institucionais da UFRJ.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="closing section" aria-labelledby="closing-title">
+      <div class="closing-media" aria-hidden="true"></div>
+      <div class="closing-content reveal">
+        <p class="eyebrow mono">BCMT · UFRJ</p>
+        <h2 id="closing-title">Ciência fica mais interessante quando as fronteiras começam a se misturar.</h2>
+        <p>Explore as grades, converse com quem já está no curso e use este site como ponto de partida — não como ponto final.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#enfases">Rever as ênfases ↑</a>
+          <a class="btn btn-ghost" href="https://www.acessograduacao.ufrj.br/" target="_blank" rel="noopener noreferrer">Acesso à UFRJ ↗</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-top">
-      <div class="footer-headline">Explorando o planeta. <span class="em">Modelando o futuro.</span></div>
-      <a href="#topo" class="back-top mono">↑ voltar ao topo</a>
+    <div class="footer-main">
+      <a class="footer-brand" href="#topo"><b>BCMT</b><span>Bacharelado em Ciências Matemáticas e da Terra</span></a>
+      <p>Projeto informativo feito por alunos para alunos e novos interessados. Não substitui os canais oficiais da UFRJ.</p>
+      <a class="back-top mono" href="#topo">voltar ao topo ↑</a>
     </div>
     <div class="footer-bottom">
-      <span>Comissão do Bacharelado em Ciências Matemáticas e da Terra (UFRJ)</span>
-      <span id="footerClock">00:00:00 UTC · ÓRBITA EM ANDAMENTO</span>
+      <span>Comissão do Bacharelado em Ciências Matemáticas e da Terra · UFRJ</span>
+      <span class="mono">CCMN · Cidade Universitária · Rio de Janeiro</span>
     </div>
   </footer>
 
