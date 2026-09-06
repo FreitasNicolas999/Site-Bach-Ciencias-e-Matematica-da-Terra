@@ -1,44 +1,61 @@
 # BCMT UFRJ — guia de alunos para alunos
 
-Site estático para apresentar o **Bacharelado em Ciências Matemáticas e da Terra (BCMT)** da UFRJ a novos interessados e, ao mesmo tempo, servir como ponto de partida para alunos do curso.
+Site estático do **Bacharelado em Ciências Matemáticas e da Terra (BCMT)** da UFRJ, pensado para dois públicos: quem está conhecendo o curso e quem já vive a graduação.
 
-## O que mudou nesta reformulação
+## O que o projeto oferece
 
-A página deixou de ser apenas uma landing page institucional e passou a ter duas jornadas claras:
+### Para novos interessados
+- apresentação do BCMT e de sua proposta interdisciplinar;
+- linha do tempo do curso;
+- carrossel com as quatro ênfases atuais;
+- seletor informal de afinidades;
+- informações de carga horária e créditos de cada percurso;
+- acesso às matrizes curriculares públicas;
+- link oficial de Acesso à Graduação.
 
-- **Novos interessados:** apresentação do curso, estrutura, ênfases, comparativo e um orientador interativo por interesses.
-- **Alunos:** central de atalhos para Portal do Aluno, SIGA, calendário acadêmico, manual estudantil, Acesso à Graduação e CCMN.
+### Para estudantes
+- Portal do Aluno;
+- Intranet UFRJ e identidade digital;
+- criação/acesso ao e-mail institucional;
+- CAFe, eduroam e Central de Serviços TIC;
+- calendário acadêmico e Manual Estudantil;
+- extensão, iniciação científica e tecnológica, monitoria, auxílios, mobilidade e estágio;
+- Base Minerva, Proxy/CAFe e acesso remoto a recursos acadêmicos;
+- BandejApp para consultar o cardápio do Restaurante Universitário, transporte interno, acessibilidade e serviços da PR-7;
+- FAQ com alerta específico para alunos vinculados a currículos anteriores à matriz 2025/1.
 
-Também foram incluídos:
+## Matriz curricular apresentada
 
-- novo hero com chamadas de ação e resumo do curso;
-- seção “O que você veio procurar?”;
-- apresentação em cards tipo bento;
-- linha do tempo do BCMT;
-- carrossel editorial responsivo e acessível;
-- seletor interativo de afinidades entre as ênfases;
-- páginas/seções detalhadas para os quatro percursos;
-- checklist de início de período;
-- FAQ;
-- aviso claro de que este é um projeto informativo estudantil, não um canal oficial da UFRJ;
-- responsividade, acessibilidade por teclado e suporte a `prefers-reduced-motion`.
+Os números exibidos na página correspondem às **ênfases vigentes a partir de 2025/1**:
 
-## Informações acadêmicas
+| Ênfase | Carga horária | Créditos mínimos | Livre escolha |
+|---|---:|---:|---:|
+| CMT — Puro | 2.400 h | 116 | 32 |
+| Análise de Dados | 2.400 h | 126 | 8 |
+| Sensoriamento Remoto e Geoprocessamento | 2.400 h | 123 | 14 |
+| Patrimônio Natural | 2.400 h | 117 | 10 |
 
-A versão considera a matriz curricular vigente no SIGA desde **2025/1**, organizada em:
+As quatro matrizes também incluem **240 h de atividade curricular de extensão**.
 
-1. CMT — Puro (Formação Geral)
-2. Análise de Dados
-3. Sensoriamento Remoto e Geoprocessamento
-4. Patrimônio Natural
+> Alunos de currículos anteriores devem conferir a situação individual no Portal do Aluno e confirmar transição, equivalências e integralização com a orientação acadêmica.
 
-O curso foi criado em **2008** e recebeu sua primeira turma em **2009**.
+## Identidade e autoria
 
-> Este projeto organiza informações para facilitar a vida dos estudantes. Para regras, prazos, grades e procedimentos, consulte sempre os canais oficiais da UFRJ.
+A logo fornecida para o projeto foi convertida em **SVG vetorial** e é utilizada no cabeçalho, no rodapé e como favicon.
+
+O site é desenvolvido pela **Comissão do BCMT**, com contribuição especialmente destacada de:
+- **Nicolas Freitas** — ingresso 25.2;
+- **Matheus Augusto** — Sensoriamento Remoto e Geoprocessamento, ingresso 18.2.
+
+Os canais oficiais da Comissão aparecem no rodapé.
+
+## Observação sobre o SIGA
+
+O acesso geral para a rotina acadêmica foi substituído no site pelo **Portal do Aluno**. O domínio histórico do SIGA aparece apenas nos links das **páginas públicas do repositório de matrizes curriculares**, que continuam acessíveis e são usadas como referência curricular.
 
 ## Como executar
 
-Não há dependências ou etapa de build. Abra `index.html` diretamente ou rode um servidor local:
+Não há dependências nem etapa de build. Abra `index.html` diretamente ou rode:
 
 ```bash
 python -m http.server 8000
@@ -46,20 +63,31 @@ python -m http.server 8000
 
 Depois acesse `http://localhost:8000`.
 
-## Arquivos
+## Estrutura
 
 ```text
 /
 ├── index.html
 ├── style.css
 ├── script.js
+├── favicon.svg
 ├── README.md
+├── REVISAO.md
 └── assets/
+    ├── logo-bcmt.svg
+    └── imagens do site
 ```
 
 ## Tecnologias
-
 - HTML5 semântico
 - CSS3 responsivo
 - JavaScript Vanilla
 - Google Fonts: Manrope e JetBrains Mono
+
+
+## Ajustes desta versão
+
+- controles do carrossel reposicionados nas laterais do destaque;
+- removidos atalhos acadêmicos que estavam indisponíveis;
+- cardápio do Restaurante Universitário direcionado ao BandejApp;
+- canais oficiais da Comissão agora usam ícones visuais para Instagram, X, TikTok e e-mail.
