@@ -47,7 +47,7 @@ O site é desenvolvido pela **Comissão do BCMT**, com contribuição especialme
 - **Nicolas Freitas** — ingresso 25.2;
 - **Matheus Augusto** — Sensoriamento Remoto e Geoprocessamento, ingresso 18.2.
 
-Os canais oficiais da Comissão aparecem no rodapé.
+O rodapé reúne o **Instagram oficial do BCMT** (`@bcmt_ufrj`), os canais oficiais da Comissão e as identidades institucionais da **UFRJ** e do **CCMN**.
 
 ## Observação sobre o SIGA
 
@@ -95,3 +95,14 @@ Depois acesse `http://localhost:8000`.
 ## Atualização adicional
 
 - Adicionado o **Portal BCMT** (`https://t4w.my.canva.site/portal-bcmt`) à Central do Aluno, identificado como portal da Comissão e mantido separado do Portal do Aluno institucional da UFRJ.
+
+
+## Atualização de identidade institucional
+
+- adicionado o Instagram oficial do curso: `https://www.instagram.com/bcmt_ufrj/`;
+- adicionadas as logos da UFRJ e do CCMN no rodapé, preservando a identidade visual de cada marca;
+- o perfil oficial do curso foi visualmente separado dos canais da Comissão para evitar confusão entre comunicação institucional e comunicação estudantil.
+
+## Ajuste visual das marcas institucionais
+
+As marcas da UFRJ e do CCMN foram preparadas em PNG com transparência para uso no tema escuro. No desktop, os dois cards institucionais ocupam colunas iguais; a marca UFRJ usa versão branca e a marca CCMN preserva o amarelo/branco, ambas sobre o mesmo fundo e borda.
