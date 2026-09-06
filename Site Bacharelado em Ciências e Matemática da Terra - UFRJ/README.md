@@ -91,3 +91,7 @@ Depois acesse `http://localhost:8000`.
 - removidos atalhos acadêmicos que estavam indisponíveis;
 - cardápio do Restaurante Universitário direcionado ao BandejApp;
 - canais oficiais da Comissão agora usam ícones visuais para Instagram, X, TikTok e e-mail.
+
+## Atualização adicional
+
+- Adicionado o **Portal BCMT** (`https://t4w.my.canva.site/portal-bcmt`) à Central do Aluno, identificado como portal da Comissão e mantido separado do Portal do Aluno institucional da UFRJ.
