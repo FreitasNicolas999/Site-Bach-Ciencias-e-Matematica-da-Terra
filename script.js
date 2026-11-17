@@ -347,10 +347,6 @@
             typeLabel = 'TCC';
             tagClass = 'tag-tcc';
             cardTypeClass = 'card-tcc';
-          } else if (d.type === 'complementar') {
-            typeLabel = 'Horas Compl.';
-            tagClass = 'tag-complementar';
-            cardTypeClass = 'card-complementar';
           }
 
           card.className = `course-card ${cardTypeClass}`;
@@ -497,10 +493,7 @@
         if (cat === 'obrigatoria') match = (type === 'obrigatoria');
         else if (cat === 'optativa') match = (type === 'optativa');
         else if (cat === 'livre') match = (type === 'livre');
-        else if (cat === 'tcc') match = (type === 'tcc');
-        else if (cat === 'extensao') match = (type === 'extensao');
-        else if (cat === 'complementar') match = (type === 'complementar');
-        else if (cat === 'suplementar') match = (type === 'extensao' || type === 'tcc' || type === 'complementar');
+        else if (cat === 'suplementar') match = (type === 'extensao' || type === 'tcc');
         card.classList.toggle('is-filtered-out', !match);
       });
     }
@@ -837,15 +830,12 @@
       if (course.type === 'tcc') {
         tagClass = 'tag-tcc';
         tagLabel = 'Trabalho de Conclusão (TCC)';
-      } else if (course.type === 'complementar') {
-        tagClass = 'tag-complementar';
-        tagLabel = 'Horas Complementares';
-      } else if (course.type === 'optativa') {
-        tagClass = 'tag-optativa';
-        tagLabel = `Optativa (${course.group || 'Eletiva'})`;
       } else if (course.type === 'extensao') {
         tagClass = 'tag-extensao';
         tagLabel = 'Extensão Universitária';
+      } else if (course.type === 'optativa') {
+        tagClass = 'tag-optativa';
+        tagLabel = `Optativa (${course.group || 'Eletiva'})`;
       } else if (course.type === 'livre') {
         tagClass = 'tag-livre';
         tagLabel = 'Livre Escolha';
@@ -863,33 +853,7 @@
         ? `<p>${course.req}</p><small style="color:var(--faint);font-size:11px;display:block;margin-top:4px;">(P) = Pré-requisito estrito · (C) = Co-requisito</small>`
         : '<p style="color:var(--faint);font-style:italic;">Sem pré-requisitos cadastrados na distribuição curricular oficial.</p>';
 
-      const tccBannerHtml = (course.code === 'CMTK03' || course.type === 'tcc')
-        ? `
-          <div class="modal-tcc-banner">
-            <div class="tcc-banner-head">
-              <span class="mono">DISCIPLINA OFICIAL DE TCC</span>
-              <span class="badge-tcc-pill">Portal UFRJ</span>
-            </div>
-            <p>Esta é a disciplina oficial de <strong>Trabalho de Conclusão de Curso (CMTK03)</strong> cadastrada na matriz curricular e disponível para solicitação de inscrição no Portal do Aluno da UFRJ.</p>
-            <div class="modal-tcc-actions">
-              <a href="https://portal.ufrj.br/Turma/detalhesTurma?id=BE85C54B-1020-4DD0-9213-F4AA22015471&cid=1181" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-small">Ver Detalhes da Turma no Portal do Aluno (SIGA) ↗</a>
-            </div>
-          </div>
-        `
-        : '';
-
-      const complementarNoticeHtml = (course.code === 'CMTX01' || course.type === 'complementar')
-        ? `
-          <div class="modal-detail-block" style="border-left:3px solid #fb7185;background:rgba(251,113,133,.06);">
-            <strong style="color:#fb7185;">Atividades Extracurriculares (Horas Complementares)</strong>
-            <p>Esta disciplina destina-se exclusivamente à validação de carga horária complementar obtida através de atividades de pesquisa (Iniciação Científica), extensão, monitoria, estágios curriculares não-obrigatórios e participação em eventos acadêmicos/congressos. <em>Não confunda com o Trabalho de Conclusão de Curso (CMTK03).</em></p>
-          </div>
-        `
-        : '';
-
       modalBody.innerHTML = `
-        ${tccBannerHtml}
-        ${complementarNoticeHtml}
         <div class="modal-stat-grid">
           <div><dt>Créditos</dt><dd>${course.credits} cr</dd></div>
           <div><dt>C.H. Total</dt><dd>${course.ch_total} h</dd></div>
