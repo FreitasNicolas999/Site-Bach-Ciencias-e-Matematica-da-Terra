@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fluxograma interativo de graduação do BCMT UFRJ, catálogo de disciplinas eletivas por grupo formativo e orientações oficiais de inscrição no SIGA.">
+  <meta name="theme-color" content="#071019">
+  <meta property="og:title" content="BCMT UFRJ | Guia de alunos para alunos">
+  <meta property="og:description" content="Conheça o Bacharelado em Ciências Matemáticas e da Terra, explore as ênfases e encontre atalhos para a vida acadêmica.">
+  <meta property="og:type" content="website">
+  <title>Fluxograma do Curso & Eletivas | BCMT UFRJ</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="index.html" aria-label="BCMT UFRJ — início">
+      <img class="brand-logo" src="assets/logo-bcmt.svg" alt="" width="48" height="48">
+      <span class="brand-copy">
+        <strong>BCMT</strong>
+        <span>Ciências Matemáticas e da Terra · UFRJ</span>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+        <nav class="links" id="navLinks" aria-label="Navegação principal">
+      <a href="index.html" class="nav-link-item">Início</a>
+      <a href="enfases.html" class="nav-link-item">Ênfases</a>
+      <a href="fluxograma.html" class="nav-link-item is-active" aria-current="page">Fluxograma do Curso</a>
+      <a href="vida-academica.html" class="nav-link-item">Vida Acadêmica</a>
+      <a href="faq.html" class="nav-link-item">FAQ & Contato</a>
+      <a class="nav-cta" href="https://www.acessograduacao.ufrj.br/" target="_blank" rel="noopener noreferrer">Como entrar <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+
+    <section class="subpage-hero" aria-labelledby="page-title">
+      <div class="subpage-hero-inner reveal">
+        <div class="breadcrumb mono">
+          <a href="index.html">Início</a> <span>/</span> <strong>Fluxograma do Curso</strong>
+        </div>
+        <h1 id="page-title">Fluxograma do Curso & Catálogo de Eletivas</h1>
+        <p>Consulte as matrizes curriculares oficiais de cada ênfase aprovadas no SIGA UFRJ. Clique nas matérias para rastrear pré-requisitos, explore as disciplinas optativas por grupo e veja as diretrizes de inscrição.</p>
+      </div>
+    </section>
+
+<section class="flowchart-section section" id="fluxograma" aria-labelledby="flowchart-title">
+      <div class="section-heading split-heading reveal">
+        <div>
+          <p class="eyebrow mono">04 · FLUXOGRAMA DO CURSO</p>
+          <h2 id="flowchart-title">Fluxograma de graduação & eletivas por ênfase.</h2>
+        </div>
+        <p>Acompanhe a trajetória recomendada dos 8 períodos para cada uma das 4 ênfases da matriz vigente (2025/1), rastreie a cadeia de pré-requisitos entre as disciplinas e explore o catálogo responsivo com todas as eletivas ofertadas.</p>
+      </div>
+
+      <div class="flowchart-wrap reveal">
+        <!-- Roster of tracks (Accessible Tablist) -->
+        <div class="track-tabs" role="tablist" aria-label="Selecione a ênfase do BCMT">
+          <button class="track-tab-btn is-active" id="tab-analise-dados" role="tab" aria-selected="true" aria-controls="track-panel" data-track-id="analise-dados" type="button">
+            <span class="track-tab-num mono">ÊNFASE 01 · CÓD. 3171000300</span>
+            <strong class="track-tab-title">CMT — Análise de Dados</strong>
+            <span class="track-tab-meta">Versão 2025/1 · Modelagem · Estatística</span>
+          </button>
+          <button class="track-tab-btn" id="tab-patrimonio" role="tab" aria-selected="false" aria-controls="track-panel" data-track-id="patrimonio" type="button">
+            <span class="track-tab-num mono">ÊNFASE 02 · CÓD. 3171000400</span>
+            <strong class="track-tab-title">CMT — Patrimônio Natural</strong>
+            <span class="track-tab-meta">Versão 2025/1 · Geologia · Geodiversidade</span>
+          </button>
+          <button class="track-tab-btn" id="tab-cmt-puro" role="tab" aria-selected="false" aria-controls="track-panel" data-track-id="cmt-puro" type="button">
+            <span class="track-tab-num mono">ÊNFASE 03 · CÓD. 3171000100</span>
+            <strong class="track-tab-title">CMT — Puro</strong>
+            <span class="track-tab-meta">Versão 2025/1 · Liberdade Curricular</span>
+          </button>
+          <button class="track-tab-btn" id="tab-sensoriamento" role="tab" aria-selected="false" aria-controls="track-panel" data-track-id="sensoriamento" type="button">
+            <span class="track-tab-num mono">ÊNFASE 04 · CÓD. 3171000200</span>
+            <strong class="track-tab-title">Sensoriamento & SIG</strong>
+            <span class="track-tab-meta">Versão 2025/1 · Satélites · Cartografia</span>
+          </button>
+        </div>
+
+        <!-- Track Summary & Curriculum Stats Panel -->
+        <div class="track-summary-card" id="trackSummaryCard">
+          <!-- Dynamically populated by JS based on selected track -->
+        </div>
+
+        <!-- Mode switcher: Fluxograma Semestral vs. Catálogo de Eletivas -->
+        <div class="flowchart-controls-bar">
+          <div class="flowchart-view-toggle" role="group" aria-label="Visualização do curso">
+            <button class="view-toggle-btn is-active" id="btnViewFlowchart" type="button" aria-pressed="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4M6.5 10v4M17.5 10v4"/></svg>
+              <span>Fluxograma Semestral (1º ao 8º)</span>
+            </button>
+            <button class="view-toggle-btn" id="btnViewElectives" type="button" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/><circle cx="18" cy="18" r="3"/><path d="m20.2 20.2 2.3 2.3"/></svg>
+              <span>Lista de Eletivas da Ênfase (90)</span>
+            </button>
+          </div>
+
+          <!-- Quick category filter chips for Flowchart view -->
+          <div class="flowchart-category-filters" id="flowchartCategoryFilters">
+            <span class="category-filter-label mono">Destacar:</span>
+            <button class="cat-chip is-active" data-cat="all" type="button">Todas</button>
+            <button class="cat-chip" data-cat="obrigatoria" type="button">Obrigatórias</button>
+            <button class="cat-chip" data-cat="optativa" type="button">Optativas da Ênfase</button>
+            <button class="cat-chip" data-cat="livre" type="button">Livre Escolha</button>
+            <button class="cat-chip" data-cat="suplementar" type="button">Extensão / TCC</button>
+          </div>
+        </div>
+
+        <!-- Tabpanel Area -->
+        <div class="track-panel-content" id="track-panel" role="tabpanel">
+          <!-- 1. Flowchart View -->
+          <div class="flowchart-view-area" id="flowchartViewArea">
+            <div class="flowchart-legend">
+              <div class="legend-badges">
+                <span class="legend-badge badge-obrigatoria"><span class="badge-dot"></span> Disciplina Obrigatória</span>
+                <span class="legend-badge badge-optativa"><span class="badge-dot"></span> Optativa da Ênfase</span>
+                <span class="legend-badge badge-livre"><span class="badge-dot"></span> Livre Escolha</span>
+                <span class="legend-badge badge-extensao"><span class="badge-dot"></span> Extensão Curricular (240h)</span>
+                <span class="legend-badge badge-tcc"><span class="badge-dot"></span> Trabalho de Conclusão (TCC)</span>
+              </div>
+              <div class="flowchart-interaction-tip mono" id="flowchartTip">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                <span>Clique em qualquer matéria para rastrear pré-requisitos e dependências</span>
+                <button class="btn-clear-highlight" id="btnClearHighlight" type="button" hidden>Limpar destaque &times;</button>
+              </div>
+            </div>
+
+            <!-- Flowchart grid containing 8 period columns -->
+            <div class="flowchart-scroll-wrap" id="flowchartScrollWrap">
+              <div class="flowchart-columns" id="flowchartColumns">
+                <!-- Injected via JavaScript from CURRICULUM_DATA -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Responsive Electives Catalog View -->
+          <div class="electives-view-area is-hidden" id="electivesViewArea">
+            <div class="electives-banner">
+              <div class="electives-banner-copy">
+                <p class="eyebrow mono">FORMAÇÃO COMPLEMENTAR · ESCOLHA RESTRITA</p>
+                <h3>Catálogo de disciplinas eletivas</h3>
+                <p>Na matriz curricular vigente, o aluno deve integralizar <strong>36 créditos (600 horas)</strong> em disciplinas optativas de escolha restrita, distribuídas entre os três grupos científicos do curso.</p>
+              </div>
+              <div class="electives-banner-stats">
+                <div><b>90</b><span>disciplinas no catálogo</span></div>
+                <div><b>36 cr</b><span>exigência mínima</span></div>
+                <div><b>600 h</b><span>carga horária de eletivas</span></div>
+              </div>
+            </div>
+
+            <!-- Electives Toolbar -->
+            <div class="electives-toolbar">
+              <div class="electives-search-box">
+                <svg class="search-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                <input class="electives-search-field" id="electivesSearchInput" type="search" placeholder="Buscar por código, nome ou tema (ex: Python, Estatística, Clima, Geologia, SIG, Álgebra)..." aria-label="Buscar disciplinas eletivas">
+                <button class="search-clear-action" id="searchClearAction" type="button" aria-label="Limpar campo de busca" hidden>&times;</button>
+              </div>
+
+              <div class="electives-filter-bar">
+                <div class="electives-group-filter" id="electivesGroupFilter" role="radiogroup" aria-label="Filtrar por grupo">
+                  <button class="group-btn is-active" data-group="all" type="button" role="radio" aria-checked="true">
+                    Todos os grupos <span class="chip-total mono">90</span>
+                  </button>
+                  <button class="group-btn" data-group="Grupo 1" type="button" role="radio" aria-checked="false">
+                    Grupo 1 · Ciências da Terra <span class="chip-total mono">51</span>
+                  </button>
+                  <button class="group-btn" data-group="Grupo 2" type="button" role="radio" aria-checked="false">
+                    Grupo 2 · Computação & Exatas <span class="chip-total mono">33</span>
+                  </button>
+                  <button class="group-btn" data-group="Grupo 3" type="button" role="radio" aria-checked="false">
+                    Grupo 3 · Oficinas <span class="chip-total mono">6</span>
+                  </button>
+                </div>
+
+                <div class="electives-sort-box">
+                  <label for="electivesSortSelect" class="mono">Ordenar por:</label>
+                  <select id="electivesSortSelect" class="electives-sort-field">
+                    <option value="code-asc">Código (A–Z)</option>
+                    <option value="name-asc">Nome (A–Z)</option>
+                    <option value="credits-desc">Créditos (Maior)</option>
+                    <option value="hours-desc">Carga Horária (Maior)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="electives-feedback-bar">
+                <span class="mono feedback-counter" id="electivesCountDisplay">Mostrando 90 disciplinas</span>
+                <span class="feedback-group-desc" id="electivesGroupDesc">Exibindo todas as disciplinas eletivas dos 3 grupos formativos.</span>
+              </div>
+            </div>
+
+            <!-- Electives Responsive Cards Grid -->
+            <div class="electives-cards-grid" id="electivesCardsGrid">
+              <!-- Injected via JavaScript from CURRICULUM_DATA -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Curriculum Versions & Reference Table -->
+        <div class="curriculum-reference-box">
+          <div class="curriculum-reference-header">
+            <div>
+              <p class="eyebrow mono">REFERÊNCIAS OFICIAIS DAS VERSÕES CURRICULARES</p>
+              <h3>Repositório Curricular SIGA · UFRJ</h3>
+            </div>
+            <p>Dados de cada ênfase extraídos da matriz curricular oficial aprovada pela Câmara de Currículos / CEG (Processo 254757/2023-16 · Boletim Interno UFRJ em 09/08/2024), com vigência desde 2025/1.</p>
+          </div>
+
+          <div class="curriculum-reference-grid">
+            <div class="ref-card">
+              <div class="ref-card-header">
+                <span class="mono ref-num">ÊNFASE 01</span>
+                <span class="ref-status-pill mono">Vigente</span>
+              </div>
+              <h4>CMT — Análise de Dados</h4>
+              <dl class="ref-details-list mono">
+                <div><dt>Código SIGA:</dt><dd>3171000300</dd></div>
+                <div><dt>Versão Curricular:</dt><dd>2025/1 a 9999/9</dd></div>
+                <div><dt>Atualizado em:</dt><dd>26/10/2026 às 18:18</dd></div>
+              </dl>
+              <a class="ref-link" href="https://www.siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/904EE857-0A2A-1E16-7AFB-56A8429DD367.html" target="_blank" rel="noopener noreferrer">
+                Acessar grade no SIGA (Cód. 3171000300) <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div class="ref-card">
+              <div class="ref-card-header">
+                <span class="mono ref-num">ÊNFASE 02</span>
+                <span class="ref-status-pill mono">Vigente</span>
+              </div>
+              <h4>CMT — Patrimônio Natural</h4>
+              <dl class="ref-details-list mono">
+                <div><dt>Código SIGA:</dt><dd>3171000400</dd></div>
+                <div><dt>Versão Curricular:</dt><dd>2025/1 a 9999/9</dd></div>
+                <div><dt>Atualizado em:</dt><dd>26/10/2026 às 18:18</dd></div>
+              </dl>
+              <a class="ref-link" href="https://www.siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/904F1AB5-0A2A-1E16-7AFB-56A8EFCE8768.html" target="_blank" rel="noopener noreferrer">
+                Acessar grade no SIGA (Cód. 3171000400) <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div class="ref-card">
+              <div class="ref-card-header">
+                <span class="mono ref-num">ÊNFASE 03</span>
+                <span class="ref-status-pill mono">Vigente</span>
+              </div>
+              <h4>CMT — Puro</h4>
+              <dl class="ref-details-list mono">
+                <div><dt>Código SIGA:</dt><dd>3171000100</dd></div>
+                <div><dt>Versão Curricular:</dt><dd>2025/1 a 9999/9</dd></div>
+                <div><dt>Atualizado em:</dt><dd>26/10/2026 às 18:18</dd></div>
+              </dl>
+              <a class="ref-link" href="https://www.siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/904D6A81-0A2A-1E16-7AFB-56A84181ADB1.html" target="_blank" rel="noopener noreferrer">
+                Acessar grade no SIGA (Cód. 3171000100) <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div class="ref-card">
+              <div class="ref-card-header">
+                <span class="mono ref-num">ÊNFASE 04</span>
+                <span class="ref-status-pill mono">Vigente</span>
+              </div>
+              <h4>Sensoriamento Remoto & SIG</h4>
+              <dl class="ref-details-list mono">
+                <div><dt>Código SIGA:</dt><dd>3171000200</dd></div>
+                <div><dt>Versão Curricular:</dt><dd>2025/1 a 9999/9</dd></div>
+                <div><dt>Atualizado em:</dt><dd>26/10/2026 às 18:18</dd></div>
+              </dl>
+              <a class="ref-link" href="https://www.siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/904E7D7F-0A2A-1E16-7AFB-56A8A2715768.html" target="_blank" rel="noopener noreferrer">
+                Acessar grade no SIGA (Cód. 3171000200) <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal / Dialog for Detailed Course Information -->
+        <dialog class="course-modal" id="courseModal" aria-labelledby="modalCourseTitle">
+          <div class="course-modal-box">
+            <button class="course-modal-close" id="courseModalClose" type="button" aria-label="Fechar detalhes da disciplina">&times;</button>
+            <div class="course-modal-header" id="modalHeader">
+              <!-- Dynamically populated -->
+            </div>
+            <div class="course-modal-body" id="modalBody">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </section>
+
+  </main>
+
+<footer id="comissao">
+    <div class="commission-footer">
+      <div class="commission-identity">
+        <img src="assets/logo-bcmt.svg" alt="Logo da Comissão do BCMT" width="190" height="190" loading="lazy">
+        <div>
+          <p class="eyebrow mono">COMISSÃO DO BCMT</p>
+          <h2>Informação circula melhor quando os alunos também constroem os caminhos.</h2>
+          <p>Este guia foi desenvolvido pela Comissão do Bacharelado em Ciências Matemáticas e da Terra para alunos, egressos, novos ingressantes e pessoas interessadas no curso. O conteúdo facilita a navegação, mas canais institucionais e editais da UFRJ prevalecem em assuntos acadêmicos.</p>
+        </div>
+      </div>
+
+      <div class="commission-grid">
+        <div class="social-card">
+          <p class="mono">CANAIS DO BCMT</p>
+          <span class="social-description">Acompanhe o perfil oficial do curso e os canais mantidos pela Comissão.</span>
+          <div class="social-links">
+            <a class="official-course-social" href="https://www.instagram.com/bcmt_ufrj/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial do BCMT, @bcmt_ufrj">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.7" r="1" class="social-fill"/></svg>
+              <div><span>Instagram oficial do BCMT</span><b>@bcmt_ufrj</b></div><strong>↗</strong>
+            </a>
+            <a href="https://instagram.com/comissaobcmt" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Comissão do BCMT, @comissaobcmt">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.7" r="1" class="social-fill"/></svg>
+              <div><span>Comissão · Instagram</span><b>@comissaobcmt</b></div><strong>↗</strong>
+            </a>
+            <a href="https://x.com/ComissaoBCMT" target="_blank" rel="noopener noreferrer" aria-label="X da Comissão do BCMT, @ComissaoBCMT">
+              <svg class="social-icon social-icon-x" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4l14 16M19 4 5 20"/></svg>
+              <div><span>Comissão · X</span><b>@ComissaoBCMT</b></div><strong>↗</strong>
+            </a>
+            <a href="https://tiktok.com/@comissaobcmt" target="_blank" rel="noopener noreferrer" aria-label="TikTok da Comissão do BCMT, @comissaobcmt">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.1a4.1 4.1 0 1 1-3-3.94V7.6a6.8 6.8 0 0 0 3-.7V4Z"/><path d="M14 4c.55 2.35 2.05 3.75 4.5 4.2"/></svg>
+              <div><span>Comissão · TikTok</span><b>@comissaobcmt</b></div><strong>↗</strong>
+            </a>
+            <a class="official-course-social sec-course-social" href="mailto:secgradbcmt@ccmn.ufrj.br" aria-label="E-mail oficial da Secretaria de Graduação do BCMT">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4.5 7 7.5 6 7.5-6"/></svg>
+              <div><span>Secretaria de Graduação · Canal Oficial</span><b>secgradbcmt@ccmn.ufrj.br</b></div><strong>✉</strong>
+            </a>
+            <a href="mailto:comissao.bcmt.ufrj@gmail.com" aria-label="E-mail da Comissão do BCMT">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4.5 7 7.5 6 7.5-6"/></svg>
+              <div><span>Comissão · E-mail</span><b>comissao.bcmt.ufrj@gmail.com</b></div><strong>↗</strong>
+            </a>
+          </div>
+        </div>
+
+        <div class="secgrad-card">
+          <p class="mono">SECRETARIA DE GRADUAÇÃO · OFICIAL</p>
+          <h3>Atendimento Acadêmico BCMT</h3>
+          <p class="secgrad-description">Canal institucional oficial para suporte a inscrições em disciplinas, processos acadêmicos, certidões e atendimento discente.</p>
+          <div class="secgrad-details">
+            <div class="secgrad-item">
+              <span class="mono">E-MAIL INSTITUCIONAL</span>
+              <a href="mailto:secgradbcmt@ccmn.ufrj.br"><b>secgradbcmt@ccmn.ufrj.br</b> ✉</a>
+            </div>
+            <div class="secgrad-item">
+              <span class="mono">LOCALIZAÇÃO</span>
+              <span>CCMN · Bloco D · Cidade Universitária</span>
+            </div>
+            <div class="secgrad-item">
+              <span class="mono">SISTEMA SIGA</span>
+              <a href="https://portal.ufrj.br/" target="_blank" rel="noopener noreferrer"><b>Portal do Aluno (portal.ufrj.br)</b> ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="credits-card">
+          <p class="mono">DESENVOLVIMENTO DO SITE</p>
+          <h3>Desenvolvido pela Comissão do BCMT.</h3>
+          <div class="student-credit"><span>01</span><div><b>Nicolas Freitas</b><small>Ingresso 25.2</small></div></div>
+          <div class="student-credit"><span>02</span><div><b>Matheus Augusto</b><small>Sensoriamento Remoto e Geoprocessamento · ingresso 18.2</small></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="institutional-strip" aria-label="Identidade institucional">
+      <div class="institutional-strip-copy">
+        <p class="eyebrow mono">VÍNCULO INSTITUCIONAL</p>
+        <span>O BCMT integra a Universidade Federal do Rio de Janeiro e o CCMN.</span>
+      </div>
+      <div class="institutional-logos">
+        <div class="institutional-logo-card ufrj-logo-card">
+          <img src="assets/ufrj-logo.png" alt="Logo da Universidade Federal do Rio de Janeiro — UFRJ" loading="lazy">
+        </div>
+        <div class="institutional-logo-card ccmn-logo-card">
+          <img src="assets/logo-ccmn-transparent.png" alt="Logo do CCMN — UFRJ" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <a class="footer-brand" href="index.html"><b>BCMT</b><span>Bacharelado em Ciências Matemáticas e da Terra · Universidade Federal do Rio de Janeiro</span></a>
+      <p>Projeto estudantil da Comissão do BCMT. Informações sobre currículo, bolsas, editais e atos acadêmicos devem ser confirmadas nos canais oficiais indicados ao longo da página.</p>
+      <a class="back-top mono" href="index.html">voltar ao topo ↑</a>
+    </div>
+    <div class="footer-bottom">
+      <span>Comissão do Bacharelado em Ciências Matemáticas e da Terra · UFRJ</span>
+      <span class="mono">CCMN · Cidade Universitária · Rio de Janeiro</span>
+    </div>
+  </footer>
+
+  <script src="curriculum-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

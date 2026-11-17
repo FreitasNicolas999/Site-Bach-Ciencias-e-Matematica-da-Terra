@@ -917,7 +917,26 @@
       });
     });
 
-    // Initialize with default track
-    selectTrack('analise-dados');
+    // Multi-page navigation link active highlight
+    const pagePath = window.location.pathname.split('/').pop() || 'index.html';
+    $$('#navLinks a:not(.nav-cta)').forEach((link) => {
+      const href = link.getAttribute('href');
+      if (href === pagePath || (pagePath === '' && href === 'index.html')) {
+        link.setAttribute('aria-current', 'page');
+        link.classList.add('is-active');
+      } else {
+        link.removeAttribute('aria-current');
+        link.classList.remove('is-active');
+      }
+    });
+
+    // Initialize with query param track or default track
+    const urlParams = new URLSearchParams(window.location.search);
+    const requestedTrack = urlParams.get('track');
+    if (requestedTrack && curriculumData.tracks.some((t) => t.id === requestedTrack)) {
+      selectTrack(requestedTrack);
+    } else if (trackTabs.length > 0) {
+      selectTrack('analise-dados');
+    }
   }
 })();
