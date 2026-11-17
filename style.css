@@ -317,7 +317,8 @@ footer{padding:60px clamp(20px,6vw,88px) 32px;background:#020609;border-top:1px 
 .institutional-strip{max-width:1500px;margin:0 auto 42px;padding:28px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.015);display:grid;grid-template-columns:minmax(220px,.72fr) minmax(0,1.28fr);gap:28px;align-items:center}
 .institutional-strip-copy>span{display:block;max-width:45ch;margin-top:9px;color:var(--faint);font-size:10.5px;line-height:1.55}
 .institutional-logos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:stretch}
-.institutional-logo-card{min-height:148px;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:24px 28px;border:1px solid rgba(255,255,255,.14);border-radius:18px;background:linear-gradient(145deg,rgba(7,18,28,.96),rgba(1,6,10,.98));box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 16px 40px rgba(0,0,0,.12)}
+.institutional-logo-card{min-height:148px;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:24px 28px;border:1px solid rgba(255,255,255,.14);border-radius:18px;background:linear-gradient(145deg,rgba(7,18,28,.96),rgba(1,6,10,.98));box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 16px 40px rgba(0,0,0,.12);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;text-decoration:none;cursor:pointer}
+.institutional-logo-card:hover{transform:translateY(-3px);border-color:rgba(240,187,112,.45);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 20px 48px rgba(0,0,0,.35),0 0 16px rgba(240,187,112,.15)}
 .institutional-logo-card img{display:block;width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 2px 9px rgba(0,0,0,.18))}
 .ufrj-logo-card,.ccmn-logo-card{background:linear-gradient(145deg,rgba(8,20,31,.98),rgba(1,7,12,.99))}
 .ufrj-logo-card img{width:min(86%,430px);max-height:104px}
