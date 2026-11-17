@@ -311,7 +311,7 @@ img{display:block;max-width:100%}
 .credits-card h3{max-width:26ch;margin-top:13px;font-size:21px;line-height:1.25;letter-spacing:-.025em}
 .student-credit{display:grid;grid-template-columns:34px 1fr;gap:13px;align-items:center;margin-top:14px;padding:12px 10px;border-top:1px solid var(--line);border-radius:12px;text-decoration:none;transition:background .2s ease,transform .2s ease}
 a.student-credit:hover{background:rgba(255,255,255,.04);transform:translateX(3px)}
-.student-credit>span{display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:rgba(116,199,202,.09);color:var(--accent-2);font:9px/1 'JetBrains Mono',monospace}
+.student-credit>span{display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:rgba(116,199,202,.09);color:var(--accent-2);font:700 11px/1 'JetBrains Mono',monospace;letter-spacing:.02em}
 .student-credit-header{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .student-credit b{display:block;font-size:13px;color:var(--text)}
 .student-credit small{display:block;margin-top:3px;color:var(--faint);font-size:10px;line-height:1.4}

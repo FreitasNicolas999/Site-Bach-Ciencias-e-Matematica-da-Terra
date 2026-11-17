@@ -1292,6 +1292,15 @@
         url: "faq.html#faq",
         snippet: "Respostas diretas sobre trancamento de matrícula, prazo de integralização, cálculo do CR e colação de grau.",
         keywords: ["faq", "duvidas", "cr", "coeficiente de rendimento", "trancamento", "prazo maximo", "integralizacao", "colacao de grau"]
+      },
+      {
+        title: "Desenvolvedores & Créditos do Portal BCMT",
+        category: "faq",
+        categoryLabel: "FAQ & Secretaria",
+        badgeClass: "tag-faq",
+        url: "index.html#creditos",
+        snippet: "Portal desenvolvido pela Comissão do BCMT por Matheus Augusto e Nicolas Freitas com perfis profissionais no LinkedIn.",
+        keywords: ["desenvolvedores", "desenvolvedor", "creditos", "criadores", "autores", "matheus augusto", "nicolas freitas", "linkedin", "quem fez"]
       }
     ];
 
