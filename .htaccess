@@ -1,0 +1,39 @@
+# ==============================================================================
+# BCMT UFRJ - DIRETRIZES DE SEGURANÇA E BLINDAGEM DE SERVIDOR (APACHE)
+# ==============================================================================
+
+# 1. Bloquear acesso a diretórios e arquivos ocultos (.git, .env, .htaccess, etc)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule "(^|/)\.(?!well-known)" - [F]
+</IfModule>
+
+# 2. Forçar HTTPS estrito
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# 3. Cabeçalhos de Segurança HTTP (Defense-in-Depth)
+<IfModule mod_headers.c>
+    # Previne que o site seja embutido em iframes externos (Clickjacking)
+    Header set X-Frame-Options "DENY"
+
+    # Previne sniffing de MIME-type
+    Header set X-Content-Type-Options "nosniff"
+
+    # Força conexão segura HTTPS e HSTS por 2 anos
+    Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+
+    # Protege privacidade do referenciador
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Desativa APIs do navegador que não são necessárias
+    Header set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+
+    # Content Security Policy (CSP)
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
+</IfModule>
+
+# 4. Desativar listagem de diretórios (Directory Listing)
+Options -Indexes
