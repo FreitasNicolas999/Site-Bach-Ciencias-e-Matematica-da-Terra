@@ -1002,9 +1002,9 @@
         category: "grade",
         categoryLabel: "Grade & Matérias",
         badgeClass: "tag-grade",
-        url: "fluxograma.html#fluxograma",
+        url: "fluxograma.html#grades-antigas",
         snippet: "Acesse as matrizes anteriores no SIGA: Sensoriamento Remoto (2013), Patrimônio Natural (2013), Tronco Comum (2013), Suporte à Decisão (2013) e Matriz até 2024.",
-        keywords: ["grades antigas", "grade 2013", "matriz 2013", "matriz antiga", "historico de matrizes", "siga", "suporte a decisao", "codigo 87a624e1", "equivalencia"]
+        keywords: ["grades antigas", "grade antiga", "grade 2013", "matriz 2013", "matrizes antigas", "matriz antiga", "historico de matrizes", "siga", "suporte a decisao", "codigo 87a624e1", "equivalencia"]
       },
       {
         title: "Portal do Curso & Navegação por Páginas",
@@ -1159,7 +1159,7 @@
         category: "grade",
         categoryLabel: "Grade & Matérias",
         badgeClass: "tag-grade",
-        url: "fluxograma.html#inscricao-siga",
+        url: "vida-academica.html#inscricoes",
         snippet: "Como funciona a matrícula no SIGA pelo Portal do Aluno, critérios de prioridade (CCR, período ideal, reprovação) e prazos.",
         keywords: ["siga", "inscricao em disciplinas", "portal do aluno", "matricula", "portal.ufrj.br", "criterios de prioridade", "trancamento de turma", "ccr", "reprovacao"]
       },
@@ -1379,12 +1379,17 @@
           return false;
         }
 
-        const normTitle = normalize(item.title);
-        const normSnippet = normalize(item.snippet);
-        const normCat = normalize(item.categoryLabel);
-        const normKeywords = item.keywords.map(normalize);
+        const titleWords = normTitle.match(/\b\w+\b/g) || [];
+        const snippetWords = normSnippet.match(/\b\w+\b/g) || [];
 
         return queryTokens.every((token) => {
+          if (token.length <= 3) {
+            return (
+              titleWords.includes(token) ||
+              snippetWords.includes(token) ||
+              normKeywords.some((kw) => kw === token || (kw.match(/\b\w+\b/g) || []).includes(token))
+            );
+          }
           return (
             normTitle.includes(token) ||
             normSnippet.includes(token) ||
@@ -1397,13 +1402,31 @@
       filtered.sort((a, b) => {
         const score = (item) => {
           const normTitle = normalize(item.title);
+          const normSnippet = normalize(item.snippet);
+          const normKws = item.keywords.map(normalize);
+          const titleWords = normTitle.match(/\b\w+\b/g) || [];
+          const snippetWords = normSnippet.match(/\b\w+\b/g) || [];
+
           let s = 0;
-          if (normTitle === query) s += 100;
-          if (normTitle.startsWith(query)) s += 50;
+          if (normTitle === query) s += 400;
+          else if (normTitle.startsWith(query)) s += 200;
+          else if (normTitle.includes(query)) s += 120;
+
           queryTokens.forEach((t) => {
-            if (normTitle.includes(t)) s += 30;
-            if (item.keywords.some((k) => normalize(k).includes(t))) s += 15;
-            if (normalize(item.snippet).includes(t)) s += 10;
+            if (titleWords.includes(t)) s += 100;
+            else if (titleWords.some((w) => w.startsWith(t))) s += 60;
+            else if (t.length > 3 && normTitle.includes(t)) s += 25;
+
+            normKws.forEach((kw) => {
+              const kwWords = kw.match(/\b\w+\b/g) || [];
+              if (kw === t) s += 90;
+              else if (kwWords.includes(t)) s += 70;
+              else if (kwWords.some((w) => w.startsWith(t))) s += 40;
+              else if (t.length > 3 && kw.includes(t)) s += 15;
+            });
+
+            if (snippetWords.includes(t)) s += 30;
+            else if (t.length > 3 && normSnippet.includes(t)) s += 10;
           });
           return s;
         };
@@ -1436,10 +1459,38 @@
       `).join('');
 
       $$('.search-result-card', searchResults).forEach((card) => {
-        card.addEventListener('click', () => {
-          closeSearch();
+        card.addEventListener('click', (e) => {
+          const href = card.getAttribute('href');
+          handleNavigation(href, e);
         });
       });
+    }
+
+    function handleNavigation(href, e) {
+      if (!href) return;
+      if (href.startsWith('http://') || href.startsWith('https://')) {
+        return;
+      }
+
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      const [targetPage, targetHash] = href.split('#');
+
+      if ((targetPage === '' || targetPage === currentPage) && targetHash) {
+        if (e) e.preventDefault();
+        closeSearch();
+        const targetEl = document.getElementById(targetHash);
+        if (targetEl) {
+          setTimeout(() => {
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            targetEl.classList.add('target-highlight');
+            setTimeout(() => targetEl.classList.remove('target-highlight'), 2400);
+          }, 80);
+          history.pushState(null, '', `#${targetHash}`);
+        }
+      } else {
+        closeSearch();
+        window.location.href = href;
+      }
     }
 
     function updateResultFocus() {
@@ -1461,6 +1512,17 @@
     searchInput.addEventListener('input', () => {
       searchClear.style.display = searchInput.value ? 'grid' : 'none';
       performSearch();
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const cards = $$('.search-result-card', searchResults);
+        const targetIndex = focusedIndex >= 0 ? focusedIndex : 0;
+        if (cards[targetIndex]) {
+          cards[targetIndex].click();
+        }
+      }
     });
 
     searchClear.addEventListener('click', () => {
@@ -1503,12 +1565,27 @@
             updateResultFocus();
           }
         } else if (e.key === 'Enter') {
-          if (focusedIndex >= 0 && cards[focusedIndex]) {
+          const cards = $$('.search-result-card', searchResults);
+          const targetIndex = focusedIndex >= 0 ? focusedIndex : 0;
+          if (cards[targetIndex]) {
             e.preventDefault();
-            cards[focusedIndex].click();
+            cards[targetIndex].click();
           }
         }
       }
     });
+
+    // Hash deep-linking on page load with smooth scroll and highlight
+    if (window.location.hash) {
+      const hashId = window.location.hash.substring(1);
+      const el = document.getElementById(hashId);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          el.classList.add('target-highlight');
+          setTimeout(() => el.classList.remove('target-highlight'), 2400);
+        }, 350);
+      }
+    }
   }
 })();
