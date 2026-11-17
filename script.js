@@ -1379,6 +1379,11 @@
           return false;
         }
 
+        const normTitle = normalize(item.title);
+        const normSnippet = normalize(item.snippet);
+        const normCat = normalize(item.categoryLabel);
+        const normKeywords = item.keywords.map(normalize);
+
         const titleWords = normTitle.match(/\b\w+\b/g) || [];
         const snippetWords = normSnippet.match(/\b\w+\b/g) || [];
 
@@ -1469,13 +1474,18 @@
     function handleNavigation(href, e) {
       if (!href) return;
       if (href.startsWith('http://') || href.startsWith('https://')) {
+        if (e) e.preventDefault();
+        closeSearch();
+        window.open(href, '_blank', 'noopener,noreferrer');
         return;
       }
 
-      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-      const [targetPage, targetHash] = href.split('#');
+      const rawPath = window.location.pathname.split('/').pop() || 'index.html';
+      const currentPage = rawPath.toLowerCase().replace(/\.html$/, '') || 'index';
+      const [targetPageRaw, targetHash] = href.split('#');
+      const targetPage = (targetPageRaw || rawPath).toLowerCase().replace(/\.html$/, '');
 
-      if ((targetPage === '' || targetPage === currentPage) && targetHash) {
+      if (targetPage === currentPage && targetHash) {
         if (e) e.preventDefault();
         closeSearch();
         const targetEl = document.getElementById(targetHash);
@@ -1483,7 +1493,7 @@
           setTimeout(() => {
             targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
             targetEl.classList.add('target-highlight');
-            setTimeout(() => targetEl.classList.remove('target-highlight'), 2400);
+            setTimeout(() => targetEl.classList.remove('target-highlight'), 2600);
           }, 80);
           history.pushState(null, '', `#${targetHash}`);
         }
@@ -1576,16 +1586,27 @@
     });
 
     // Hash deep-linking on page load with smooth scroll and highlight
-    if (window.location.hash) {
+    function handleHashOnLoad() {
+      if (!window.location.hash) return;
       const hashId = window.location.hash.substring(1);
       const el = document.getElementById(hashId);
-      if (el) {
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          el.classList.add('target-highlight');
-          setTimeout(() => el.classList.remove('target-highlight'), 2400);
-        }, 350);
-      }
+      if (!el) return;
+
+      const performScroll = () => {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        el.classList.add('target-highlight');
+        setTimeout(() => el.classList.remove('target-highlight'), 2600);
+      };
+
+      // Double run after flowchart injection and fonts settle
+      setTimeout(performScroll, 200);
+      setTimeout(performScroll, 600);
+    }
+
+    if (document.readyState === 'complete') {
+      handleHashOnLoad();
+    } else {
+      window.addEventListener('load', handleHashOnLoad);
     }
   }
 })();
