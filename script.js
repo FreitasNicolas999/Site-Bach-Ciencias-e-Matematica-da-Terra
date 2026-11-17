@@ -918,19 +918,6 @@
       });
     });
 
-    // Multi-page navigation link active highlight
-    const pagePath = window.location.pathname.split('/').pop() || 'index.html';
-    $$('#navLinks a:not(.nav-cta)').forEach((link) => {
-      const href = link.getAttribute('href');
-      if (href === pagePath || (pagePath === '' && href === 'index.html')) {
-        link.setAttribute('aria-current', 'page');
-        link.classList.add('is-active');
-      } else {
-        link.removeAttribute('aria-current');
-        link.classList.remove('is-active');
-      }
-    });
-
     // Initialize with query param track or default track
     const urlParams = new URLSearchParams(window.location.search);
     const requestedTrack = urlParams.get('track');
@@ -939,5 +926,571 @@
     } else if (trackTabs.length > 0) {
       selectTrack('analise-dados');
     }
+  }
+
+  // ==========================================================================
+  // MULTI-PAGE NAVIGATION ACTIVE HIGHLIGHT (GLOBAL)
+  // ==========================================================================
+  const pagePath = window.location.pathname.split('/').pop() || 'index.html';
+  $$('#navLinks a:not(.nav-cta)').forEach((link) => {
+    const href = link.getAttribute('href');
+    if (href === pagePath || (pagePath === '' && href === 'index.html')) {
+      link.setAttribute('aria-current', 'page');
+      link.classList.add('is-active');
+    } else {
+      link.removeAttribute('aria-current');
+      link.classList.remove('is-active');
+    }
+  });
+
+  // ==========================================================================
+  // PESQUISA GLOBAL NO PORTAL DO BCMT (SITE SEARCH)
+  // ==========================================================================
+  const searchModal = $('#siteSearchModal');
+  const searchBtn = $('#siteSearchBtn');
+  const searchInput = $('#siteSearchInput');
+  const searchClear = $('#siteSearchClear');
+  const searchClose = $('#siteSearchClose');
+  const searchResults = $('#siteSearchResults');
+  const searchCounter = $('#searchResultsCounter');
+  const searchFilterChips = $$('#searchFilterChips .search-chip');
+
+  if (searchModal && searchBtn && searchInput && searchResults) {
+    let currentFilter = 'all';
+    let focusedIndex = -1;
+
+    const SITE_SEARCH_INDEX = [
+      // --- O CURSO / GERAL ---
+      {
+        title: "O que é o BCMT & Proposta Interdisciplinar",
+        category: "curso",
+        categoryLabel: "Início & O Curso",
+        badgeClass: "tag-curso",
+        url: "index.html#proposta",
+        snippet: "Graduação interdisciplinar que conecta matemática, computação, física, astronomia, meteorologia, geografia, geologia e ciências da Terra.",
+        keywords: ["bcmt", "o que e", "sobre", "ciencias matematicas e da terra", "interdisciplinar", "ufrj", "ccmn", "astronomia", "meteorologia", "geografia", "geologia", "fisica", "matematica", "computacao"]
+      },
+      {
+        title: "Formas de Ingresso na UFRJ (SiSU, Transferência e Acesso Graduação)",
+        category: "curso",
+        categoryLabel: "Início & O Curso",
+        badgeClass: "tag-curso",
+        url: "https://www.acessograduacao.ufrj.br/",
+        snippet: "Ingresso anual pelo SiSU/Enem, editais de transferência externa, mudança de curso e vagas remanescentes da UFRJ.",
+        keywords: ["como entrar", "sisu", "enem", "vestibular", "ingresso", "transferencia", "mudanca de curso", "isencao", "acesso graduacao"]
+      },
+      {
+        title: "Histórico e Criação do BCMT na UFRJ",
+        category: "curso",
+        categoryLabel: "Início & O Curso",
+        badgeClass: "tag-curso",
+        url: "index.html#proposta",
+        snippet: "Criação aprovada pelo Consuni em 2008, turmas iniciadas em 2009 e matriz reformulada em 2025/1 com quatro ênfases.",
+        keywords: ["historia", "criacao", "consuni", "2008", "2009", "2025", "reformulacao", "matriz curricular"]
+      },
+      {
+        title: "Portal do Curso & Navegação por Páginas",
+        category: "curso",
+        categoryLabel: "Início & O Curso",
+        badgeClass: "tag-curso",
+        url: "index.html#explore",
+        snippet: "Central de navegação com acesso às 4 ênfases, grade curricular com fluxograma, oportunidades acadêmicas e secretaria.",
+        keywords: ["portal", "navegacao", "atalhos", "secoes", "paginas", "hub"]
+      },
+      {
+        title: "CCMN — Centro de Ciências Matemáticas e da Natureza",
+        category: "curso",
+        categoryLabel: "Início & O Curso",
+        badgeClass: "tag-curso",
+        url: "https://ccmn.ufrj.br/",
+        snippet: "Centro universitário da UFRJ no Fundão que abriga o BCMT, Instituto de Matemática, Física, Geociências e Observatório do Valongo.",
+        keywords: ["ccmn", "centro de ciencias matematicas e da natureza", "bloco d", "bloco f", "fundao", "unidades"]
+      },
+      {
+        title: "UFRJ — Universidade Federal do Rio de Janeiro",
+        category: "curso",
+        categoryLabel: "Início & O Curso",
+        badgeClass: "tag-curso",
+        url: "https://ufrj.br/",
+        snippet: "Portal oficial da universidade com notícias, editais acadêmicos, calendário de graduação e serviços institucionais.",
+        keywords: ["ufrj", "universidade federal do rio de janeiro", "portal ufrj", "calendario oficial"]
+      },
+
+      // --- AS 4 ÊNFASES ---
+      {
+        title: "As Quatro Ênfases Formativas do BCMT",
+        category: "enfases",
+        categoryLabel: "Ênfases",
+        badgeClass: "tag-enfases",
+        url: "enfases.html#enfases",
+        snippet: "Conheça os percursos formativos que você escolhe a partir do 5º período: CMT Puro, Análise de Dados, Sensoriamento e Patrimônio.",
+        keywords: ["enfases", "percursos", "formacoes", "habilitacoes", "trajetorias", "quatro enfases"]
+      },
+      {
+        title: "Ênfase em CMT — Puro (Formação Geral)",
+        category: "enfases",
+        categoryLabel: "Ênfases",
+        badgeClass: "tag-enfases",
+        url: "enfases.html#detalhes",
+        snippet: "Percurso generalista que preserva ampla liberdade científica e flexibilidade entre matemática, física, computação e ciências da Terra.",
+        keywords: ["cmt puro", "puro", "enfase pura", "formacao geral", "liberdade curricular", "interdisciplinar"]
+      },
+      {
+        title: "Ênfase em Análise de Dados",
+        category: "enfases",
+        categoryLabel: "Ênfases",
+        badgeClass: "tag-enfases",
+        url: "enfases.html#detalhes",
+        snippet: "Formação em ciência de dados, programação, estruturas de dados, modelagem matemática, inteligência artificial e estatística.",
+        keywords: ["analise de dados", "dados", "data science", "programacao", "python", "estatistica", "machine learning", "ia", "inteligencia artificial", "computacao"]
+      },
+      {
+        title: "Ênfase em Sensoriamento Remoto & Geoprocessamento",
+        category: "enfases",
+        categoryLabel: "Ênfases",
+        badgeClass: "tag-enfases",
+        url: "enfases.html#detalhes",
+        snippet: "Dados espaciais, imagens orbitais de satélite, SIG (Sistemas de Informações Geográficas) e análise territorial.",
+        keywords: ["sensoriamento remoto", "geoprocessamento", "sig", "gis", "satelite", "imagens orbitais", "drones", "dados espaciais", "cartografia"]
+      },
+      {
+        title: "Ênfase em Patrimônio Natural",
+        category: "enfases",
+        categoryLabel: "Ênfases",
+        badgeClass: "tag-enfases",
+        url: "enfases.html#detalhes",
+        snippet: "Geodiversidade, valorização e conservação da memória geológica, geoparques, meio físico e sustentabilidade ambiental.",
+        keywords: ["patrimonio natural", "geodiversidade", "geoconservacao", "geoparques", "geologia", "meio ambiente", "sustentabilidade"]
+      },
+      {
+        title: "Simulador de Afinidade por Ênfase (Pathfinder)",
+        category: "enfases",
+        categoryLabel: "Ênfases",
+        badgeClass: "tag-enfases",
+        url: "enfases.html#afinidade",
+        snippet: "Teste interativo que recomenda qual das 4 ênfases mais combina com você a partir dos seus temas de maior interesse.",
+        keywords: ["simulador", "afinidade", "pathfinder", "teste", "qual enfase escolher", "interesses", "recomendacao"]
+      },
+
+      // --- GRADE, FLUXOGRAMA & MATÉRIAS ---
+      {
+        title: "Fluxograma Interativo dos 8 Períodos (Matriz 2025/1)",
+        category: "grade",
+        categoryLabel: "Grade & Matérias",
+        badgeClass: "tag-grade",
+        url: "fluxograma.html#fluxograma",
+        snippet: "Visualização interativa das disciplinas período a período, requisitos encadeados e dependências liberadas ao clicar.",
+        keywords: ["fluxograma", "grade", "grade curricular", "periodos", "materias", "disciplinas", "pre-requisitos", "dependencias", "matriz 2025"]
+      },
+      {
+        title: "Disciplinas Obrigatórias do Núcleo Comum",
+        category: "grade",
+        categoryLabel: "Grade & Matérias",
+        badgeClass: "tag-grade",
+        url: "fluxograma.html#fluxograma",
+        snippet: "Cálculo I, II, III e IV, Álgebra Linear, Física I e II, Introdução à Computação, Estatística, Mecânica e Geologia Geral.",
+        keywords: ["obrigatorias", "calculo", "calculo 1", "calculo 2", "calculo 3", "calculo 4", "algebra linear", "fisica", "computacao", "geologia", "estatistica", "mecanica"]
+      },
+      {
+        title: "Disciplinas Optativas / Escolha Restrita por Grupo (A a K)",
+        category: "grade",
+        categoryLabel: "Grade & Matérias",
+        badgeClass: "tag-grade",
+        url: "fluxograma.html#fluxograma",
+        snippet: "Modal interativo no fluxograma com as matérias disponíveis para cursar em cada grupo de escolha restrita das ênfases.",
+        keywords: ["optativas", "escolha restrita", "grupo a", "grupo b", "grupo c", "grupo d", "grupo e", "modal optativas", "creditos"]
+      },
+      {
+        title: "Catálogo Completo de Disciplinas Eletivas da UFRJ",
+        category: "grade",
+        categoryLabel: "Grade & Matérias",
+        badgeClass: "tag-grade",
+        url: "fluxograma.html#electivesViewArea",
+        snippet: "Pesquise por nome, código ou departamento em toda a base de matérias eletivas do BCMT oferecidas na universidade.",
+        keywords: ["catalogo", "eletivas", "busca de materias", "busca disciplinas", "todas as materias", "departamentos"]
+      },
+      {
+        title: "Atividades de Livre Escolha (8 Créditos Abertos)",
+        category: "grade",
+        categoryLabel: "Grade & Matérias",
+        badgeClass: "tag-grade",
+        url: "fluxograma.html#fluxograma",
+        snippet: "8 créditos que você pode cursar livremente em qualquer curso, faculdade ou instituto da UFRJ.",
+        keywords: ["livre escolha", "creditos livres", "aberta ufrj", "disciplinas externas", "outros cursos"]
+      },
+      {
+        title: "Trabalho de Conclusão de Curso (TCC I e TCC II)",
+        category: "grade",
+        categoryLabel: "Grade & Matérias",
+        badgeClass: "tag-grade",
+        url: "fluxograma.html#fluxograma",
+        snippet: "Monografia ou projeto prático no 7º e 8º períodos sob orientação de um docente, avaliado por banca examinadora.",
+        keywords: ["tcc", "tcc 1", "tcc 2", "trabalho de conclusao", "monografia", "orientador", "defesa", "banca", "formatura", "conclusao"]
+      },
+      {
+        title: "Extensão Curricular (ACEX — 240 Horas Obrigatórias)",
+        category: "grade",
+        categoryLabel: "Grade & Matérias",
+        badgeClass: "tag-grade",
+        url: "fluxograma.html#fluxograma",
+        snippet: "Carga horária de extensão universitária cumprida em projetos, programas, cursos e ações com a sociedade.",
+        keywords: ["extensao", "acex", "horas de extensao", "240 horas", "curricularizacao da extensao", "projetos"]
+      },
+      {
+        title: "Guia Oficial de Inscrição em Disciplinas no SIGA (portal.ufrj.br)",
+        category: "grade",
+        categoryLabel: "Grade & Matérias",
+        badgeClass: "tag-grade",
+        url: "fluxograma.html#inscricao-siga",
+        snippet: "Como funciona a matrícula no SIGA pelo Portal do Aluno, critérios de prioridade (CCR, período ideal, reprovação) e prazos.",
+        keywords: ["siga", "inscricao em disciplinas", "portal do aluno", "matricula", "portal.ufrj.br", "criterios de prioridade", "trancamento de turma", "ccr", "reprovacao"]
+      },
+
+      // --- VIDA ACADÊMICA & COTIDIANO FUNDÃO ---
+      {
+        title: "Guia do Calouro & Primeiro Período",
+        category: "vida",
+        categoryLabel: "Vida no Fundão",
+        badgeClass: "tag-vida",
+        url: "vida-academica.html#alunos",
+        snippet: "Matrícula automática de calouros, semana de acolhimento e dicas fundamentais para os primeiros meses na UFRJ.",
+        keywords: ["calouro", "calouros", "primeiro periodo", "guia do calouro", "ingressantes", "boas vindas", "semana de acolhimento"]
+      },
+      {
+        title: "Restaurantes Universitários (RU / Bandejão do Fundão)",
+        category: "vida",
+        categoryLabel: "Vida no Fundão",
+        badgeClass: "tag-vida",
+        url: "vida-academica.html#campus-essentials",
+        snippet: "Bandejão Central, Letras e CT. Almoço, jantar e desjejum com alimentação balanceada a preço subsidiado para alunos.",
+        keywords: ["ru", "bandejao", "restaurante universitario", "almoco", "jantar", "refeicao", "comida fundao", "saldo ru", "cardapio"]
+      },
+      {
+        title: "Transporte Intercampi Gratuito & Ônibus Interno",
+        category: "vida",
+        categoryLabel: "Vida no Fundão",
+        badgeClass: "tag-vida",
+        url: "vida-academica.html#campus-essentials",
+        snippet: "Ônibus gratuitos da UFRJ entre o Fundão, Praia Vermelha, Nova América / Del Castilho e linhas circulares internas.",
+        keywords: ["intercampi", "onibus gratuito", "transporte", "onibus ufrj", "integracao metro", "del castilho", "nova america", "praia vermelha", "fundao"]
+      },
+      {
+        title: "Intranet UFRJ, E-mail @ufrj.br & Wi-Fi Eduroam",
+        category: "vida",
+        categoryLabel: "Vida no Fundão",
+        badgeClass: "tag-vida",
+        url: "vida-academica.html#alunos",
+        snippet: "Passaporte institucional, rede Wi-Fi mundial Eduroam nos prédios da universidade e ativação de e-mail institucional.",
+        keywords: ["intranet", "eduroam", "wifi", "wi-fi", "email institucional", "email ufrj", "passaporte", "login ufrj"]
+      },
+      {
+        title: "Bolsas de Pesquisa & Iniciação Científica (PIBIC)",
+        category: "vida",
+        categoryLabel: "Vida no Fundão",
+        badgeClass: "tag-vida",
+        url: "vida-academica.html#oportunidades",
+        snippet: "Oportunidades em laboratórios da UFRJ com bolsas do CNPq e FAPERJ desde os períodos iniciais.",
+        keywords: ["pibic", "pibiti", "iniciacao cientifica", "bolsa de pesquisa", "cnpq", "faperj", "laboratorios", "pesquisa"]
+      },
+      {
+        title: "Bolsas de Extensão & Cultura (PIBIAC / PR-5)",
+        category: "vida",
+        categoryLabel: "Vida no Fundão",
+        badgeClass: "tag-vida",
+        url: "vida-academica.html#oportunidades",
+        snippet: "Projetos de extensão universitária com concessão de bolsas de incentivo pela Pró-Reitoria de Extensão.",
+        keywords: ["pibiac", "bolsa extensao", "pr5", "cultura", "comunidade"]
+      },
+      {
+        title: "Programa Institucional de Monitoria da UFRJ",
+        category: "vida",
+        categoryLabel: "Vida no Fundão",
+        badgeClass: "tag-vida",
+        url: "vida-academica.html#oportunidades",
+        snippet: "Atuação didática junto aos professores e auxílio aos estudantes em matérias do núcleo comum.",
+        keywords: ["monitoria", "monitor", "bolsa monitoria", "docencia", "ajuda em calculo"]
+      },
+      {
+        title: "Estágios & Convênios Oficiais da UFRJ (PR-1)",
+        category: "vida",
+        categoryLabel: "Vida no Fundão",
+        badgeClass: "tag-vida",
+        url: "vida-academica.html#oportunidades",
+        snippet: "Lista oficial de empresas conveniadas na PR-1 e formalização de termos de compromisso de estágio curricular.",
+        keywords: ["estagio", "estagios", "convenios", "pr1", "termo de compromisso", "empresa", "estagio remunerado", "carreira"]
+      },
+      {
+        title: "Assistência Estudantil, Auxílios e Permanência (PR-7)",
+        category: "vida",
+        categoryLabel: "Vida no Fundão",
+        badgeClass: "tag-vida",
+        url: "vida-academica.html#oportunidades",
+        snippet: "Bolsas de permanência da PR-7: auxílio alimentação, transporte, moradia universitária, material didático e inclusão digital.",
+        keywords: ["pr7", "assistencia estudantil", "auxilio transporte", "auxilio moradia", "bolsa permanencia", "alojamento", "inclusao digital"]
+      },
+      {
+        title: "Mobilidade Internacional e Intercâmbio (SGRI)",
+        category: "vida",
+        categoryLabel: "Vida no Fundão",
+        badgeClass: "tag-vida",
+        url: "vida-academica.html#oportunidades",
+        snippet: "Acordos com universidades internacionais parceiras e aproveitamento curricular das disciplinas cursadas fora.",
+        keywords: ["intercambio", "mobilidade internacional", "sgri", "estudar fora", "universidades parceiras"]
+      },
+      {
+        title: "Bibliotecas UFRJ (SiBI) & Base Minerva",
+        category: "vida",
+        categoryLabel: "Vida no Fundão",
+        badgeClass: "tag-vida",
+        url: "vida-academica.html#alunos",
+        snippet: "Acervo bibliográfico no Fundão, empréstimos entre bibliotecas e consulta remota aos periódicos CAPES via CAFe.",
+        keywords: ["biblioteca", "base minerva", "sibi", "livros", "periodicos", "capes", "cafe", "acervo"]
+      },
+
+      // --- FAQ & ATENDIMENTO ---
+      {
+        title: "Secretaria de Graduação do BCMT (Canal Oficial)",
+        category: "faq",
+        categoryLabel: "FAQ & Secretaria",
+        badgeClass: "tag-faq",
+        url: "faq.html#comissao",
+        snippet: "Atendimento discente oficial: secgradbcmt@ccmn.ufrj.br no CCMN. Emissão de certidões, processos de matrícula e suporte discente.",
+        keywords: ["secretaria", "secgrad", "secgradbcmt@ccmn.ufrj.br", "atendimento", "contato oficial", "certidao", "processos", "historico"]
+      },
+      {
+        title: "Comissão do Curso do BCMT (@bcmt_ufrj)",
+        category: "faq",
+        categoryLabel: "FAQ & Secretaria",
+        badgeClass: "tag-faq",
+        url: "faq.html#comissao",
+        snippet: "Representação discente do curso no Instagram oficial @bcmt_ufrj, X, TikTok e e-mail da comissão.",
+        keywords: ["comissao", "comissao bcmt", "instagram", "@bcmt_ufrj", "representacao", "estudantes", "alunos"]
+      },
+      {
+        title: "Perguntas Frequentes (FAQ do Curso)",
+        category: "faq",
+        categoryLabel: "FAQ & Secretaria",
+        badgeClass: "tag-faq",
+        url: "faq.html#faq",
+        snippet: "Respostas diretas sobre trancamento de matrícula, prazo de integralização, cálculo do CR e colação de grau.",
+        keywords: ["faq", "duvidas", "cr", "coeficiente de rendimento", "trancamento", "prazo maximo", "integralizacao", "colacao de grau"]
+      }
+    ];
+
+    function normalize(str) {
+      return (str || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .trim();
+    }
+
+    function openSearch() {
+      searchModal.showModal();
+      document.body.style.overflow = 'hidden';
+      searchInput.value = '';
+      searchClear.style.display = 'none';
+      currentFilter = 'all';
+      updateFilterChips();
+      renderDefaultState();
+      setTimeout(() => searchInput.focus(), 50);
+    }
+
+    function closeSearch() {
+      searchModal.close();
+      document.body.style.overflow = '';
+      focusedIndex = -1;
+    }
+
+    function updateFilterChips() {
+      searchFilterChips.forEach((chip) => {
+        chip.classList.toggle('is-active', chip.dataset.filter === currentFilter);
+      });
+    }
+
+    function highlightMatch(text, query) {
+      if (!query || !text) return text;
+      const terms = query.split(/\s+/).filter(Boolean);
+      if (!terms.length) return text;
+      const regex = new RegExp(`(${terms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
+      return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+    }
+
+    function renderDefaultState() {
+      focusedIndex = -1;
+      searchCounter.textContent = 'Busca rápida do portal';
+      searchResults.innerHTML = `
+        <div class="search-empty-state">
+          <div class="search-empty-icon">🔍</div>
+          <div class="search-empty-title">O que você gostaria de encontrar?</div>
+          <p class="search-empty-text">Digite palavras-chave como matérias, ênfases, RU, bolsas, estágio ou regras da UFRJ, ou escolha uma das sugestões abaixo:</p>
+          <div class="search-quick-suggestions">
+            <button type="button" class="search-suggestion-btn" data-query="Análise de Dados">Análise de Dados</button>
+            <button type="button" class="search-suggestion-btn" data-query="Fluxograma">Fluxograma</button>
+            <button type="button" class="search-suggestion-btn" data-query="Bandejão RU">Bandejão (RU)</button>
+            <button type="button" class="search-suggestion-btn" data-query="Estágios">Estágios PR-1</button>
+            <button type="button" class="search-suggestion-btn" data-query="Inscrição SIGA">Inscrição SIGA</button>
+            <button type="button" class="search-suggestion-btn" data-query="TCC">TCC</button>
+            <button type="button" class="search-suggestion-btn" data-query="Secretaria">Secretaria BCMT</button>
+            <button type="button" class="search-suggestion-btn" data-query="Simulador">Simulador de Afinidade</button>
+          </div>
+        </div>
+      `;
+
+      $$('.search-suggestion-btn', searchResults).forEach((btn) => {
+        btn.addEventListener('click', () => {
+          searchInput.value = btn.dataset.query;
+          searchClear.style.display = 'grid';
+          performSearch();
+          searchInput.focus();
+        });
+      });
+    }
+
+    function performSearch() {
+      const query = normalize(searchInput.value);
+      if (!query) {
+        renderDefaultState();
+        return;
+      }
+
+      const queryTokens = query.split(/\s+/).filter(Boolean);
+
+      const filtered = SITE_SEARCH_INDEX.filter((item) => {
+        if (currentFilter !== 'all' && item.category !== currentFilter) {
+          return false;
+        }
+
+        const normTitle = normalize(item.title);
+        const normSnippet = normalize(item.snippet);
+        const normCat = normalize(item.categoryLabel);
+        const normKeywords = item.keywords.map(normalize);
+
+        return queryTokens.every((token) => {
+          return (
+            normTitle.includes(token) ||
+            normSnippet.includes(token) ||
+            normCat.includes(token) ||
+            normKeywords.some((kw) => kw.includes(token))
+          );
+        });
+      });
+
+      filtered.sort((a, b) => {
+        const score = (item) => {
+          const normTitle = normalize(item.title);
+          let s = 0;
+          if (normTitle === query) s += 100;
+          if (normTitle.startsWith(query)) s += 50;
+          queryTokens.forEach((t) => {
+            if (normTitle.includes(t)) s += 30;
+            if (item.keywords.some((k) => normalize(k).includes(t))) s += 15;
+            if (normalize(item.snippet).includes(t)) s += 10;
+          });
+          return s;
+        };
+        return score(b) - score(a);
+      });
+
+      focusedIndex = -1;
+      searchCounter.textContent = `${filtered.length} ${filtered.length === 1 ? 'resultado encontrado' : 'resultados encontrados'}`;
+
+      if (filtered.length === 0) {
+        searchResults.innerHTML = `
+          <div class="search-empty-state">
+            <div class="search-empty-icon">🔎</div>
+            <div class="search-empty-title">Nenhum resultado para "${searchInput.value}"</div>
+            <p class="search-empty-text">Tente termos mais amplos como <em>cálculo</em>, <em>matrícula</em>, <em>ênfases</em>, <em>RU</em> ou escolha uma das categorias no topo.</p>
+          </div>
+        `;
+        return;
+      }
+
+      searchResults.innerHTML = filtered.map((item, idx) => `
+        <a class="search-result-card" href="${item.url}" data-index="${idx}" role="option">
+          <div class="search-result-card-top">
+            <span class="search-result-badge ${item.badgeClass}">${item.categoryLabel}</span>
+            <span class="search-result-arrow" aria-hidden="true">Ir para a seção →</span>
+          </div>
+          <h4 class="search-result-title">${highlightMatch(item.title, searchInput.value)}</h4>
+          <p class="search-result-snippet">${highlightMatch(item.snippet, searchInput.value)}</p>
+        </a>
+      `).join('');
+
+      $$('.search-result-card', searchResults).forEach((card) => {
+        card.addEventListener('click', () => {
+          closeSearch();
+        });
+      });
+    }
+
+    function updateResultFocus() {
+      const cards = $$('.search-result-card', searchResults);
+      cards.forEach((card, idx) => {
+        const isFoc = idx === focusedIndex;
+        card.classList.toggle('is-focused', isFoc);
+        if (isFoc) card.scrollIntoView({ block: 'nearest' });
+      });
+    }
+
+    searchBtn.addEventListener('click', openSearch);
+    searchClose.addEventListener('click', closeSearch);
+
+    searchModal.addEventListener('click', (e) => {
+      if (e.target === searchModal) closeSearch();
+    });
+
+    searchInput.addEventListener('input', () => {
+      searchClear.style.display = searchInput.value ? 'grid' : 'none';
+      performSearch();
+    });
+
+    searchClear.addEventListener('click', () => {
+      searchInput.value = '';
+      searchClear.style.display = 'none';
+      performSearch();
+      searchInput.focus();
+    });
+
+    searchFilterChips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        currentFilter = chip.dataset.filter;
+        updateFilterChips();
+        performSearch();
+      });
+    });
+
+    // Keyboard shortcuts: Ctrl+K / Cmd+K / '/'
+    document.addEventListener('keydown', (e) => {
+      const isInput = ['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName);
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        if (searchModal.open) closeSearch();
+        else openSearch();
+      } else if (e.key === '/' && !isInput && !searchModal.open) {
+        e.preventDefault();
+        openSearch();
+      } else if (searchModal.open) {
+        const cards = $$('.search-result-card', searchResults);
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          if (cards.length > 0) {
+            focusedIndex = (focusedIndex + 1) % cards.length;
+            updateResultFocus();
+          }
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          if (cards.length > 0) {
+            focusedIndex = (focusedIndex - 1 + cards.length) % cards.length;
+            updateResultFocus();
+          }
+        } else if (e.key === 'Enter') {
+          if (focusedIndex >= 0 && cards[focusedIndex]) {
+            e.preventDefault();
+            cards[focusedIndex].click();
+          }
+        }
+      }
+    });
   }
 })();

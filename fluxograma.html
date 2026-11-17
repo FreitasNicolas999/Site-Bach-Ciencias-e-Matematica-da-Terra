@@ -31,11 +31,7 @@
       </span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">
-      <span></span><span></span><span></span>
-    </button>
-
-        <nav class="links" id="navLinks" aria-label="Navegação principal">
+    <nav class="links" id="navLinks" aria-label="Navegação principal">
       <a href="index.html" class="nav-link-item">Início</a>
       <a href="enfases.html" class="nav-link-item">Ênfases</a>
       <a href="fluxograma.html" class="nav-link-item is-active" aria-current="page">Fluxograma do Curso</a>
@@ -43,6 +39,21 @@
       <a href="faq.html" class="nav-link-item">FAQ & Contato</a>
       <a class="nav-cta" href="https://www.acessograduacao.ufrj.br/" target="_blank" rel="noopener noreferrer">Como entrar <span aria-hidden="true">↗</span></a>
     </nav>
+
+    <div class="header-actions">
+      <button class="site-search-btn" id="siteSearchBtn" type="button" aria-label="Pesquisar no portal do BCMT (Ctrl+K)">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <span class="search-btn-label">Buscar</span>
+        <kbd class="search-kbd">Ctrl K</kbd>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    </div>
   </header>
 
   <main id="conteudo">
@@ -303,6 +314,47 @@
         </dialog>
       </div>
     </section>
+
+    <!-- Modal de Pesquisa Global no Site -->
+  <dialog class="site-search-modal" id="siteSearchModal" aria-label="Pesquisa global no portal do BCMT">
+    <div class="site-search-box">
+      <div class="site-search-top">
+        <div class="site-search-field">
+          <svg class="search-field-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="search" id="siteSearchInput" class="site-search-input" placeholder="Buscar no BCMT (ex: estágio, RU, ênfases, TCC, SIGA, cálculo)..." autocomplete="off" spellcheck="false">
+          <button type="button" id="siteSearchClear" class="site-search-clear" aria-label="Limpar texto da busca" style="display: none;">&times;</button>
+        </div>
+        <button type="button" id="siteSearchClose" class="site-search-close" aria-label="Fechar busca">ESC</button>
+      </div>
+
+      <div class="site-search-filters" id="searchFilterChips">
+        <button type="button" class="search-chip is-active" data-filter="all">Tudo</button>
+        <button type="button" class="search-chip" data-filter="curso">O Curso</button>
+        <button type="button" class="search-chip" data-filter="enfases">Ênfases</button>
+        <button type="button" class="search-chip" data-filter="grade">Grade & Matérias</button>
+        <button type="button" class="search-chip" data-filter="vida">Vida Acadêmica</button>
+        <button type="button" class="search-chip" data-filter="faq">FAQ & Secretaria</button>
+      </div>
+
+      <div class="site-search-body">
+        <div class="site-search-results" id="siteSearchResults" role="listbox" aria-label="Resultados da pesquisa">
+          <!-- Populado dinamicamente via JS -->
+        </div>
+      </div>
+
+      <div class="site-search-footer">
+        <div class="search-footer-hint">
+          <span><kbd>↑</kbd><kbd>↓</kbd> Navegar</span>
+          <span><kbd>Enter</kbd> Selecionar</span>
+          <span><kbd>ESC</kbd> Fechar</span>
+        </div>
+        <span class="search-results-counter" id="searchResultsCounter">Busca rápida do portal</span>
+      </div>
+    </div>
+  </dialog>
 
   </main>
 
