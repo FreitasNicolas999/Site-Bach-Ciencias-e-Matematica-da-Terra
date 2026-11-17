@@ -813,6 +813,7 @@
         courseModal.close();
         switchView('electives');
         setElectivesGroup(groupKey);
+        $('#electivesViewArea')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
 
       $('#btnModalCloseGroup', modalBody)?.addEventListener('click', () => courseModal.close());
