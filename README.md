@@ -9,6 +9,8 @@ Site estático do **Bacharelado em Ciências Matemáticas e da Terra (BCMT)** da
 - linha do tempo do curso;
 - carrossel com as quatro ênfases atuais;
 - seletor informal de afinidades;
+- fluxograma semestral de graduação interativo (1º ao 8º período) por ênfase com rastreamento de pré-requisitos e dependências;
+- catálogo responsivo de 90 disciplinas eletivas com busca instantânea e filtros por grupo temático;
 - informações de carga horária e créditos de cada percurso;
 - acesso às matrizes curriculares públicas;
 - link oficial de Acesso à Graduação.
@@ -87,14 +89,13 @@ Depois acesse `http://localhost:8000`.
 
 ## Ajustes desta versão
 
-- controles do carrossel reposicionados nas laterais do destaque;
-- removidos atalhos acadêmicos que estavam indisponíveis;
-- cardápio do Restaurante Universitário direcionado ao BandejApp;
-- canais oficiais da Comissão agora usam ícones visuais para Instagram, X, TikTok e e-mail.
+- **Aba 'Fluxograma do Curso'**: fluxograma semestral interativo completo (1º ao 8º período) para as 4 ênfases vigentes a partir de 2025/1 (Análise de Dados, Patrimônio Natural, CMT — Puro e Sensoriamento Remoto e Geoprocessamento) com rastreamento visual de pré-requisitos e dependências.
+- **Catálogo de Eletivas**: 90 disciplinas eletivas extraídas das matrizes oficiais com busca em tempo real e filtros por agrupamento temático (Matemática, Estatística/Dados, Física, Geologia/Geociências, Geografia/Sensoriamento, Meteorologia/Atmosfera e Humanidades/Geral).
+- **Referências Curriculares Oficiais**: inclusão de códigos curriculares, processo de aprovação (254757/2023-16), data de atualização e links diretos para cada repositório do SIGA.
+- **Guia de Inscrições em Disciplinas**: painel dedicado na Central do Aluno com as regras oficiais de alocação de vagas (Curso de origem/Localidade, Periodização, Critérios variáveis CRA/COA/Turno e Critério pós-fixo por data/hora) e limites acadêmicos (faixa de 6 a 32 créditos por período, pré-requisitos e choques, limite de 1/3 fora do currículo e diferença entre CRPID e CRID).
+- **Portal do Aluno**: link oficial unificado e atualizado para `https://portal.ufrj.br/`.
+- **Secretaria de Graduação do BCMT**: canal institucional oficial (`secgradbcmt@ccmn.ufrj.br`) evidenciado na Central do Aluno, no Guia de Inscrição, no FAQ e no rodapé institucional junto ao CCMN.
 
-## Atualização adicional
-
-- Adicionado o **Portal BCMT** (`https://t4w.my.canva.site/portal-bcmt`) à Central do Aluno, identificado como portal da Comissão e mantido separado do Portal do Aluno institucional da UFRJ.
 
 
 ## Atualização de identidade institucional

@@ -289,7 +289,7 @@ img{display:block;max-width:100%}
 .commission-identity>img{width:190px;height:190px;border-radius:50%;background:#fff;box-shadow:0 20px 65px rgba(0,0,0,.28)}
 .commission-identity h2{max-width:20ch;margin-top:11px;font-size:clamp(30px,4.6vw,64px);line-height:1.01;letter-spacing:-.05em;text-wrap:balance}
 .commission-identity>div>p:last-child{max-width:75ch;margin-top:18px;color:var(--muted);font-size:13px;line-height:1.72}
-.commission-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:36px}
+.commission-grid{display:grid;grid-template-columns:1.15fr 1fr .85fr;gap:14px;margin-top:36px}
 .social-card,.credits-card{padding:28px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.018)}
 .social-card>p,.credits-card>p{color:var(--accent);font-size:9px;letter-spacing:.09em}
 .social-description{display:block;max-width:58ch;margin-top:9px;color:var(--faint);font-size:10.5px;line-height:1.55}
@@ -1551,4 +1551,399 @@ footer{padding:60px clamp(20px,6vw,88px) 32px;background:#020609;border-top:1px 
   .flowchart-legend{flex-direction:column;align-items:flex-start}
   .curriculum-reference-grid{grid-template-columns:1fr}
   .track-ref-meta{grid-template-columns:1fr}
+}
+
+/* ==========================================================================
+   RESOURCE CARD HIGHLIGHT (SECRETARIA DE GRADUAÇÃO)
+   ========================================================================== */
+.resource-card.resource-card-highlight{
+  grid-column: 1 / -1;
+  min-height: auto;
+  align-items: center;
+  border-color: rgba(116,199,202,.32);
+  background: linear-gradient(135deg, rgba(116,199,202,.08), rgba(15,30,42,.75));
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+}
+.resource-card.resource-card-highlight:hover{
+  border-color: rgba(116,199,202,.55);
+  background: linear-gradient(135deg, rgba(116,199,202,.13), rgba(15,30,42,.85));
+}
+.resource-card.resource-card-highlight .resource-icon{
+  background: rgba(116,199,202,.18);
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   ENROLLMENT GUIDE PANEL (INSCRIÇÃO EM DISCIPLINAS)
+   ========================================================================== */
+.enrollment-panel{
+  margin-top: 44px;
+  border: 1px solid rgba(116,199,202,.24);
+  border-radius: 28px;
+  background: radial-gradient(circle at 100% 0%, rgba(116,199,202,.09), transparent 45%),
+              radial-gradient(circle at 0% 100%, rgba(240,187,112,.06), transparent 50%),
+              rgba(11,23,33,.85);
+  box-shadow: 0 16px 48px rgba(0,0,0,.32);
+  padding: clamp(28px, 4vw, 44px);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.enrollment-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 28px;
+}
+.enrollment-header-copy{
+  max-width: 820px;
+}
+.enrollment-header-copy h3{
+  margin-top: 10px;
+  font-size: clamp(24px, 3vw, 36px);
+  letter-spacing: -.03em;
+  color: var(--text);
+  line-height: 1.15;
+}
+.enrollment-header-copy p{
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.68;
+}
+.enrollment-inline-link{
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+  transition: color .2s ease;
+}
+.enrollment-inline-link:hover{
+  color: #fff;
+}
+.enrollment-header-actions{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+  align-items: stretch;
+}
+.enrollment-header-actions .btn{
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 11px 18px;
+  justify-content: center;
+}
+
+/* Grid of two major blocks: Priorities vs Rules */
+.enrollment-content-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+.enrollment-block{
+  background: rgba(4,12,18,.55);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: border-color .22s ease;
+}
+.enrollment-block:hover{
+  border-color: rgba(116,199,202,.3);
+}
+.enrollment-block-title{
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  padding-bottom: 16px;
+}
+.enrollment-icon-tag{
+  font-size: 10px;
+  color: var(--accent);
+  letter-spacing: .1em;
+  font-weight: 800;
+}
+.enrollment-block-title h4{
+  font-size: 19px;
+  color: var(--text);
+  margin-top: 6px;
+  letter-spacing: -.02em;
+}
+.enrollment-block-title p{
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+
+/* Priority steps */
+.priority-steps-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+}
+.priority-step-item{
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.02);
+  border: 1px solid rgba(255,255,255,.04);
+  transition: background .2s ease, border-color .2s ease;
+}
+.priority-step-item:hover{
+  background: rgba(255,255,255,.04);
+  border-color: rgba(116,199,202,.22);
+}
+.step-badge{
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: rgba(116,199,202,.12);
+  color: var(--accent-2);
+  font-size: 12px;
+  font-weight: 800;
+  border: 1px solid rgba(116,199,202,.25);
+}
+.priority-step-item strong{
+  font-size: 13.5px;
+  color: var(--text);
+  display: block;
+}
+.priority-step-item p{
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.criteria-pills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 10px;
+}
+.criteria-pill{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: rgba(116,199,202,.08);
+  border: 1px solid rgba(116,199,202,.2);
+  font-size: 11px;
+  color: var(--text);
+}
+.criteria-pill b{
+  color: var(--accent-2);
+  font-size: 10px;
+}
+
+/* Rules cards list */
+.rules-cards-list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.rule-subcard{
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.02);
+  border: 1px solid rgba(255,255,255,.04);
+  transition: background .2s ease, border-color .2s ease;
+}
+.rule-subcard:hover{
+  background: rgba(255,255,255,.04);
+  border-color: rgba(240,187,112,.25);
+}
+.rule-subcard-alert{
+  background: rgba(240,187,112,.04);
+  border-color: rgba(240,187,112,.24);
+}
+.rule-subcard-alert:hover{
+  border-color: rgba(240,187,112,.45);
+}
+.rule-icon-box{
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+}
+.rule-subcard h5{
+  font-size: 13.5px;
+  color: var(--text);
+}
+.rule-subcard p{
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.rule-subcard p strong{
+  color: var(--text);
+}
+
+/* Enrollment support banner */
+.enrollment-support-banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 24px;
+  border-radius: 18px;
+  background: rgba(116,199,202,.06);
+  border: 1px solid rgba(116,199,202,.2);
+}
+.support-banner-info{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.support-icon{
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: rgba(116,199,202,.14);
+  color: var(--accent-2);
+  font-size: 10px;
+  font-weight: 800;
+  border: 1px solid rgba(116,199,202,.25);
+  flex-shrink: 0;
+}
+.support-banner-info strong{
+  display: block;
+  font-size: 13.5px;
+  color: var(--text);
+}
+.support-banner-info p{
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.support-banner-info a{
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 700;
+}
+.support-banner-actions .btn-sm{
+  white-space: nowrap;
+}
+
+/* Secgrad card in footer commission-grid */
+.secgrad-card{
+  padding: 28px;
+  border: 1px solid rgba(116,199,202,.22);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(116,199,202,.06), rgba(255,255,255,.018));
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.secgrad-card>p{
+  color: var(--accent-2);
+  font-size: 9px;
+  letter-spacing: .09em;
+}
+.secgrad-card h3{
+  font-size: 19px;
+  letter-spacing: -.02em;
+  color: var(--text);
+}
+.secgrad-description{
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.secgrad-details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.secgrad-item{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.secgrad-item span.mono{
+  font-size: 9px;
+  color: var(--faint);
+  letter-spacing: .08em;
+}
+.secgrad-item a{
+  color: var(--accent-2);
+  font-size: 12.5px;
+  transition: color .2s ease;
+}
+.secgrad-item a:hover{
+  color: #fff;
+}
+.secgrad-item span:not(.mono){
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.social-links .official-course-social.sec-course-social{
+  border-color: rgba(240,187,112,.22);
+  background: linear-gradient(135deg, rgba(240,187,112,.07), rgba(255,255,255,.025));
+}
+.social-links .official-course-social.sec-course-social:hover{
+  border-color: rgba(240,187,112,.45);
+  background: linear-gradient(135deg, rgba(240,187,112,.12), rgba(255,255,255,.035));
+}
+.social-links .official-course-social.sec-course-social .social-icon{
+  stroke: var(--accent);
+  border-color: rgba(240,187,112,.2);
+}
+
+/* ==========================================================================
+   RESPONSIVE ENROLLMENT & FOOTER QUERIES
+   ========================================================================== */
+@media (max-width: 1024px){
+  .enrollment-content-grid{
+    grid-template-columns: 1fr;
+  }
+  .enrollment-header{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .enrollment-header-actions{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .enrollment-support-banner{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 640px){
+  .enrollment-header-actions{
+    flex-direction: column;
+  }
+  .priority-step-item, .rule-subcard{
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .support-banner-info{
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
