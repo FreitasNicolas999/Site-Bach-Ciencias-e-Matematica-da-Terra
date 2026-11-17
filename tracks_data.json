@@ -1,0 +1,5739 @@
+[
+  {
+    "id": "analise-dados",
+    "name": "CMT — Análise de Dados",
+    "description": "Direciona a formação para modelagem computacional, programação, matemática aplicada, probabilidade, estatística e mineração de dados.",
+    "link_siga": "https://www.siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/904EE857-0A2A-1E16-7AFB-56A8429DD367.html",
+    "periods": {
+      "1": [
+        {
+          "code": "CMA110",
+          "name": "Tóp Gerais Ciências da Terra",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "CMT111",
+          "name": "Inovações Cient Tecn e Art I",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "CMTZ50",
+          "name": "Ativ Curricular Extensão Cmt",
+          "credits": 0.0,
+          "ch_t": 0,
+          "ch_p": 0,
+          "ch_ext": 240,
+          "ch_total": 240,
+          "req": "",
+          "type": "extensao"
+        },
+        {
+          "code": "FIW115",
+          "name": "Introdução às Ciências Físicas",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 90,
+          "ch_ext": 0,
+          "ch_total": 120,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAW117",
+          "name": "Introdução ao Cálculo",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 60,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        }
+      ],
+      "2": [
+        {
+          "code": "CMT121",
+          "name": "Inovações Cient Tecn e Art II",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "FIS111",
+          "name": "Física Experimental I",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "ICP121",
+          "name": "Computação I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAC118",
+          "name": "Cálculo Difer e Integral I",
+          "credits": 6.0,
+          "ch_t": 90,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "3": [
+        {
+          "code": "CMT231",
+          "name": "Inovações Cient Tecn e Art III",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "FIT111",
+          "name": "Física I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAC128",
+          "name": "Cálculo Diferen e Integral II",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC118 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "4": [
+        {
+          "code": "MAC238",
+          "name": "Cálculo Diferen e Integral III",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC128 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 3 (Oficinas de Pesquisa/Ensino)",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "5": [
+        {
+          "code": "FIM230",
+          "name": "Física III - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT112 (P), MAC128 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "ICP116",
+          "name": "Estruturas de Dados",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP141 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAD124",
+          "name": "Introdução à Estatística",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 3 (Oficinas de Pesquisa/Ensino)",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "6": [
+        {
+          "code": "ICP489",
+          "name": "Banco de Dados I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP116 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAD233",
+          "name": "Cálculo das Probabilidades I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAC128 (C)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "7": [
+        {
+          "code": "ICP103",
+          "name": "Análise de Risco",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAD243 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "ICP357",
+          "name": "Data Warehousing e Intel Negóc",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP489 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "ICP532",
+          "name": "Mineração de Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP489 (P), MAD243 (P)",
+          "type": "obrigatoria"
+        }
+      ],
+      "8": [
+        {
+          "code": "CMTK03",
+          "name": "Trabalho de Conclusão Curso",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 50,
+          "ch_ext": 0,
+          "ch_total": 50,
+          "req": "CMT004 (P)",
+          "type": "tcc"
+        },
+        {
+          "code": "CMTX01",
+          "name": "Trab Final em Ativ Extracurric",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 40,
+          "ch_ext": 0,
+          "ch_total": 40,
+          "req": "",
+          "type": "tcc"
+        },
+        {
+          "code": "ICP359",
+          "name": "Introd ao Suporte à Decisão",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAD243 (P)",
+          "type": "obrigatoria"
+        }
+      ]
+    },
+    "electives": {
+      "Grupo 1": [
+        {
+          "code": "BMW114",
+          "name": "Origem da Vida",
+          "credits": 1.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG002",
+          "name": "Téc de Levantamento de Campo",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGG131 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG006",
+          "name": "Geoinformação",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG013",
+          "name": "Geografia Ambiental",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG015",
+          "name": "Política e Meio Ambiente",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG016",
+          "name": "Gestão de Riscos Ambientais",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG018",
+          "name": "Teoria e Clima Urbano",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG020",
+          "name": "Geodiversidade Geoconservação",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG031",
+          "name": "Rec Naturais e Gest Território",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG039",
+          "name": "Interpretação de Imagens",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG040",
+          "name": "Astrogeografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG112",
+          "name": "Teoria da Geografia",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG116",
+          "name": "Práticas em Cartografia",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGG131 (C)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG118",
+          "name": "Climatologia Geográfica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 75,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG126",
+          "name": "Métodos em Geografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG128",
+          "name": "Biogeografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 75,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG130",
+          "name": "Geografia da População",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG131",
+          "name": "Cartografia Básica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG238",
+          "name": "Pedologia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG252",
+          "name": "Geografia Política",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG253",
+          "name": "Geomorfologia Geral",
+          "credits": 6.0,
+          "ch_t": 60,
+          "ch_p": 60,
+          "ch_ext": 0,
+          "ch_total": 120,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG255",
+          "name": "Geografia Regional do Mundo",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG256",
+          "name": "Geoprocessamento",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG264",
+          "name": "Geografia Econômica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG352",
+          "name": "Geografia Marinha e Costeira",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG410",
+          "name": "Impactos Ambientais",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG474",
+          "name": "Sensoriamento Remoto",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG514",
+          "name": "Gestão Ambiental",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGL115",
+          "name": "Geologia Geral",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 32,
+          "ch_ext": 0,
+          "ch_total": 92,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT006",
+          "name": "Elem de Oceanografia Física",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT111 (P), MAC118 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT015",
+          "name": "Camada Limite Atmosférica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT111 (P), MAC118 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT110",
+          "name": "Introd Ciências Atmosféricas",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT120",
+          "name": "Instrum Meteorológ Mét Observ",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIS111 (C), IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT230",
+          "name": "Sensoriamento Remoto",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT231",
+          "name": "Metodos Estat Aplic Meteor I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT241",
+          "name": "Inic à Pesq Ciênc Atmosféricas",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT376",
+          "name": "Aplicação Satélites Meteorológ",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGT230 (P), IGT343 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT603",
+          "name": "Poluição do ar",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT604",
+          "name": "Físico Química da Atmosfera",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT603 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT607",
+          "name": "Variabilidade e Mud Climáticas",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IHI225",
+          "name": "Historia da África",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IHI111 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQF474",
+          "name": "Quimica Atmosférica e Poluição",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQF505",
+          "name": "Química no Antropoceno",
+          "credits": 3.0,
+          "ch_t": 30,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 45,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQG114",
+          "name": "Química Geral I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQG120",
+          "name": "Química Geral II - Iq",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IQG114 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQO111",
+          "name": "Química Geral Estrutural",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "LEB599",
+          "name": "Est da Líng Bras de Sinais I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP110",
+          "name": "Fund Direitos Humanos",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP120",
+          "name": "Fund Polít Públicas Dir Hum",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP148",
+          "name": "Dir Hum, Pens Negro e Racismo",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "OVL121",
+          "name": "Astronomia Esférica",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 1"
+        }
+      ],
+      "Grupo 2": [
+        {
+          "code": "CMT012",
+          "name": "Introdução à Programação C/c++",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAB121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIM240",
+          "name": "Física IV - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIM230 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIN242",
+          "name": "Física Moderna I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIM230 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIS121",
+          "name": "Física Experimental II",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "FIS111 (P), FIT112 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIT122",
+          "name": "Física II - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT112 (P), MAC118 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP037",
+          "name": "Oficina Programação em C",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "ICP121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP102",
+          "name": "Tecn para Grandes Vol de Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP489 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP131",
+          "name": "Programação de Computadores I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP132",
+          "name": "Processos de Software",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP133",
+          "name": "Fund de Sistemas de Computação",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP141",
+          "name": "Programação de Computadores II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP131 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP142",
+          "name": "Organização de Dados I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP144",
+          "name": "Matemática Discreta",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP134 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP231",
+          "name": "Cálculo Numérico",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP121 (P), MAC128 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP241",
+          "name": "Computação II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP245",
+          "name": "Circuitos Lógicos",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP111 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP248",
+          "name": "Comput Científ e Análise Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP115 (P), ICP238 (P), MAE992 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP352",
+          "name": "Matemática Combinatória",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP624 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP363",
+          "name": "Introd Aprendizado de Máquina",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP248 (P), MAD243 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP602",
+          "name": "Dw no Sup à Tomada de Decisão",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP605",
+          "name": "Recuperação de Informação",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP116 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP624",
+          "name": "Números Inteiros Criptografia",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA114",
+          "name": "Álgebra I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA233",
+          "name": "Álgebra II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAA114 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA240",
+          "name": "Análise I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAA116 (P), MAC118 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAC248",
+          "name": "Cálculo Diferen e Integral IV",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC128 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD114",
+          "name": "Análise Exploratória de Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD351",
+          "name": "Inferência Estatística I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAD233 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD357",
+          "name": "Análise de Regressão",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAD351 (P), MAE125 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD484",
+          "name": "Análise Estat Multivariada",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAD357 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAE115",
+          "name": "Cálculo Vetorial e G Analítica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAE125",
+          "name": "Álgebra Linear",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAW243",
+          "name": "Probabilidade e Estatistica",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 2"
+        }
+      ],
+      "Grupo 3": [
+        {
+          "code": "CMT003",
+          "name": "Oficina Trab Pesquisa I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT004",
+          "name": "Oficina Trab Pesquisa II",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT003 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT005",
+          "name": "Oficina Trab Pesquisa III",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT004 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT009",
+          "name": "Oficina Trab Ensino I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT010",
+          "name": "Oficina Trab Ensino II",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT009 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT011",
+          "name": "Oficina Trab Ensino III",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT010 (P)",
+          "group": "Grupo 3"
+        }
+      ]
+    },
+    "requirements": {
+      "Disciplinas Obrigatórias": {
+        "credits": 80.0,
+        "hours": 1350
+      },
+      "Requisitos Curriculares Suplementares": {
+        "credits": 2.0,
+        "hours": 330
+      },
+      "Disc. Compl. Escolha Restrita": {
+        "credits": 36.0,
+        "hours": 600
+      },
+      "Disc. Compl. Escolha Condicionada": {
+        "credits": 0.0,
+        "hours": 0
+      },
+      "Disc. Compl. Livre Escolha": {
+        "credits": 8.0,
+        "hours": 120
+      },
+      "Total": {
+        "credits": 126.0,
+        "hours": 2400
+      }
+    },
+    "code_siga": "3171000300",
+    "version_curriculum": "2025/1 a 9999/9",
+    "updated_at": "26/10/2026 às 18:18",
+    "approval": "Processo 254757/2023-16 de 22/07/2024 (Boletim Interno UFRJ em 09/08/2024)"
+  },
+  {
+    "id": "patrimonio",
+    "name": "CMT — Patrimônio Natural",
+    "description": "Concentra-se na compreensão, valorização e conservação da geodiversidade, meio físico, mineralogia, paleontologia e geoparques.",
+    "link_siga": "https://www.siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/904F1AB5-0A2A-1E16-7AFB-56A8EFCE8768.html",
+    "periods": {
+      "1": [
+        {
+          "code": "CMA110",
+          "name": "Tóp Gerais Ciências da Terra",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "CMT111",
+          "name": "Inovações Cient Tecn e Art I",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "CMTZ50",
+          "name": "Ativ Curricular Extensão Cmt",
+          "credits": 0.0,
+          "ch_t": 0,
+          "ch_p": 0,
+          "ch_ext": 240,
+          "ch_total": 240,
+          "req": "",
+          "type": "extensao"
+        },
+        {
+          "code": "FIW115",
+          "name": "Introdução às Ciências Físicas",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 90,
+          "ch_ext": 0,
+          "ch_total": 120,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAW117",
+          "name": "Introdução ao Cálculo",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 60,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        }
+      ],
+      "2": [
+        {
+          "code": "CMT121",
+          "name": "Inovações Cient Tecn e Art II",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "FIS111",
+          "name": "Física Experimental I",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "ICP121",
+          "name": "Computação I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAC118",
+          "name": "Cálculo Difer e Integral I",
+          "credits": 6.0,
+          "ch_t": 90,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "3": [
+        {
+          "code": "CMT231",
+          "name": "Inovações Cient Tecn e Art III",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "FIT111",
+          "name": "Física I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAC128",
+          "name": "Cálculo Diferen e Integral II",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC118 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "4": [
+        {
+          "code": "MAC238",
+          "name": "Cálculo Diferen e Integral III",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC128 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 3 (Oficinas de Pesquisa/Ensino)",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "5": [
+        {
+          "code": "FIM230",
+          "name": "Física III - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT112 (P), MAC128 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "IGL127",
+          "name": "Mineralogia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 46,
+          "ch_ext": 0,
+          "ch_total": 91,
+          "req": "IGL116 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 2.0,
+          "ch_t": 55,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 55,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 3 (Oficinas de Pesquisa/Ensino)",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "6": [
+        {
+          "code": "IGG254",
+          "name": "Cartografia Temática",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGG125 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "IGL005",
+          "name": "Geoconservação",
+          "credits": 3.0,
+          "ch_t": 45,
+          "ch_p": 16,
+          "ch_ext": 0,
+          "ch_total": 61,
+          "req": "IGL116 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "7": [
+        {
+          "code": "IGG306",
+          "name": "Lab de Geoprocessamento",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 60,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "IGL236",
+          "name": "Paleontologia",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 78,
+          "ch_ext": 0,
+          "ch_total": 108,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "IGL600",
+          "name": "Geologia e Meio Ambiente",
+          "credits": 3.0,
+          "ch_t": 45,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 45,
+          "req": "IGL116 (P)",
+          "type": "obrigatoria"
+        }
+      ],
+      "8": [
+        {
+          "code": "CMTK03",
+          "name": "Trabalho de Conclusão Curso",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 50,
+          "ch_ext": 0,
+          "ch_total": 50,
+          "req": "CMT004 (P)",
+          "type": "tcc"
+        },
+        {
+          "code": "CMTX01",
+          "name": "Trab Final em Ativ Extracurric",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 40,
+          "ch_ext": 0,
+          "ch_total": 40,
+          "req": "",
+          "type": "tcc"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 2.0,
+          "ch_t": 55,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 55,
+          "req": "",
+          "type": "livre"
+        }
+      ]
+    },
+    "electives": {
+      "Grupo 1": [
+        {
+          "code": "BMW114",
+          "name": "Origem da Vida",
+          "credits": 1.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG002",
+          "name": "Téc de Levantamento de Campo",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGG131 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG006",
+          "name": "Geoinformação",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG013",
+          "name": "Geografia Ambiental",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG015",
+          "name": "Política e Meio Ambiente",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG016",
+          "name": "Gestão de Riscos Ambientais",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG018",
+          "name": "Teoria e Clima Urbano",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG020",
+          "name": "Geodiversidade Geoconservação",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG031",
+          "name": "Rec Naturais e Gest Território",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG039",
+          "name": "Interpretação de Imagens",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG040",
+          "name": "Astrogeografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG112",
+          "name": "Teoria da Geografia",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG116",
+          "name": "Práticas em Cartografia",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGG131 (C)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG118",
+          "name": "Climatologia Geográfica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 75,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG126",
+          "name": "Métodos em Geografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG128",
+          "name": "Biogeografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 75,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG130",
+          "name": "Geografia da População",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG131",
+          "name": "Cartografia Básica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG238",
+          "name": "Pedologia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG252",
+          "name": "Geografia Política",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG253",
+          "name": "Geomorfologia Geral",
+          "credits": 6.0,
+          "ch_t": 60,
+          "ch_p": 60,
+          "ch_ext": 0,
+          "ch_total": 120,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG255",
+          "name": "Geografia Regional do Mundo",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG256",
+          "name": "Geoprocessamento",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG264",
+          "name": "Geografia Econômica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG352",
+          "name": "Geografia Marinha e Costeira",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG410",
+          "name": "Impactos Ambientais",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG474",
+          "name": "Sensoriamento Remoto",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG514",
+          "name": "Gestão Ambiental",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGL115",
+          "name": "Geologia Geral",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 32,
+          "ch_ext": 0,
+          "ch_total": 92,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT006",
+          "name": "Elem de Oceanografia Física",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT111 (P), MAC118 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT015",
+          "name": "Camada Limite Atmosférica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT111 (P), MAC118 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT110",
+          "name": "Introd Ciências Atmosféricas",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT120",
+          "name": "Instrum Meteorológ Mét Observ",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIS111 (C), IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT230",
+          "name": "Sensoriamento Remoto",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT231",
+          "name": "Metodos Estat Aplic Meteor I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT241",
+          "name": "Inic à Pesq Ciênc Atmosféricas",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT376",
+          "name": "Aplicação Satélites Meteorológ",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGT230 (P), IGT343 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT603",
+          "name": "Poluição do ar",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT604",
+          "name": "Físico Química da Atmosfera",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT603 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT607",
+          "name": "Variabilidade e Mud Climáticas",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IHI225",
+          "name": "Historia da África",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IHI111 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQF474",
+          "name": "Quimica Atmosférica e Poluição",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQF505",
+          "name": "Química no Antropoceno",
+          "credits": 3.0,
+          "ch_t": 30,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 45,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQG114",
+          "name": "Química Geral I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQG120",
+          "name": "Química Geral II - Iq",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IQG114 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQO111",
+          "name": "Química Geral Estrutural",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "LEB599",
+          "name": "Est da Líng Bras de Sinais I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP110",
+          "name": "Fund Direitos Humanos",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP120",
+          "name": "Fund Polít Públicas Dir Hum",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP148",
+          "name": "Dir Hum, Pens Negro e Racismo",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "OVL121",
+          "name": "Astronomia Esférica",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 1"
+        }
+      ],
+      "Grupo 2": [
+        {
+          "code": "CMT012",
+          "name": "Introdução à Programação C/c++",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAB121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIM240",
+          "name": "Física IV - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIM230 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIN242",
+          "name": "Física Moderna I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIM230 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIS121",
+          "name": "Física Experimental II",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "FIS111 (P), FIT112 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIT122",
+          "name": "Física II - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT112 (P), MAC118 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP037",
+          "name": "Oficina Programação em C",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "ICP121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP102",
+          "name": "Tecn para Grandes Vol de Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP489 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP131",
+          "name": "Programação de Computadores I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP132",
+          "name": "Processos de Software",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP133",
+          "name": "Fund de Sistemas de Computação",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP141",
+          "name": "Programação de Computadores II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP131 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP142",
+          "name": "Organização de Dados I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP144",
+          "name": "Matemática Discreta",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP134 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP231",
+          "name": "Cálculo Numérico",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP121 (P), MAC128 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP241",
+          "name": "Computação II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP245",
+          "name": "Circuitos Lógicos",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP111 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP248",
+          "name": "Comput Científ e Análise Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP115 (P), ICP238 (P), MAE992 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP352",
+          "name": "Matemática Combinatória",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP624 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP363",
+          "name": "Introd Aprendizado de Máquina",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP248 (P), MAD243 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP602",
+          "name": "Dw no Sup à Tomada de Decisão",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP605",
+          "name": "Recuperação de Informação",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP116 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP624",
+          "name": "Números Inteiros Criptografia",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA114",
+          "name": "Álgebra I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA233",
+          "name": "Álgebra II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAA114 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA240",
+          "name": "Análise I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAA116 (P), MAC118 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAC248",
+          "name": "Cálculo Diferen e Integral IV",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC128 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD114",
+          "name": "Análise Exploratória de Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD351",
+          "name": "Inferência Estatística I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAD233 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD357",
+          "name": "Análise de Regressão",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAD351 (P), MAE125 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD484",
+          "name": "Análise Estat Multivariada",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAD357 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAE115",
+          "name": "Cálculo Vetorial e G Analítica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAE125",
+          "name": "Álgebra Linear",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAW243",
+          "name": "Probabilidade e Estatistica",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 2"
+        }
+      ],
+      "Grupo 3": [
+        {
+          "code": "CMT003",
+          "name": "Oficina Trab Pesquisa I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT004",
+          "name": "Oficina Trab Pesquisa II",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT003 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT005",
+          "name": "Oficina Trab Pesquisa III",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT004 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT009",
+          "name": "Oficina Trab Ensino I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT010",
+          "name": "Oficina Trab Ensino II",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT009 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT011",
+          "name": "Oficina Trab Ensino III",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT010 (P)",
+          "group": "Grupo 3"
+        }
+      ]
+    },
+    "requirements": {
+      "Disciplinas Obrigatórias": {
+        "credits": 69.0,
+        "hours": 1295
+      },
+      "Requisitos Curriculares Suplementares": {
+        "credits": 2.0,
+        "hours": 330
+      },
+      "Disc. Compl. Escolha Restrita": {
+        "credits": 36.0,
+        "hours": 600
+      },
+      "Disc. Compl. Escolha Condicionada": {
+        "credits": 0.0,
+        "hours": 0
+      },
+      "Disc. Compl. Livre Escolha": {
+        "credits": 10.0,
+        "hours": 175
+      },
+      "Total": {
+        "credits": 117.0,
+        "hours": 2400
+      }
+    },
+    "code_siga": "3171000400",
+    "version_curriculum": "2025/1 a 9999/9",
+    "updated_at": "26/10/2026 às 18:18",
+    "approval": "Processo 254757/2023-16 de 22/07/2024 (Boletim Interno UFRJ em 09/08/2024)"
+  },
+  {
+    "id": "cmt-puro",
+    "name": "CMT — Puro",
+    "description": "Percurso de formação geral com máxima liberdade curricular (32 créditos de livre escolha) para transitar entre ciências exatas e da Terra.",
+    "link_siga": "https://www.siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/904D6A81-0A2A-1E16-7AFB-56A84181ADB1.html",
+    "periods": {
+      "1": [
+        {
+          "code": "CMA110",
+          "name": "Tóp Gerais Ciências da Terra",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "CMT111",
+          "name": "Inovações Cient Tecn e Art I",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "CMTZ50",
+          "name": "Ativ Curricular Extensão Cmt",
+          "credits": 0.0,
+          "ch_t": 0,
+          "ch_p": 0,
+          "ch_ext": 240,
+          "ch_total": 240,
+          "req": "",
+          "type": "extensao"
+        },
+        {
+          "code": "FIW115",
+          "name": "Introdução às Ciências Físicas",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 90,
+          "ch_ext": 0,
+          "ch_total": 120,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAW117",
+          "name": "Introdução ao Cálculo",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 60,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        }
+      ],
+      "2": [
+        {
+          "code": "CMT121",
+          "name": "Inovações Cient Tecn e Art II",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "FIS111",
+          "name": "Física Experimental I",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "ICP121",
+          "name": "Computação I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAC118",
+          "name": "Cálculo Difer e Integral I",
+          "credits": 6.0,
+          "ch_t": 90,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "3": [
+        {
+          "code": "CMT231",
+          "name": "Inovações Cient Tecn e Art III",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "FIT111",
+          "name": "Física I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAC128",
+          "name": "Cálculo Diferen e Integral II",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC118 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "4": [
+        {
+          "code": "MAC238",
+          "name": "Cálculo Diferen e Integral III",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC128 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 3 (Oficinas de Pesquisa/Ensino)",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "5": [
+        {
+          "code": "FIM230",
+          "name": "Física III - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT112 (P), MAC128 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 3 (Oficinas de Pesquisa/Ensino)",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "6": [
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 12.0,
+          "ch_t": 180,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 180,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "7": [
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 14.0,
+          "ch_t": 200,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 200,
+          "req": "",
+          "type": "livre"
+        }
+      ],
+      "8": [
+        {
+          "code": "CMTX01",
+          "name": "Trab Final em Ativ Extracurric",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 40,
+          "ch_ext": 0,
+          "ch_total": 40,
+          "req": "",
+          "type": "tcc"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 8.0,
+          "ch_t": 120,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 120,
+          "req": "",
+          "type": "livre"
+        }
+      ]
+    },
+    "electives": {
+      "Grupo 1": [
+        {
+          "code": "BMW114",
+          "name": "Origem da Vida",
+          "credits": 1.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG002",
+          "name": "Téc de Levantamento de Campo",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGG131 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG006",
+          "name": "Geoinformação",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG013",
+          "name": "Geografia Ambiental",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG015",
+          "name": "Política e Meio Ambiente",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG016",
+          "name": "Gestão de Riscos Ambientais",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG018",
+          "name": "Teoria e Clima Urbano",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG020",
+          "name": "Geodiversidade Geoconservação",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG031",
+          "name": "Rec Naturais e Gest Território",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG039",
+          "name": "Interpretação de Imagens",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG040",
+          "name": "Astrogeografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG112",
+          "name": "Teoria da Geografia",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG116",
+          "name": "Práticas em Cartografia",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGG131 (C)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG118",
+          "name": "Climatologia Geográfica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 75,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG126",
+          "name": "Métodos em Geografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG128",
+          "name": "Biogeografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 75,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG130",
+          "name": "Geografia da População",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG131",
+          "name": "Cartografia Básica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG238",
+          "name": "Pedologia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG252",
+          "name": "Geografia Política",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG253",
+          "name": "Geomorfologia Geral",
+          "credits": 6.0,
+          "ch_t": 60,
+          "ch_p": 60,
+          "ch_ext": 0,
+          "ch_total": 120,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG255",
+          "name": "Geografia Regional do Mundo",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG256",
+          "name": "Geoprocessamento",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG264",
+          "name": "Geografia Econômica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG352",
+          "name": "Geografia Marinha e Costeira",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG410",
+          "name": "Impactos Ambientais",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG474",
+          "name": "Sensoriamento Remoto",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG514",
+          "name": "Gestão Ambiental",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGL115",
+          "name": "Geologia Geral",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 32,
+          "ch_ext": 0,
+          "ch_total": 92,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT006",
+          "name": "Elem de Oceanografia Física",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT111 (P), MAC118 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT015",
+          "name": "Camada Limite Atmosférica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT111 (P), MAC118 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT110",
+          "name": "Introd Ciências Atmosféricas",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT120",
+          "name": "Instrum Meteorológ Mét Observ",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIS111 (C), IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT230",
+          "name": "Sensoriamento Remoto",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT231",
+          "name": "Metodos Estat Aplic Meteor I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT241",
+          "name": "Inic à Pesq Ciênc Atmosféricas",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT376",
+          "name": "Aplicação Satélites Meteorológ",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGT230 (P), IGT343 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT603",
+          "name": "Poluição do ar",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT604",
+          "name": "Físico Química da Atmosfera",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT603 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT607",
+          "name": "Variabilidade e Mud Climáticas",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IHI225",
+          "name": "Historia da África",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IHI111 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQF474",
+          "name": "Quimica Atmosférica e Poluição",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQF505",
+          "name": "Química no Antropoceno",
+          "credits": 3.0,
+          "ch_t": 30,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 45,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQG114",
+          "name": "Química Geral I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQG120",
+          "name": "Química Geral II - Iq",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IQG114 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQO111",
+          "name": "Química Geral Estrutural",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "LEB599",
+          "name": "Est da Líng Bras de Sinais I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP110",
+          "name": "Fund Direitos Humanos",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP120",
+          "name": "Fund Polít Públicas Dir Hum",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP148",
+          "name": "Dir Hum, Pens Negro e Racismo",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "OVL121",
+          "name": "Astronomia Esférica",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 1"
+        }
+      ],
+      "Grupo 2": [
+        {
+          "code": "CMT012",
+          "name": "Introdução à Programação C/c++",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAB121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIM240",
+          "name": "Física IV - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIM230 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIN242",
+          "name": "Física Moderna I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIM230 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIS121",
+          "name": "Física Experimental II",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "FIS111 (P), FIT112 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIT122",
+          "name": "Física II - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT112 (P), MAC118 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP037",
+          "name": "Oficina Programação em C",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "ICP121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP102",
+          "name": "Tecn para Grandes Vol de Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP489 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP131",
+          "name": "Programação de Computadores I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP132",
+          "name": "Processos de Software",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP133",
+          "name": "Fund de Sistemas de Computação",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP141",
+          "name": "Programação de Computadores II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP131 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP142",
+          "name": "Organização de Dados I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP144",
+          "name": "Matemática Discreta",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP134 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP231",
+          "name": "Cálculo Numérico",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP121 (P), MAC128 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP241",
+          "name": "Computação II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP245",
+          "name": "Circuitos Lógicos",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP111 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP248",
+          "name": "Comput Científ e Análise Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP115 (P), ICP238 (P), MAE992 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP352",
+          "name": "Matemática Combinatória",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP624 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP363",
+          "name": "Introd Aprendizado de Máquina",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP248 (P), MAD243 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP602",
+          "name": "Dw no Sup à Tomada de Decisão",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP605",
+          "name": "Recuperação de Informação",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP116 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP624",
+          "name": "Números Inteiros Criptografia",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA114",
+          "name": "Álgebra I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA233",
+          "name": "Álgebra II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAA114 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA240",
+          "name": "Análise I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAA116 (P), MAC118 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAC248",
+          "name": "Cálculo Diferen e Integral IV",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC128 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD114",
+          "name": "Análise Exploratória de Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD351",
+          "name": "Inferência Estatística I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAD233 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD357",
+          "name": "Análise de Regressão",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAD351 (P), MAE125 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD484",
+          "name": "Análise Estat Multivariada",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAD357 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAE115",
+          "name": "Cálculo Vetorial e G Analítica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAE125",
+          "name": "Álgebra Linear",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAW243",
+          "name": "Probabilidade e Estatistica",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 2"
+        }
+      ],
+      "Grupo 3": [
+        {
+          "code": "CMT003",
+          "name": "Oficina Trab Pesquisa I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT004",
+          "name": "Oficina Trab Pesquisa II",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT003 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT005",
+          "name": "Oficina Trab Pesquisa III",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT004 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT009",
+          "name": "Oficina Trab Ensino I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT010",
+          "name": "Oficina Trab Ensino II",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT009 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT011",
+          "name": "Oficina Trab Ensino III",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT010 (P)",
+          "group": "Grupo 3"
+        }
+      ]
+    },
+    "requirements": {
+      "Disciplinas Obrigatórias": {
+        "credits": 47.0,
+        "hours": 840
+      },
+      "Requisitos Curriculares Suplementares": {
+        "credits": 1.0,
+        "hours": 280
+      },
+      "Disc. Compl. Escolha Restrita": {
+        "credits": 36.0,
+        "hours": 600
+      },
+      "Disc. Compl. Escolha Condicionada": {
+        "credits": 0.0,
+        "hours": 0
+      },
+      "Disc. Compl. Livre Escolha": {
+        "credits": 32.0,
+        "hours": 680
+      },
+      "Total": {
+        "credits": 116.0,
+        "hours": 2400
+      }
+    },
+    "code_siga": "3171000100",
+    "version_curriculum": "2025/1 a 9999/9",
+    "updated_at": "26/10/2026 às 18:18",
+    "approval": "Processo 254757/2023-16 de 22/07/2024 (Boletim Interno UFRJ em 09/08/2024)"
+  },
+  {
+    "id": "sensoriamento",
+    "name": "CMT — Sensoriamento Remoto e Geoprocessamento",
+    "description": "Base voltada para dados espaciais, cartografia temática, SIG, imagens orbitais e leitura integrada da superfície terrestre.",
+    "link_siga": "https://www.siga.ufrj.br/sira/temas/zire/frameConsultas.jsp?mainPage=/repositorio-curriculo/904E7D7F-0A2A-1E16-7AFB-56A8A2715768.html",
+    "periods": {
+      "1": [
+        {
+          "code": "CMA110",
+          "name": "Tóp Gerais Ciências da Terra",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "CMT111",
+          "name": "Inovações Cient Tecn e Art I",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "CMTZ50",
+          "name": "Ativ Curricular Extensão Cmt",
+          "credits": 0.0,
+          "ch_t": 0,
+          "ch_p": 0,
+          "ch_ext": 240,
+          "ch_total": 240,
+          "req": "",
+          "type": "extensao"
+        },
+        {
+          "code": "FIW115",
+          "name": "Introdução às Ciências Físicas",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 90,
+          "ch_ext": 0,
+          "ch_total": 120,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAW117",
+          "name": "Introdução ao Cálculo",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 60,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        }
+      ],
+      "2": [
+        {
+          "code": "CMT121",
+          "name": "Inovações Cient Tecn e Art II",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "FIS111",
+          "name": "Física Experimental I",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "ICP121",
+          "name": "Computação I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAC118",
+          "name": "Cálculo Difer e Integral I",
+          "credits": 6.0,
+          "ch_t": 90,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "3": [
+        {
+          "code": "CMT231",
+          "name": "Inovações Cient Tecn e Art III",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "FIT111",
+          "name": "Física I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "MAC128",
+          "name": "Cálculo Diferen e Integral II",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC118 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "4": [
+        {
+          "code": "MAC238",
+          "name": "Cálculo Diferen e Integral III",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC128 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 2 (Computação & Exatas)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 3 (Oficinas de Pesquisa/Ensino)",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "5": [
+        {
+          "code": "FIM230",
+          "name": "Física III - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT112 (P), MAC128 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "IGG003",
+          "name": "Análise Espacial Dados Geográf",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "LIVRE",
+          "name": "Atividades Acadêmicas de Livre Escolha",
+          "credits": 6.0,
+          "ch_t": 90,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "livre"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 3 (Oficinas de Pesquisa/Ensino)",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "6": [
+        {
+          "code": "IGG254",
+          "name": "Cartografia Temática",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGG125 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "IGT004",
+          "name": "Sensoriamento Remoto Aplic I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT230 (P)",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "OPTATIVA",
+          "name": "Optativa · Grupo 1 (Ciências da Terra)",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "type": "optativa"
+        }
+      ],
+      "7": [
+        {
+          "code": "IGG306",
+          "name": "Lab de Geoprocessamento",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 60,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "type": "obrigatoria"
+        },
+        {
+          "code": "IGT005",
+          "name": "Sensoriamento Remoto Aplic II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT230 (P)",
+          "type": "obrigatoria"
+        }
+      ],
+      "8": [
+        {
+          "code": "CMTK03",
+          "name": "Trabalho de Conclusão Curso",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 50,
+          "ch_ext": 0,
+          "ch_total": 50,
+          "req": "CMT004 (P)",
+          "type": "tcc"
+        },
+        {
+          "code": "CMTX01",
+          "name": "Trab Final em Ativ Extracurric",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 40,
+          "ch_ext": 0,
+          "ch_total": 40,
+          "req": "",
+          "type": "tcc"
+        },
+        {
+          "code": "IGT003",
+          "name": "Lab Sensoriamento Remoto",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 60,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "IGT004 (P), IGT005 (P)",
+          "type": "obrigatoria"
+        }
+      ]
+    },
+    "electives": {
+      "Grupo 1": [
+        {
+          "code": "BMW114",
+          "name": "Origem da Vida",
+          "credits": 1.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG002",
+          "name": "Téc de Levantamento de Campo",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGG131 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG006",
+          "name": "Geoinformação",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG013",
+          "name": "Geografia Ambiental",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG015",
+          "name": "Política e Meio Ambiente",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG016",
+          "name": "Gestão de Riscos Ambientais",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG018",
+          "name": "Teoria e Clima Urbano",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG020",
+          "name": "Geodiversidade Geoconservação",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG031",
+          "name": "Rec Naturais e Gest Território",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG039",
+          "name": "Interpretação de Imagens",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG040",
+          "name": "Astrogeografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG112",
+          "name": "Teoria da Geografia",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG116",
+          "name": "Práticas em Cartografia",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGG131 (C)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG118",
+          "name": "Climatologia Geográfica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 75,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG126",
+          "name": "Métodos em Geografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG128",
+          "name": "Biogeografia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 75,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG130",
+          "name": "Geografia da População",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG131",
+          "name": "Cartografia Básica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG238",
+          "name": "Pedologia",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG252",
+          "name": "Geografia Política",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG253",
+          "name": "Geomorfologia Geral",
+          "credits": 6.0,
+          "ch_t": 60,
+          "ch_p": 60,
+          "ch_ext": 0,
+          "ch_total": 120,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG255",
+          "name": "Geografia Regional do Mundo",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG256",
+          "name": "Geoprocessamento",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG264",
+          "name": "Geografia Econômica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG352",
+          "name": "Geografia Marinha e Costeira",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG410",
+          "name": "Impactos Ambientais",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG474",
+          "name": "Sensoriamento Remoto",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGG514",
+          "name": "Gestão Ambiental",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGL115",
+          "name": "Geologia Geral",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 32,
+          "ch_ext": 0,
+          "ch_total": 92,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT006",
+          "name": "Elem de Oceanografia Física",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT111 (P), MAC118 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT015",
+          "name": "Camada Limite Atmosférica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT111 (P), MAC118 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT110",
+          "name": "Introd Ciências Atmosféricas",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT120",
+          "name": "Instrum Meteorológ Mét Observ",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIS111 (C), IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT230",
+          "name": "Sensoriamento Remoto",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT231",
+          "name": "Metodos Estat Aplic Meteor I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT241",
+          "name": "Inic à Pesq Ciênc Atmosféricas",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT376",
+          "name": "Aplicação Satélites Meteorológ",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "IGT230 (P), IGT343 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT603",
+          "name": "Poluição do ar",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT604",
+          "name": "Físico Química da Atmosfera",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT603 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IGT607",
+          "name": "Variabilidade e Mud Climáticas",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IGT110 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IHI225",
+          "name": "Historia da África",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IHI111 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQF474",
+          "name": "Quimica Atmosférica e Poluição",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQF505",
+          "name": "Química no Antropoceno",
+          "credits": 3.0,
+          "ch_t": 30,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 45,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQG114",
+          "name": "Química Geral I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQG120",
+          "name": "Química Geral II - Iq",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "IQG114 (P)",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "IQO111",
+          "name": "Química Geral Estrutural",
+          "credits": 2.0,
+          "ch_t": 30,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "LEB599",
+          "name": "Est da Líng Bras de Sinais I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP110",
+          "name": "Fund Direitos Humanos",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP120",
+          "name": "Fund Polít Públicas Dir Hum",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "NEP148",
+          "name": "Dir Hum, Pens Negro e Racismo",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 1"
+        },
+        {
+          "code": "OVL121",
+          "name": "Astronomia Esférica",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 1"
+        }
+      ],
+      "Grupo 2": [
+        {
+          "code": "CMT012",
+          "name": "Introdução à Programação C/c++",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAB121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIM240",
+          "name": "Física IV - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIM230 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIN242",
+          "name": "Física Moderna I",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIM230 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIS121",
+          "name": "Física Experimental II",
+          "credits": 1.0,
+          "ch_t": 0,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "FIS111 (P), FIT112 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "FIT122",
+          "name": "Física II - a",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "FIT112 (P), MAC118 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP037",
+          "name": "Oficina Programação em C",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "ICP121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP102",
+          "name": "Tecn para Grandes Vol de Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP489 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP131",
+          "name": "Programação de Computadores I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP132",
+          "name": "Processos de Software",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP133",
+          "name": "Fund de Sistemas de Computação",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP141",
+          "name": "Programação de Computadores II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP131 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP142",
+          "name": "Organização de Dados I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 30,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP144",
+          "name": "Matemática Discreta",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP134 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP231",
+          "name": "Cálculo Numérico",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP121 (P), MAC128 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP241",
+          "name": "Computação II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP121 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP245",
+          "name": "Circuitos Lógicos",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP111 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP248",
+          "name": "Comput Científ e Análise Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP115 (P), ICP238 (P), MAE992 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP352",
+          "name": "Matemática Combinatória",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP624 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP363",
+          "name": "Introd Aprendizado de Máquina",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP248 (P), MAD243 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP602",
+          "name": "Dw no Sup à Tomada de Decisão",
+          "credits": 4.0,
+          "ch_t": 30,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP605",
+          "name": "Recuperação de Informação",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "ICP116 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "ICP624",
+          "name": "Números Inteiros Criptografia",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA114",
+          "name": "Álgebra I",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA233",
+          "name": "Álgebra II",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAA114 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAA240",
+          "name": "Análise I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAA116 (P), MAC118 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAC248",
+          "name": "Cálculo Diferen e Integral IV",
+          "credits": 4.0,
+          "ch_t": 60,
+          "ch_p": 0,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAC128 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD114",
+          "name": "Análise Exploratória de Dados",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD351",
+          "name": "Inferência Estatística I",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAD233 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD357",
+          "name": "Análise de Regressão",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "MAD351 (P), MAE125 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAD484",
+          "name": "Análise Estat Multivariada",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "MAD357 (P)",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAE115",
+          "name": "Cálculo Vetorial e G Analítica",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAE125",
+          "name": "Álgebra Linear",
+          "credits": 4.0,
+          "ch_t": 45,
+          "ch_p": 15,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 2"
+        },
+        {
+          "code": "MAW243",
+          "name": "Probabilidade e Estatistica",
+          "credits": 5.0,
+          "ch_t": 60,
+          "ch_p": 30,
+          "ch_ext": 0,
+          "ch_total": 90,
+          "req": "",
+          "group": "Grupo 2"
+        }
+      ],
+      "Grupo 3": [
+        {
+          "code": "CMT003",
+          "name": "Oficina Trab Pesquisa I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT004",
+          "name": "Oficina Trab Pesquisa II",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT003 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT005",
+          "name": "Oficina Trab Pesquisa III",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT004 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT009",
+          "name": "Oficina Trab Ensino I",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT010",
+          "name": "Oficina Trab Ensino II",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT009 (P)",
+          "group": "Grupo 3"
+        },
+        {
+          "code": "CMT011",
+          "name": "Oficina Trab Ensino III",
+          "credits": 2.0,
+          "ch_t": 15,
+          "ch_p": 45,
+          "ch_ext": 0,
+          "ch_total": 60,
+          "req": "CMT010 (P)",
+          "group": "Grupo 3"
+        }
+      ]
+    },
+    "requirements": {
+      "Disciplinas Obrigatórias": {
+        "credits": 71.0,
+        "hours": 1260
+      },
+      "Requisitos Curriculares Suplementares": {
+        "credits": 2.0,
+        "hours": 330
+      },
+      "Disc. Compl. Escolha Restrita": {
+        "credits": 36.0,
+        "hours": 600
+      },
+      "Disc. Compl. Escolha Condicionada": {
+        "credits": 0.0,
+        "hours": 0
+      },
+      "Disc. Compl. Livre Escolha": {
+        "credits": 14.0,
+        "hours": 210
+      },
+      "Total": {
+        "credits": 123.0,
+        "hours": 2400
+      }
+    },
+    "code_siga": "3171000200",
+    "version_curriculum": "2025/1 a 9999/9",
+    "updated_at": "26/10/2026 às 18:18",
+    "approval": "Processo 254757/2023-16 de 22/07/2024 (Boletim Interno UFRJ em 09/08/2024)"
+  }
+]
