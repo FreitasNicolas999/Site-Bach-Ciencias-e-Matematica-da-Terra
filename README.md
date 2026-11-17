@@ -46,8 +46,8 @@ As quatro matrizes também incluem **240 h de atividade curricular de extensão*
 A logo fornecida para o projeto foi convertida em **SVG vetorial** e é utilizada no cabeçalho, no rodapé e como favicon.
 
 O site é desenvolvido pela **Comissão do BCMT**, com contribuição especialmente destacada de:
-- **Nicolas Freitas** — ingresso 25.2;
-- **Matheus Augusto** — Sensoriamento Remoto e Geoprocessamento, ingresso 18.2.
+- **Nicolas Freitas** ([LinkedIn](https://www.linkedin.com/in/freitasnicolass/)) — ingresso 25.2;
+- **Matheus Augusto** ([LinkedIn](https://www.linkedin.com/in/mattaugustt/)) — Sensoriamento Remoto e Geoprocessamento, ingresso 18.2.
 
 O rodapé reúne o **Instagram oficial do BCMT** (`@bcmt_ufrj`), os canais oficiais da Comissão e as identidades institucionais da **UFRJ** e do **CCMN**.
 

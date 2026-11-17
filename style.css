@@ -308,10 +308,14 @@ img{display:block;max-width:100%}
 .social-links b{display:block;min-width:0;margin-top:4px;overflow-wrap:anywhere;font-size:11px}
 .social-links strong{color:var(--accent);font-size:11px}
 .credits-card h3{max-width:26ch;margin-top:13px;font-size:21px;line-height:1.25;letter-spacing:-.025em}
-.student-credit{display:grid;grid-template-columns:34px 1fr;gap:13px;align-items:center;margin-top:17px;padding-top:17px;border-top:1px solid var(--line)}
+.student-credit{display:grid;grid-template-columns:34px 1fr;gap:13px;align-items:center;margin-top:14px;padding:12px 10px;border-top:1px solid var(--line);border-radius:12px;text-decoration:none;transition:background .2s ease,transform .2s ease}
+a.student-credit:hover{background:rgba(255,255,255,.04);transform:translateX(3px)}
 .student-credit>span{display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:rgba(116,199,202,.09);color:var(--accent-2);font:9px/1 'JetBrains Mono',monospace}
-.student-credit b{display:block;font-size:13px}
-.student-credit small{display:block;margin-top:4px;color:var(--faint);font-size:10px;line-height:1.4}
+.student-credit-header{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.student-credit b{display:block;font-size:13px;color:var(--text)}
+.student-credit small{display:block;margin-top:3px;color:var(--faint);font-size:10px;line-height:1.4}
+.credit-linkedin-badge{display:inline-flex;align-items:center;gap:4px;font:700 9px/1 'JetBrains Mono',monospace;padding:3px 7px;border-radius:6px;background:rgba(10,102,194,.18);color:#70b5f9;border:1px solid rgba(10,102,194,.35);transition:background .2s ease,color .2s ease}
+a.student-credit:hover .credit-linkedin-badge{background:#0a66c2;color:#fff}
 
 footer{padding:60px clamp(20px,6vw,88px) 32px;background:#020609;border-top:1px solid var(--line)}
 .institutional-strip{max-width:1500px;margin:0 auto 42px;padding:28px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.015);display:grid;grid-template-columns:minmax(220px,.72fr) minmax(0,1.28fr);gap:28px;align-items:center}
