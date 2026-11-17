@@ -397,25 +397,26 @@ window.CURRICULUM_DATA = {
         "8": [
           {
             "code": "CMTK03",
-            "name": "Trabalho de Conclusão Curso",
+            "name": "Trabalho de Conclusão de Curso (TCC)",
             "credits": 1.0,
             "ch_t": 0,
             "ch_p": 50,
             "ch_ext": 0,
             "ch_total": 50,
             "req": "CMT004 (P)",
-            "type": "tcc"
+            "type": "tcc",
+            "turma_url": "https://portal.ufrj.br/Turma/detalhesTurma?id=BE85C54B-1020-4DD0-9213-F4AA22015471&cid=1181"
           },
           {
             "code": "CMTX01",
-            "name": "Trab Final em Ativ Extracurric",
+            "name": "Atividades Extracurriculares (Horas Complementares)",
             "credits": 1.0,
             "ch_t": 0,
             "ch_p": 40,
             "ch_ext": 0,
             "ch_total": 40,
             "req": "",
-            "type": "tcc"
+            "type": "complementar"
           },
           {
             "code": "ICP359",
@@ -1845,25 +1846,26 @@ window.CURRICULUM_DATA = {
         "8": [
           {
             "code": "CMTK03",
-            "name": "Trabalho de Conclusão Curso",
+            "name": "Trabalho de Conclusão de Curso (TCC)",
             "credits": 1.0,
             "ch_t": 0,
             "ch_p": 50,
             "ch_ext": 0,
             "ch_total": 50,
             "req": "CMT004 (P)",
-            "type": "tcc"
+            "type": "tcc",
+            "turma_url": "https://portal.ufrj.br/Turma/detalhesTurma?id=BE85C54B-1020-4DD0-9213-F4AA22015471&cid=1181"
           },
           {
             "code": "CMTX01",
-            "name": "Trab Final em Ativ Extracurric",
+            "name": "Atividades Extracurriculares (Horas Complementares)",
             "credits": 1.0,
             "ch_t": 0,
             "ch_p": 40,
             "ch_ext": 0,
             "ch_total": 40,
             "req": "",
-            "type": "tcc"
+            "type": "complementar"
           },
           {
             "code": "LIVRE",
@@ -3248,15 +3250,27 @@ window.CURRICULUM_DATA = {
         ],
         "8": [
           {
+            "code": "CMTK03",
+            "name": "Trabalho de Conclusão de Curso (TCC)",
+            "credits": 1.0,
+            "ch_t": 0,
+            "ch_p": 50,
+            "ch_ext": 0,
+            "ch_total": 50,
+            "req": "CMT004 (P)",
+            "type": "tcc",
+            "turma_url": "https://portal.ufrj.br/Turma/detalhesTurma?id=BE85C54B-1020-4DD0-9213-F4AA22015471&cid=1181"
+          },
+          {
             "code": "CMTX01",
-            "name": "Trab Final em Ativ Extracurric",
+            "name": "Atividades Extracurriculares (Horas Complementares)",
             "credits": 1.0,
             "ch_t": 0,
             "ch_p": 40,
             "ch_ext": 0,
             "ch_total": 40,
             "req": "",
-            "type": "tcc"
+            "type": "complementar"
           },
           {
             "code": "LIVRE",
@@ -4675,25 +4689,26 @@ window.CURRICULUM_DATA = {
         "8": [
           {
             "code": "CMTK03",
-            "name": "Trabalho de Conclusão Curso",
+            "name": "Trabalho de Conclusão de Curso (TCC)",
             "credits": 1.0,
             "ch_t": 0,
             "ch_p": 50,
             "ch_ext": 0,
             "ch_total": 50,
             "req": "CMT004 (P)",
-            "type": "tcc"
+            "type": "tcc",
+            "turma_url": "https://portal.ufrj.br/Turma/detalhesTurma?id=BE85C54B-1020-4DD0-9213-F4AA22015471&cid=1181"
           },
           {
             "code": "CMTX01",
-            "name": "Trab Final em Ativ Extracurric",
+            "name": "Atividades Extracurriculares (Horas Complementares)",
             "credits": 1.0,
             "ch_t": 0,
             "ch_p": 40,
             "ch_ext": 0,
             "ch_total": 40,
             "req": "",
-            "type": "tcc"
+            "type": "complementar"
           },
           {
             "code": "IGT003",

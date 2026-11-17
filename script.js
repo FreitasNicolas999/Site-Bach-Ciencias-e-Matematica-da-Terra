@@ -329,19 +329,37 @@
 
           let typeLabel = 'Obrigatória';
           let tagClass = 'tag-obrigatoria';
+          let cardTypeClass = 'card-obrigatoria';
+
           if (d.type === 'optativa') {
             typeLabel = 'Optativa';
             tagClass = 'tag-optativa';
+            cardTypeClass = 'card-optativa';
           } else if (d.type === 'livre') {
             typeLabel = 'Livre';
             tagClass = 'tag-livre';
+            cardTypeClass = 'card-livre';
           } else if (d.type === 'extensao') {
             typeLabel = 'Extensão';
             tagClass = 'tag-extensao';
+            cardTypeClass = 'card-extensao';
           } else if (d.type === 'tcc') {
             typeLabel = 'TCC';
             tagClass = 'tag-tcc';
+            cardTypeClass = 'card-tcc';
+          } else if (d.type === 'complementar') {
+            typeLabel = 'Horas Compl.';
+            tagClass = 'tag-complementar';
+            cardTypeClass = 'card-complementar';
           }
+
+          card.className = `course-card ${cardTypeClass}`;
+
+          const isOptativeSlot = (d.type === 'optativa' || d.type === 'livre' || d.code === 'OPTATIVA' || d.code === 'LIVRE');
+          const cueLabel = (d.type === 'livre' || d.code === 'LIVRE') ? 'Ver regras de escolha' : 'Ver matérias do grupo';
+          const actionCueHtml = isOptativeSlot
+            ? `<div class="card-action-cue"><span>${cueLabel}</span> <b>↗</b></div>`
+            : '';
 
           const reqHtml = d.req
             ? `<div class="card-req" title="Pré-requisitos: ${d.req}"><strong>Pré-req:</strong> <span>${d.req}</span></div>`
@@ -358,17 +376,38 @@
               <span>${d.ch_total}h</span>
             </div>
             ${reqHtml}
+            ${actionCueHtml}
           `;
 
-          // Click handling for prerequisite tracing
+          // Click handling: optatives open group modal immediately; others toggle trace
           card.addEventListener('click', (e) => {
             e.stopPropagation();
-            toggleCardTrace(card);
+            if (isOptativeSlot) {
+              openOptativesModal(d, track);
+            } else {
+              toggleCardTrace(card);
+            }
           });
 
-          // Double click or keyboard enter to open modal
+          // Double click to open course modal or optatives modal
           card.addEventListener('dblclick', () => {
-            openCourseModal(d, track);
+            if (isOptativeSlot) {
+              openOptativesModal(d, track);
+            } else {
+              openCourseModal(d, track);
+            }
+          });
+
+          // Keyboard Enter or Space opens modal
+          card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              if (isOptativeSlot) {
+                openOptativesModal(d, track);
+              } else {
+                openCourseModal(d, track);
+              }
+            }
           });
 
           cardsContainer.appendChild(card);
@@ -458,7 +497,10 @@
         if (cat === 'obrigatoria') match = (type === 'obrigatoria');
         else if (cat === 'optativa') match = (type === 'optativa');
         else if (cat === 'livre') match = (type === 'livre');
-        else if (cat === 'suplementar') match = (type === 'extensao' || type === 'tcc');
+        else if (cat === 'tcc') match = (type === 'tcc');
+        else if (cat === 'extensao') match = (type === 'extensao');
+        else if (cat === 'complementar') match = (type === 'complementar');
+        else if (cat === 'suplementar') match = (type === 'extensao' || type === 'tcc' || type === 'complementar');
         card.classList.toggle('is-filtered-out', !match);
       });
     }
@@ -634,13 +676,185 @@
     btnViewFlowchart?.addEventListener('click', () => switchView('flowchart'));
     btnViewElectives?.addEventListener('click', () => switchView('electives'));
 
+    // Modal de Optativas por Grupo Formativo
+    function openOptativesModal(course, track) {
+      if (!courseModal || !modalHeader || !modalBody) return;
+      courseModal.classList.add('modal-wide');
+
+      // Detect group key
+      let groupKey = 'Grupo 1';
+      if (course.name.includes('Grupo 2')) groupKey = 'Grupo 2';
+      else if (course.name.includes('Grupo 3')) groupKey = 'Grupo 3';
+      else if (course.type === 'livre' || course.code === 'LIVRE' || course.name.includes('Livre')) groupKey = 'Livre';
+
+      if (groupKey === 'Livre') {
+        modalHeader.innerHTML = `
+          <div class="modal-eyebrow">
+            <span class="modal-code">LIVRE ESCOLHA</span>
+            <span class="card-type-tag tag-livre">UFRJ · Aberta</span>
+          </div>
+          <h3 id="modalCourseTitle">Atividades Acadêmicas de Livre Escolha</h3>
+        `;
+
+        modalBody.innerHTML = `
+          <p class="modal-group-lead">
+            As disciplinas de <strong>Livre Escolha</strong> conferem autonomia ao estudante para enriquecer sua formação interdisciplinar com disciplinas de qualquer centro ou curso da UFRJ, respeitado o teto institucional de 1/3 da carga horária fora do curso.
+          </p>
+          <div class="modal-detail-block">
+            <strong>Opções e Recomendações Acadêmicas:</strong>
+            <ul style="padding-left:18px;margin-top:8px;font-size:12.5px;color:var(--text);line-height:1.65;">
+              <li><strong>Grupos Eletivos do BCMT:</strong> Disciplinas adicionais dos Grupos 1 (Ciências da Terra), 2 (Exatas & Computação) ou 3 (Oficinas e Práticas Integradas) além do mínimo obrigatório.</li>
+              <li><strong>Instituto de Geociências (IGEO):</strong> Geologia Geral, Cartografia Digital, Sedimentologia, Sensoriamento Avançado.</li>
+              <li><strong>Instituto de Matemática & DCC:</strong> Estruturas de Dados, Inteligência Artificial, Cálculo Numérico, Álgebra Linear Aplicada.</li>
+              <li><strong>COPPE & Escola Politécnica:</strong> Engenharia Ambiental, Recursos Hídricos, Geotécnica.</li>
+              <li><strong>Instituto de Biologia & Outros:</strong> Ecologia Geral, Conservação da Biodiversidade, Legislação Ambiental.</li>
+            </ul>
+          </div>
+          <div class="modal-group-footer">
+            <button class="btn btn-primary btn-small" id="btnModalExploreElectives" type="button">Explorar Catálogo de Eletivas do BCMT ↗</button>
+            <button class="btn btn-ghost btn-small" id="btnModalCloseOptatives" type="button">Fechar Janela</button>
+          </div>
+        `;
+
+        $('#btnModalExploreElectives', modalBody)?.addEventListener('click', () => {
+          courseModal.close();
+          switchView('electives');
+          setElectivesGroup('all');
+        });
+        $('#btnModalCloseOptatives', modalBody)?.addEventListener('click', () => courseModal.close());
+        courseModal.showModal();
+        return;
+      }
+
+      const disciplines = (track.electives && track.electives[groupKey]) || [];
+      const gInfo = (curriculumData.group_info && curriculumData.group_info[groupKey]) || {
+        title: groupKey,
+        description: 'Disciplinas formativas de escolha restrita da ênfase.'
+      };
+
+      modalHeader.innerHTML = `
+        <div class="modal-eyebrow">
+          <span class="modal-code">${groupKey.toUpperCase()}</span>
+          <span class="card-type-tag tag-optativa">Escolha Restrita · ${disciplines.length} Matérias Disponíveis</span>
+        </div>
+        <h3 id="modalCourseTitle">${gInfo.title}</h3>
+      `;
+
+      modalBody.innerHTML = `
+        <p class="modal-group-lead">${gInfo.description}</p>
+        <div class="modal-search-wrap">
+          <input type="search" class="modal-search-input" id="modalOptativesSearch" placeholder="Buscar por código, nome ou pré-requisito no ${groupKey}..." autocomplete="off">
+          <span class="modal-count-indicator mono" id="modalOptativesCount">${disciplines.length} de ${disciplines.length} matérias</span>
+        </div>
+        <div class="modal-electives-list" id="modalOptativesList"></div>
+        <div class="modal-group-footer">
+          <button class="btn btn-primary btn-small" id="btnModalJumpToCatalog" type="button">Ver todas no Catálogo Completo ↗</button>
+          <button class="btn btn-ghost btn-small" id="btnModalCloseGroup" type="button">Fechar Janela</button>
+        </div>
+      `;
+
+      const listContainer = $('#modalOptativesList', modalBody);
+      const countIndicator = $('#modalOptativesCount', modalBody);
+      const searchInput = $('#modalOptativesSearch', modalBody);
+
+      function renderModalList(items) {
+        if (!listContainer) return;
+        listContainer.innerHTML = '';
+        if (!items.length) {
+          listContainer.innerHTML = '<div style="grid-column:1/-1;padding:28px 16px;text-align:center;color:var(--muted);font-size:12.5px;background:rgba(255,255,255,.02);border-radius:12px;border:1px dashed var(--line);">Nenhuma disciplina encontrada com esse termo de busca.</div>';
+          return;
+        }
+        items.forEach((item) => {
+          const card = document.createElement('div');
+          card.className = 'modal-elective-card';
+          card.setAttribute('role', 'button');
+          card.setAttribute('tabindex', '0');
+          card.style.cursor = 'pointer';
+
+          const reqSpan = item.req
+            ? `<span class="modal-elective-req has-req" title="Pré-requisitos: ${item.req}">Req: ${item.req}</span>`
+            : '<span class="modal-elective-req no-req">Sem pré-req</span>';
+
+          card.innerHTML = `
+            <div class="modal-elective-top">
+              <span class="modal-elective-code mono">${item.code}</span>
+              <span class="modal-elective-credits mono">${item.credits} cr · ${item.ch_total}h</span>
+            </div>
+            <strong class="modal-elective-name">${item.name}</strong>
+            <div class="modal-elective-bottom">
+              ${reqSpan}
+              <span class="modal-elective-hours mono">T:${item.ch_t} P:${item.ch_p}</span>
+            </div>
+          `;
+
+          card.addEventListener('click', () => {
+            openCourseModal(item, track);
+          });
+          card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              openCourseModal(item, track);
+            }
+          });
+
+          listContainer.appendChild(card);
+        });
+      }
+
+      renderModalList(disciplines);
+
+      searchInput?.addEventListener('input', () => {
+        const q = normalizeStr(searchInput.value);
+        const filtered = disciplines.filter((d) => {
+          return normalizeStr(d.code).includes(q) ||
+                 normalizeStr(d.name).includes(q) ||
+                 normalizeStr(d.req).includes(q);
+        });
+        if (countIndicator) {
+          countIndicator.textContent = `${filtered.length} de ${disciplines.length} matérias`;
+        }
+        renderModalList(filtered);
+      });
+
+      $('#btnModalJumpToCatalog', modalBody)?.addEventListener('click', () => {
+        courseModal.close();
+        switchView('electives');
+        setElectivesGroup(groupKey);
+      });
+
+      $('#btnModalCloseGroup', modalBody)?.addEventListener('click', () => courseModal.close());
+
+      courseModal.showModal();
+    }
+
     // Course Detail Modal
     function openCourseModal(course, track) {
       if (!courseModal || !modalHeader || !modalBody) return;
+      courseModal.classList.remove('modal-wide');
+
+      let tagClass = 'tag-obrigatoria';
+      let tagLabel = 'Obrigatória';
+      if (course.type === 'tcc') {
+        tagClass = 'tag-tcc';
+        tagLabel = 'Trabalho de Conclusão (TCC)';
+      } else if (course.type === 'complementar') {
+        tagClass = 'tag-complementar';
+        tagLabel = 'Horas Complementares';
+      } else if (course.type === 'optativa') {
+        tagClass = 'tag-optativa';
+        tagLabel = `Optativa (${course.group || 'Eletiva'})`;
+      } else if (course.type === 'extensao') {
+        tagClass = 'tag-extensao';
+        tagLabel = 'Extensão Universitária';
+      } else if (course.type === 'livre') {
+        tagClass = 'tag-livre';
+        tagLabel = 'Livre Escolha';
+      }
+
       modalHeader.innerHTML = `
         <div class="modal-eyebrow">
           <span class="modal-code">${course.code}</span>
-          <span class="card-type-tag tag-obrigatoria">${course.group || course.type || 'Disciplina'}</span>
+          <span class="card-type-tag ${tagClass}">${tagLabel}</span>
         </div>
         <h3 id="modalCourseTitle">${course.name}</h3>
       `;
@@ -649,7 +863,33 @@
         ? `<p>${course.req}</p><small style="color:var(--faint);font-size:11px;display:block;margin-top:4px;">(P) = Pré-requisito estrito · (C) = Co-requisito</small>`
         : '<p style="color:var(--faint);font-style:italic;">Sem pré-requisitos cadastrados na distribuição curricular oficial.</p>';
 
+      const tccBannerHtml = (course.code === 'CMTK03' || course.type === 'tcc')
+        ? `
+          <div class="modal-tcc-banner">
+            <div class="tcc-banner-head">
+              <span class="mono">DISCIPLINA OFICIAL DE TCC</span>
+              <span class="badge-tcc-pill">Portal UFRJ</span>
+            </div>
+            <p>Esta é a disciplina oficial de <strong>Trabalho de Conclusão de Curso (CMTK03)</strong> cadastrada na matriz curricular e disponível para solicitação de inscrição no Portal do Aluno da UFRJ.</p>
+            <div class="modal-tcc-actions">
+              <a href="https://portal.ufrj.br/Turma/detalhesTurma?id=BE85C54B-1020-4DD0-9213-F4AA22015471&cid=1181" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-small">Ver Detalhes da Turma no Portal do Aluno (SIGA) ↗</a>
+            </div>
+          </div>
+        `
+        : '';
+
+      const complementarNoticeHtml = (course.code === 'CMTX01' || course.type === 'complementar')
+        ? `
+          <div class="modal-detail-block" style="border-left:3px solid #fb7185;background:rgba(251,113,133,.06);">
+            <strong style="color:#fb7185;">Atividades Extracurriculares (Horas Complementares)</strong>
+            <p>Esta disciplina destina-se exclusivamente à validação de carga horária complementar obtida através de atividades de pesquisa (Iniciação Científica), extensão, monitoria, estágios curriculares não-obrigatórios e participação em eventos acadêmicos/congressos. <em>Não confunda com o Trabalho de Conclusão de Curso (CMTK03).</em></p>
+          </div>
+        `
+        : '';
+
       modalBody.innerHTML = `
+        ${tccBannerHtml}
+        ${complementarNoticeHtml}
         <div class="modal-stat-grid">
           <div><dt>Créditos</dt><dd>${course.credits} cr</dd></div>
           <div><dt>C.H. Total</dt><dd>${course.ch_total} h</dd></div>
