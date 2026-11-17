@@ -989,6 +989,24 @@
         keywords: ["historia", "criacao", "consuni", "2008", "2009", "2025", "reformulacao", "matriz curricular"]
       },
       {
+        title: "Evolução Regulatória & Entrave no MEC (Reforma de 2024)",
+        category: "curso",
+        categoryLabel: "Início & O Curso",
+        badgeClass: "tag-curso",
+        url: "index.html#historico-regulatorio",
+        snippet: "Entenda por que o curso foi reestruturado pelo CEG em 2024: unificação de códigos avulsos, segurança para o diploma e inclusão de 10% de extensão.",
+        keywords: ["regulatorio", "mec", "emec", "reforma 2024", "ceg", "portaria mec 770", "diploma", "extencao", "curricularizacao da extensao", "habilitações", "entraves", "historia"]
+      },
+      {
+        title: "Grades Antigas do BCMT (Repositório SIGA 2013 e até 2024)",
+        category: "grade",
+        categoryLabel: "Grade & Matérias",
+        badgeClass: "tag-grade",
+        url: "fluxograma.html#fluxograma",
+        snippet: "Acesse as matrizes anteriores no SIGA: Sensoriamento Remoto (2013), Patrimônio Natural (2013), Tronco Comum (2013), Suporte à Decisão (2013) e Matriz até 2024.",
+        keywords: ["grades antigas", "grade 2013", "matriz 2013", "matriz antiga", "historico de matrizes", "siga", "suporte a decisao", "codigo 87a624e1", "equivalencia"]
+      },
+      {
         title: "Portal do Curso & Navegação por Páginas",
         category: "curso",
         categoryLabel: "Início & O Curso",
